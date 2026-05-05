@@ -1,0 +1,66 @@
+# GROUTBOT — Generative Engine Optimization Map
+
+> צור לי מהאתר שלי דף נחיתה
+
+---
+
+## Pages
+
+### בית
+https://example.com
+צור לי מהאתר שלי דף נחיתה
+
+## Legal & Policy
+
+### Privacy Policy
+https://example.com/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://example.com/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://example.com/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+## How to Contact Us
+
+- (No contact details configured yet.)
+
+### Contact form
+- URL: https://example.com
+- Endpoint: https://example.com/api/email/contact-form
+- Method: POST
+- Content-Type: application/json
+- Fields:
+  - `name` (text, required)
+  - `email` (email, required)
+  - `phone` (tel)
+  - `message` (textarea, required)
+  - `privacy_consent` (checkbox, required)
+
+---
+
+# Business Context (for LLM understanding)
+
+## About GROUTBOT
+צור לי מהאתר שלי דף נחיתה
+
+## Target Audience
+- אנשי מקצוע בתחום הבנייה
+- חובבי עשה זאת בעצמך
+- קמעונאים בתחום השיפוצים הביתיים
+
+## Industry
+General
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://example.com/sitemap.xml
+- Robots: https://example.com/robots.txt
+- Flattened page text (for LLMs): https://example.com/llms-full.txt
