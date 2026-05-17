@@ -318,18 +318,18 @@
         #mic-access-tool-general-button, .mic-access-tool-general-button,
         #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
         ._access-icon { display: flex !important; visibility: visible !important; opacity: 1 !important; pointer-events: auto !important; }
-        #mic-access-tool-box, .mic-access-tool-box, #mic-init-access-tool #mic-access-tool-box,
-        div[id*="mic-access-tool-box"], ._access-menu {
-          visibility: hidden; opacity: 0; pointer-events: auto !important;
+        #mic-access-tool-box.opened-mic-access-tool, .mic-access-tool-box.opened-mic-access-tool,
+        #mic-init-access-tool #mic-access-tool-box.opened-mic-access-tool {
+          visibility: visible !important; opacity: 1 !important; pointer-events: auto !important;
         }
       }
       @media (min-width: 769px) {
         #mic-access-tool-general-button, .mic-access-tool-general-button,
         #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
         ._access-icon { display: flex !important; visibility: visible !important; opacity: 1 !important; pointer-events: auto !important; }
-        #mic-access-tool-box, .mic-access-tool-box, #mic-init-access-tool #mic-access-tool-box,
-        div[id*="mic-access-tool-box"], ._access-menu {
-          visibility: hidden; opacity: 0; pointer-events: auto !important;
+        #mic-access-tool-box.opened-mic-access-tool, .mic-access-tool-box.opened-mic-access-tool,
+        #mic-init-access-tool #mic-access-tool-box.opened-mic-access-tool {
+          visibility: visible !important; opacity: 1 !important; pointer-events: auto !important;
         }
       }
     </style>
@@ -1268,6 +1268,103 @@
   </div>
 
 </section>
+
+<section class="grout-team-section" aria-labelledby="grout-team-heading">
+  <div class="grout-team-container">
+    <!-- Section Header -->
+    <div class="grout-team-header">
+      <span class="grout-team-badge">המומחים שלנו</span>
+      <h2 class="grout-team-title" id="grout-team-heading">הצוות שלנו</h2>
+      <p class="grout-team-subtitle">
+        מאחורי כל פרויקט מוצלח עומד צוות מקצועי ומסור. אנשי GROUTBOT מביאים עמם שנים של ניסיון, מומחיות טכנית ותשוקה אמיתית לאיכות — כדי שכל עבודה תיראה ותרגיש מושלמת.
+      </p>
+    </div>
+
+    <!-- Team Cards Grid -->
+    <div class="grout-team-grid">
+
+      <!-- Card 1 -->
+      <article class="grout-team-card" aria-label="חבר צוות: אבי לוי">
+        <div class="grout-team-card-img-wrap">
+          <img class="grout-team-card-img" src="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27300%27%3E%3Cdefs%3E%3ClinearGradient id=%27grad%27 x1=%270%25%27 y1=%270%25%27 x2=%27100%25%27 y2=%27100%25%27%3E%3Cstop offset=%270%25%27 style=%27stop-color:%23FF0083;stop-opacity:1%27 /%3E%3Cstop offset=%27100%25%27 style=%27stop-color:%23FF008320;stop-opacity:1%27 /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27url(%23grad)%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 font-family=%27Arial, sans-serif%27 font-size=%2716%27 fill=%27white%27 text-anchor=%27middle%27 dy=%27.3em%27 font-weight=%27500%27%3EClick%20to%20add%20image%3C/text%3E%3C/svg%3E" alt="אבי לוי — מנהל פרויקטים בכיר" data-placeholder="team-member-1" data-context="Professional Israeli male project manager, confident smile, wearing smart casual clothing, clean modern background, headshot portrait style">
+          <div class="grout-team-card-overlay"></div>
+        </div>
+        <div class="grout-team-card-body">
+          <div class="grout-team-card-accent"></div>
+          <h3 class="grout-team-card-name">אבי לוי</h3>
+          <span class="grout-team-card-role">מנהל פרויקטים בכיר</span>
+          <p class="grout-team-card-desc">
+            עם למעלה מ-15 שנות ניסיון בתחום, אבי מוביל כל פרויקט מהתכנון ועד הביצוע תוך שמירה על סטנדרטים גבוהים במיוחד.
+          </p>
+          <div class="grout-team-card-divider"></div>
+          <div class="grout-team-card-tags">
+            <span class="grout-team-tag">ניהול פרויקטים</span>
+            <span class="grout-team-tag">פיקוח איכות</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="grout-team-card" aria-label="חבר צוות: מיכל כהן">
+        <div class="grout-team-card-img-wrap">
+          <img class="grout-team-card-img" src="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27300%27%3E%3Cdefs%3E%3ClinearGradient id=%27grad%27 x1=%270%25%27 y1=%270%25%27 x2=%27100%25%27 y2=%27100%25%27%3E%3Cstop offset=%270%25%27 style=%27stop-color:%23FF0083;stop-opacity:1%27 /%3E%3Cstop offset=%27100%25%27 style=%27stop-color:%23FF008320;stop-opacity:1%27 /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27url(%23grad)%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 font-family=%27Arial, sans-serif%27 font-size=%2716%27 fill=%27white%27 text-anchor=%27middle%27 dy=%27.3em%27 font-weight=%27500%27%3EClick%20to%20add%20image%3C/text%3E%3C/svg%3E" alt="מיכל כהן — מומחית עיצוב ואסתטיקה" data-placeholder="team-member-2" data-context="Professional Israeli female design expert, warm friendly smile, modern professional attire, bright studio background, headshot portrait photography">
+          <div class="grout-team-card-overlay"></div>
+        </div>
+        <div class="grout-team-card-body">
+          <div class="grout-team-card-accent"></div>
+          <h3 class="grout-team-card-name">מיכל כהן</h3>
+          <span class="grout-team-card-role">מומחית עיצוב ואסתטיקה</span>
+          <p class="grout-team-card-desc">
+            מיכל מביאה עין אמנותית וידע טכני לכל פרויקט. היא מתמחה בבחירת חומרים, גוונים ופתרונות עיצוביים שמשדרגים כל מרחב.
+          </p>
+          <div class="grout-team-card-divider"></div>
+          <div class="grout-team-card-tags">
+            <span class="grout-team-tag">עיצוב פנים</span>
+            <span class="grout-team-tag">בחירת חומרים</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="grout-team-card" aria-label="חבר צוות: רון שפירא">
+        <div class="grout-team-card-img-wrap">
+          <img class="grout-team-card-img" src="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27300%27%3E%3Cdefs%3E%3ClinearGradient id=%27grad%27 x1=%270%25%27 y1=%270%25%27 x2=%27100%25%27 y2=%27100%25%27%3E%3Cstop offset=%270%25%27 style=%27stop-color:%23FF0083;stop-opacity:1%27 /%3E%3Cstop offset=%27100%25%27 style=%27stop-color:%23FF008320;stop-opacity:1%27 /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27url(%23grad)%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 font-family=%27Arial, sans-serif%27 font-size=%2716%27 fill=%27white%27 text-anchor=%27middle%27 dy=%27.3em%27 font-weight=%27500%27%3EClick%20to%20add%20image%3C/text%3E%3C/svg%3E" alt="רון שפירא — טכנאי ראשי" data-placeholder="team-member-3" data-context="Professional Israeli male senior technician, skilled craftsman look, wearing clean work uniform, tools in background, confident portrait headshot">
+          <div class="grout-team-card-overlay"></div>
+        </div>
+        <div class="grout-team-card-body">
+          <div class="grout-team-card-accent"></div>
+          <h3 class="grout-team-card-name">רון שפירא</h3>
+          <span class="grout-team-card-role">טכנאי ראשי</span>
+          <p class="grout-team-card-desc">
+            רון הוא הידיים המיומנות מאחורי כל עבודה. מומחה בטכניקות ריצוף ואיטום מתקדמות, הוא מבטיח תוצאה מושלמת בכל פרויקט.
+          </p>
+          <div class="grout-team-card-divider"></div>
+          <div class="grout-team-card-tags">
+            <span class="grout-team-tag">ריצוף מתקדם</span>
+            <span class="grout-team-tag">איטום מקצועי</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+    <!-- End Grid -->
+
+    <!-- Bottom CTA -->
+    <div class="grout-team-cta">
+      <p class="grout-team-cta-text">רוצים לדעת עוד על הצוות שלנו?</p>
+      <a href="#contact" class="grout-team-cta-btn" aria-label="צרו קשר עם הצוות שלנו">
+        <span>צרו קשר</span>
+        <svg class="grout-team-cta-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 5 12 12 19"></polyline>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
 
 <section id="cta" class="index-cta-section" data-layout-spec="בית-cta" dir="rtl">
   <div class="index-cta-container">

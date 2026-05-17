@@ -207,7 +207,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 img,
@@ -2093,7 +2093,7 @@ nav.navbar {
   right: 0;
   width: 100% !important;
   max-width: none !important;
-  overflow-x: hidden !important;
+  overflow-x: clip !important;
 }
 
 /* iOS Safari fix: When the page has hidden horizontal overflow (which iOS
@@ -2119,7 +2119,7 @@ nav.navbar {
     max-width: none !important;
     left: 0 !important;
     right: 0 !important;
-    overflow-x: hidden !important;
+    overflow-x: clip !important;
     box-sizing: border-box !important;
   }
   /* Selector list mirrors the RTL selectors used elsewhere in Zappy CSS so
@@ -4241,7 +4241,7 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   html, body {
     width: 100% !important;
     max-width: 100vw !important;
-    overflow-x: hidden !important;
+    overflow-x: clip !important;
     box-sizing: border-box !important;
   }
   
@@ -5143,8 +5143,7 @@ nav.navbar .sub-menu li a:hover { color: #2CA6A4 !important; background-color: r
   padding: 8px !important;
   text-decoration: none !important;
   z-index: 10000 !important;
-  border-radius: 4px !important;
-}
+  border-radius: 4px !important; transform: none; }
 
 /* Enhanced focus indicators */
 *:focus {
@@ -5334,6 +5333,322 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 #mic-init-access-tool #mic-access-tool-general-button,
 ._access-icon {
   display: flex !important;
+}
+
+/* AI-generated section */
+/* =============================================
+   GROUTBOT — Team Section
+   ============================================= */
+
+.grout-team-section {
+  direction: rtl;
+  font-family: system-ui, sans-serif;
+  background: #f4f7fb;
+  padding: 96px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle decorative background shapes */
+.grout-team-section::before,
+.grout-team-section::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.grout-team-section::before {
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(42, 157, 143, 0.08) 0%, transparent 70%);
+  top: -120px;
+  left: -100px;
+}
+
+.grout-team-section::after {
+  width: 340px;
+  height: 340px;
+  background: radial-gradient(circle, rgba(35, 57, 91, 0.07) 0%, transparent 70%);
+  bottom: -80px;
+  right: -80px;
+}
+
+/* Container */
+.grout-team-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- Header ---- */
+.grout-team-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.grout-team-badge {
+  display: inline-block;
+  background: var(--gradient-primary, linear-gradient(135deg, #2A9D8F 0%, #1A7A6E 100%));
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 6px 18px;
+  border-radius: 50px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.grout-team-title {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: var(--primary, #23395B);
+  margin: 0 0 18px 0;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.grout-team-subtitle {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  color: #4a5568;
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* ---- Grid ---- */
+.grout-team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 60px;
+}
+
+/* ---- Card ---- */
+.grout-team-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(35, 57, 91, 0.1);
+  box-shadow: 0 4px 20px rgba(35, 57, 91, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.grout-team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(35, 57, 91, 0.13);
+}
+
+/* Card Image Wrapper */
+.grout-team-card-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  background: #e2e8f0;
+}
+
+.grout-team-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.grout-team-card:hover .grout-team-card-img {
+  transform: scale(1.05);
+}
+
+.grout-team-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 40%,
+    rgba(35, 57, 91, 0.35) 100%
+  );
+  pointer-events: none;
+}
+
+/* Card Body */
+.grout-team-card-body {
+  padding: 28px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Top accent bar */
+.grout-team-card-accent {
+  width: 40px;
+  height: 4px;
+  background: var(--gradient-primary, linear-gradient(135deg, #2A9D8F 0%, #1A7A6E 100%));
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.grout-team-card-name {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary, #23395B);
+  margin: 0 0 6px 0;
+  line-height: 1.3;
+}
+
+.grout-team-card-role {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #2A9D8F;
+  background: rgba(42, 157, 143, 0.1);
+  padding: 4px 12px;
+  border-radius: 50px;
+  margin-bottom: 16px;
+}
+
+.grout-team-card-desc {
+  font-size: 0.95rem;
+  color: #4a5568;
+  line-height: 1.75;
+  margin: 0;
+  flex: 1;
+}
+
+/* Divider */
+.grout-team-card-divider {
+  height: 1px;
+  background: rgba(35, 57, 91, 0.1);
+  margin: 18px 0;
+}
+
+/* Tags */
+.grout-team-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.grout-team-tag {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--primary, #23395B);
+  background: rgba(35, 57, 91, 0.07);
+  border: 1px solid rgba(35, 57, 91, 0.15);
+  padding: 4px 12px;
+  border-radius: 50px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.grout-team-card:hover .grout-team-tag {
+  background: rgba(42, 157, 143, 0.12);
+  border-color: rgba(42, 157, 143, 0.3);
+  color: #1A7A6E;
+}
+
+/* ---- Bottom CTA ---- */
+.grout-team-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.grout-team-cta-text {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--primary, #23395B);
+  margin: 0;
+}
+
+.grout-team-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--gradient-primary, linear-gradient(135deg, #2A9D8F 0%, #1A7A6E 100%));
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 16px rgba(42, 157, 143, 0.3);
+}
+
+.grout-team-cta-btn:hover,
+.grout-team-cta-btn:focus-visible {
+  opacity: 0.92;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(42, 157, 143, 0.4);
+  outline: none;
+}
+
+.grout-team-cta-btn:focus-visible {
+  outline: 3px solid #2A9D8F;
+  outline-offset: 3px;
+}
+
+/* Arrow icon — flip for RTL */
+.grout-team-cta-icon {
+  transform: scaleX(-1);
+  flex-shrink: 0;
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+
+@media (max-width: 960px) {
+  .grout-team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+
+  .grout-team-card:last-child {
+    grid-column: 1 / -1;
+    max-width: 420px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .grout-team-section {
+    padding: 64px 16px;
+  }
+
+  .grout-team-header {
+    margin-bottom: 40px;
+  }
+
+  .grout-team-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .grout-team-card:last-child {
+    grid-column: auto;
+    max-width: none;
+  }
+
+  .grout-team-card-img-wrap {
+    height: 210px;
+  }
+
+  .grout-team-cta {
+    flex-direction: column;
+    gap: 14px;
+  }
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
@@ -6086,7 +6401,7 @@ section[data-hero-type] {
     max-width: none !important;
     left: 0 !important;
     right: 0 !important;
-    overflow-x: hidden !important;
+    overflow-x: clip !important;
     box-sizing: border-box !important;
   }
   #navMenu,
@@ -6193,6 +6508,109 @@ html:not([dir]) #mic-access-tool-general-button, html:not([dir]) .mic-access-too
 html:not([dir]) #mic-init-access-tool .mic-access-tool-general-button,
 html:not([dir]) #mic-init-access-tool #mic-access-tool-general-button,
 html:not([dir]) ._access-icon { right: 20px !important; left: auto !important; }
+
+/* LTR: keep image on left for solution-reverse sections */
+html[dir="ltr"] .solution-item.solution-reverse .solution-image { order: -1 !important; }
+html[dir="ltr"] .solution-item.solution-reverse .solution-content { order: 1 !important; }
+html[dir="ltr"] .service-detail.service-reverse .service-detail-image { order: -1 !important; }
+html[dir="ltr"] .service-detail.service-reverse .service-detail-content { order: 1 !important; }
+
+
+/* ZAPPY_MOBILE_NAV_ICON_ALIGNMENT_FIX */
+/* ZAPPY_MOBILE_NAV_ICON_ALIGNMENT_FIX_V2 */
+/* The mobile hamburger / phone buttons are absolutely positioned. Keep the
+   navbar itself as a non-collapsing containing block so auto-margin centering
+   stays aligned even when generated mobile CSS moves every nav child out of flow. */
+@media (max-width: 768px) {
+  .navbar,
+  nav.navbar {
+    min-height: 70px !important;
+  }
+
+  .navbar > .mobile-toggle,
+  nav.navbar > .mobile-toggle,
+  .navbar .mobile-toggle,
+  nav.navbar .mobile-toggle,
+  #mobileToggle,
+  .navbar > .phone-header-btn,
+  nav.navbar > .phone-header-btn,
+  .navbar .phone-header-btn,
+  nav.navbar .phone-header-btn {
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    transform: none !important;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    align-self: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    line-height: 0 !important;
+  }
+
+  .navbar > .mobile-toggle,
+  nav.navbar > .mobile-toggle,
+  .navbar .mobile-toggle,
+  nav.navbar .mobile-toggle,
+  #mobileToggle {
+    display: flex !important;
+  }
+
+  html:not([data-zappy-site-type="ecommerce"]) .navbar > .phone-header-btn,
+  html:not([data-zappy-site-type="ecommerce"]) nav.navbar > .phone-header-btn,
+  html:not([data-zappy-site-type="ecommerce"]) .navbar .phone-header-btn,
+  html:not([data-zappy-site-type="ecommerce"]) nav.navbar .phone-header-btn {
+    display: flex !important;
+  }
+
+  html[data-zappy-site-type="ecommerce"] .phone-header-btn,
+  body[data-zappy-site-type="ecommerce"] .phone-header-btn,
+  html[data-zappy-site-type="ecommerce"] header .phone-header-btn,
+  html[data-zappy-site-type="ecommerce"] nav .phone-header-btn {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+  }
+}
+
+
+/* ZAPPY_PUBLISHED_MOBILE_MEDIA_FIT_FIX */
+@media (max-width: 768px) {
+  /* Published sites can carry stale editor-generated transform:scale(...) rules.
+     Fullscreen hero backgrounds must keep filling their absolute wrapper; mobile
+     crop runtime can still override this with inline styles when needed. */
+  html body main section[class*="hero"] [data-hero-bg],
+  html body main section[class*="hero"] [data-hero-background="true"],
+  html body main section[data-hero-type*="fullscreen"] img[data-hero-bg],
+  html body main section[data-hero-type*="fullscreen"] img[data-hero-background="true"] {
+    transform: none !important;
+    transform-origin: center center !important;
+    max-width: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  /* Filter chip rows should wrap on narrow RTL screens instead of hiding most
+     options off-canvas behind a horizontal scroller. */
+  html body main #showcaseAdvancedFilter .adv-filter-group > .adv-filter-scroll-row,
+  html body main .index-showcase-section #showcaseAdvancedFilter .adv-filter-group > .adv-filter-scroll-row,
+  html body main .index-showcase-section .adv-filter-group > .adv-filter-scroll-row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    padding-inline: 0 !important;
+    margin-inline: 0 !important;
+    height: auto !important;
+    cursor: default !important;
+  }
+}
 
 /* Spec table BiDi fix: isolate cells so mixed LTR/RTL content renders correctly */
 .specs-table th, .specs-table td { unicode-bidi: plaintext !important; }
