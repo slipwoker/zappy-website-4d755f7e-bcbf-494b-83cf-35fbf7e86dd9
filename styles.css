@@ -5351,6 +5351,24 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 .index-showcase-section .tile-caption {
   display: none !important;
 }
+
+.grout-team-section .grout-team-card-img-wrap {
+  position: relative !important;
+  overflow: hidden !important;
+  width: 100% !important;
+  height: 240px !important;
+}
+
+.grout-team-section .grout-team-card-img {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  margin: 0 !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
