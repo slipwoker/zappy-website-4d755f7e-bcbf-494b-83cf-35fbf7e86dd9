@@ -5369,6 +5369,17 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   object-position: center center !important;
   margin: 0 !important;
 }
+
+.grout-team-section article.grout-team-card:nth-child(2) .grout-team-card-img-wrap img {
+  top: 0px !important;
+  left: 0px !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: 50% 50% !important;
+  margin: 0 !important;
+  transform: none !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
