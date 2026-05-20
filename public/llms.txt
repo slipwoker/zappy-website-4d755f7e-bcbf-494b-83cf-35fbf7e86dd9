@@ -7,21 +7,21 @@
 ## Pages
 
 ### בית
-https://groutbot.zappy5.app
+https://groutbot.co.il
 צור לי מהאתר שלי דף נחיתה
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://groutbot.zappy5.app/privacy
+https://groutbot.co.il/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://groutbot.zappy5.app/terms
+https://groutbot.co.il/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://groutbot.zappy5.app/accessibility
+https://groutbot.co.il/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -34,8 +34,8 @@ Information about WCAG compliance and accessibility features.
 - Address: שפלה, ישראל
 
 ### Contact form
-- URL: https://groutbot.zappy5.app
-- Endpoint: https://groutbot.zappy5.app/api/email/contact-form
+- URL: https://groutbot.co.il
+- Endpoint: https://groutbot.co.il/api/email/contact-form
 - Method: POST
 - Content-Type: application/json
 - Fields:
@@ -64,6 +64,6 @@ General
 
 # Machine-readable feeds
 
-- Sitemap (XML): https://groutbot.zappy5.app/sitemap.xml
-- Robots: https://groutbot.zappy5.app/robots.txt
-- Flattened page text (for LLMs): https://groutbot.zappy5.app/llms-full.txt
+- Sitemap (XML): https://groutbot.co.il/sitemap.xml
+- Robots: https://groutbot.co.il/robots.txt
+- Flattened page text (for LLMs): https://groutbot.co.il/llms-full.txt
