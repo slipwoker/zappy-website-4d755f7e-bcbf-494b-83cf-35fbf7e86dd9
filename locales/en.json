@@ -131,7 +131,7 @@
   "home_div_135": "Clean application without excess stains",
   "home_div_136": "Friendly for both large and small projects",
   "home_div_137": "Professional and Certified Service",
-  "home_link_96": "Contact Now",
+  "home_link_96": "Contractors? Enter",
   "home_link_97": "Discover the Benefits",
   "home_link_98": "Contact Us",
   "home_link_99": "Send Direct Inquiry",
@@ -530,5 +530,7 @@
   "legal_accessibility_link_18": "← Back to website",
   "home_seo_twitter_description": "Create a landing page from my website",
   "accessibility_meta_description": "Our accessibility statement - our commitment to digital accessibility",
-  "legal_accessibility_page_title": "Accessibility Statement - GROUTBOT"
+  "legal_accessibility_page_title": "Accessibility Statement - GROUTBOT",
+  "new_text_214_0": "<span>I have read and agree to the </span><a href=\"/terms\" target=\"_blank\">",
+  "new_text_214_1": "</a><span> and </span><a href=\"/privacy\" target=\"_blank\">"
 }

@@ -3446,15 +3446,41 @@ function fixContrast(){
             }
             if (addBtn) { addBtn.disabled = false; addBtn.style.opacity = ''; addBtn.style.cursor = ''; }
           }
-          // Always update price when a variant is matched
+          // Always update price when a variant is matched.
+          //
+          // CUSTOMER-DISCOUNT AWARENESS (per-customer percentage off):
+          // When the active shopper has a customer-specific percentage discount
+          // configured (delivered into window.__zappyCustomerDiscountConfig by
+          // the storefront's customer-discount runtime), we MUST apply it here
+          // too — otherwise variant clicks in the fullscreen-preview editor
+          // overwrite the discounted price with the raw variant price, leaving
+          // merchants unable to preview "what their customer sees" while
+          // editing. This mirrors the V2 patch in
+          // githubService.ensureVariantSelectionFix that runs on the published
+          // site; the two click-handler paths must stay in sync since the
+          // editor's capture-phase handler (this one) runs first and
+          // stopImmediatePropagation()s the published-site V2 handler. Pinned
+          // by server/tests/previewVariantDisplayCustomerDiscount.test.js.
           if (priceDisplay) {
             var currency = product.currency || t.currency || '₪';
             var baseP = window.productBasePrice || parseFloat(product.price) || 0;
             var origP = window.productOriginalPrice || parseFloat(product.compare_at_price || product.original_price || 0);
             var hasSale = window.productHasSalePrice;
             var finalPrice = (v.price != null) ? parseFloat(v.price) : baseP;
+            var _cdApplied = false;
+            var _cdOrig = finalPrice;
+            if (typeof window.__zappyApplyCustomerPercentToPrice === 'function' && product && product.id) {
+              var _cdRes = window.__zappyApplyCustomerPercentToPrice(finalPrice, product.id);
+              if (_cdRes && _cdRes.applied) {
+                _cdApplied = true;
+                _cdOrig = finalPrice;
+                finalPrice = _cdRes.price;
+              }
+            }
             var html = currency + finalPrice.toFixed(2);
-            if (v.price != null) {
+            if (_cdApplied) {
+              html += ' <span class="original-price">' + currency + _cdOrig.toFixed(2) + '</span>';
+            } else if (v.price != null) {
               if (origP && origP > finalPrice) {
                 html += ' <span class="original-price">' + currency + origP.toFixed(2) + '</span>';
               }
@@ -3463,9 +3489,15 @@ function fixContrast(){
             }
             priceDisplay.innerHTML = html;
           }
-          // Update price-per-unit if the function exists
+          // Update price-per-unit if the function exists. Feed the discounted
+          // price (when a customer discount applied) so per-unit math matches
+          // the headline price.
           if (typeof updatePricePerUnitDisplay === 'function') {
             var effPrice = (v.price != null) ? parseFloat(v.price) : (window.productBasePrice || parseFloat(product.price) || 0);
+            if (typeof window.__zappyApplyCustomerPercentToPrice === 'function' && product && product.id) {
+              var _cdResUnit = window.__zappyApplyCustomerPercentToPrice(effPrice, product.id);
+              if (_cdResUnit && _cdResUnit.applied) effPrice = _cdResUnit.price;
+            }
             updatePricePerUnitDisplay(effPrice, product, t);
           }
           // Update SKU: prefer variant SKU, fall back to base product SKU.
@@ -3508,7 +3540,10 @@ function fixContrast(){
           stockDisplay.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>' + (t.inStock || 'In Stock');
         }
         if (addBtn) { addBtn.disabled = false; addBtn.style.opacity = ''; addBtn.style.cursor = ''; }
-        // Reset price to initial state (Starting at / base price)
+        // Reset price to initial state (Starting at / base price). Same
+        // customer-discount path as the variant-matched branch above; without
+        // this, partially-selecting a variant and then deselecting another
+        // wipes the customer's discount until they re-pick a full combo.
         if (priceDisplay) {
           var currency = product.currency || t.currency || '₪';
           var baseP = window.productBasePrice || parseFloat(product.price) || 0;
@@ -3516,21 +3551,50 @@ function fixContrast(){
           var hasSale = window.productHasSalePrice;
           var hasRange = window.productHasVariantPriceRange;
           var minP = window.productVariantMinPrice;
+          var _cdFn = (typeof window.__zappyApplyCustomerPercentToPrice === 'function' && product && product.id)
+            ? window.__zappyApplyCustomerPercentToPrice
+            : null;
           if (hasRange && minP != null && isFinite(minP)) {
             var startLabel = (typeof getEcomText === 'function') ? getEcomText('startingAt', t.startingAt || 'Starting at') : (t.startingAt || 'Starting at');
-            priceDisplay.textContent = startLabel + ' ' + currency + minP.toFixed(2);
+            if (_cdFn) {
+              var _cdRange = _cdFn(minP, product.id);
+              if (_cdRange && _cdRange.applied) {
+                priceDisplay.innerHTML = startLabel + ' ' + currency + _cdRange.price.toFixed(2) +
+                  ' <span class="original-price">' + currency + minP.toFixed(2) + '</span>';
+              } else {
+                priceDisplay.textContent = startLabel + ' ' + currency + minP.toFixed(2);
+              }
+            } else {
+              priceDisplay.textContent = startLabel + ' ' + currency + minP.toFixed(2);
+            }
+          } else if (_cdFn) {
+            var _cdBase = _cdFn(baseP, product.id);
+            if (_cdBase && _cdBase.applied) {
+              priceDisplay.innerHTML = currency + _cdBase.price.toFixed(2) +
+                ' <span class="original-price">' + currency + baseP.toFixed(2) + '</span>';
+            } else if (hasSale && origP > baseP) {
+              priceDisplay.innerHTML = currency + baseP.toFixed(2) +
+                ' <span class="original-price">' + currency + origP.toFixed(2) + '</span>';
+            } else {
+              priceDisplay.textContent = currency + baseP.toFixed(2);
+            }
           } else if (hasSale && origP > baseP) {
             priceDisplay.innerHTML = currency + baseP.toFixed(2) + ' <span class="original-price">' + currency + origP.toFixed(2) + '</span>';
           } else {
             priceDisplay.textContent = currency + baseP.toFixed(2);
           }
         }
-        // Reset price-per-unit
+        // Reset price-per-unit (apply customer discount when active so the
+        // per-unit math matches the headline reset price).
         if (typeof updatePricePerUnitDisplay === 'function') {
-          var hasRange = window.productHasVariantPriceRange;
-          var minP = window.productVariantMinPrice;
-          var baseP = window.productBasePrice || parseFloat(product.price) || 0;
-          var resetPrice = (hasRange && minP != null && isFinite(minP)) ? minP : baseP;
+          var hasRange2 = window.productHasVariantPriceRange;
+          var minP2 = window.productVariantMinPrice;
+          var baseP2 = window.productBasePrice || parseFloat(product.price) || 0;
+          var resetPrice = (hasRange2 && minP2 != null && isFinite(minP2)) ? minP2 : baseP2;
+          if (typeof window.__zappyApplyCustomerPercentToPrice === 'function' && product && product.id) {
+            var _cdResetUnit = window.__zappyApplyCustomerPercentToPrice(resetPrice, product.id);
+            if (_cdResetUnit && _cdResetUnit.applied) resetPrice = _cdResetUnit.price;
+          }
           updatePricePerUnitDisplay(resetPrice, product, t);
         }
         // Restore original image when no variant is fully selected
@@ -4352,10 +4416,10 @@ function fixContrast(){
 })();
 
 
-/* ZAPPY_ECOM_LANGUAGE_ROUTING_RUNTIME_V16 */
+/* ZAPPY_ECOM_LANGUAGE_ROUTING_RUNTIME_V19 */
 (function() {
-  if (window.__zappyEcomLanguageRoutingRuntime >= 16) return;
-  window.__zappyEcomLanguageRoutingRuntime = 16;
+  if (window.__zappyEcomLanguageRoutingRuntime >= 19) return;
+  window.__zappyEcomLanguageRoutingRuntime = 19;
 
   // Routing strategy: use path-based language URLs for ALL storefront pages
   // (including dynamic /product/:slug and /category/:slug). The publish
@@ -4460,10 +4524,11 @@ function fixContrast(){
   }
 
   function getDefaultLang() {
-    // The default language is whatever owns the path-prefix-free routes. We
-    // pin to 'he' here for the legacy Hebrew-source sites; future-proof by
-    // overriding via window.__zappyDefaultLang from the generated bundle.
-    return window.__zappyDefaultLang || 'he';
+    // Must mirror getBakedDefaultLang() so buildPath() agrees with the
+    // zappyAdditionalDefaultLanguage / zappyEcomDefaultLanguage baked at
+    // generation time. A hardcoded 'he' fallback here caused English-only
+    // sites (post language removal) to rewrite /products → /en/products.
+    return getBakedDefaultLang();
   }
 
   function buildPath(path) {
@@ -4481,7 +4546,12 @@ function fixContrast(){
   }
 
   function isStorefrontPath(href) {
-    return /^\/(?:[a-z]{2}\/)?(?:product|category|products)(?:\/|\?|#|$)/i.test(href || '');
+    // Includes the static account/login/cart/checkout pages (in addition to
+    // product/category/products) so the navbar login/account icon, the
+    // "please sign in" CTA, etc. keep the active language prefix — otherwise
+    // an English shopper clicking the account icon lands on the unprefixed
+    // default-language /account static file (Hebrew navbar + footer + body).
+    return /^\/(?:[a-z]{2}\/)?(?:product|category|products|account|login|cart|checkout)(?:\/|\?|#|$)/i.test(href || '');
   }
 
   function patchLinks(root) {
@@ -4825,6 +4895,24 @@ function fixContrast(){
   window.addEventListener('languageChanged', function() { setTimeout(patch, 0); });
   new MutationObserver(function(mutations) {
     var shouldPatch = mutations.some(function(mutation) {
+      // Re-patch when a storefront anchor's href is RESET by other runtime code
+      // after our initial patch. The baked-in updateHeaderAuthState (shipped in
+      // the stored script.js, which re-publishing does NOT regenerate) pins the
+      // navbar account/login icon back to the unprefixed default-language page
+      // once the customer profile finishes loading — often AFTER our scheduled
+      // patch() passes. On courses pages there is no language signal in the URL
+      // (language lives in localStorage), so the clobbered icon sends an English
+      // shopper to the Hebrew /account static file. Watching href mutations lets
+      // us immediately re-prefix it. The href !== buildPath(href) guard makes
+      // our own corrective setAttribute idempotent (no observer loop).
+      if (mutation.type === 'attributes') {
+        var tgt = mutation.target;
+        if (tgt && tgt.nodeType === 1 && tgt.tagName === 'A') {
+          var href = tgt.getAttribute('href');
+          return isStorefrontPath(href) && href !== buildPath(href);
+        }
+        return false;
+      }
       return Array.prototype.some.call(mutation.addedNodes || [], function(node) {
         return node.nodeType === 1 && (
           (node.matches && node.matches('a[href], .zappy-products-dropdown, #zappy-catalog-menu')) ||
@@ -4833,7 +4921,7 @@ function fixContrast(){
       });
     });
     if (shouldPatch) setTimeout(patch, 0);
-  }).observe(document.documentElement, { childList: true, subtree: true });
+  }).observe(document.documentElement, { childList: true, subtree: true, attributes: true, attributeFilter: ['href'] });
   setTimeout(patch, 250);
   setTimeout(patch, 1500);
 })();
@@ -4972,4 +5060,196 @@ function fixContrast(){
     setTimeout(injectMobileNavIconAlignmentFix, 250);
     setTimeout(injectMobileNavIconAlignmentFix, 1000);
   } catch (e) {}
+})();
+
+/* ZAPPY_CUSTOMER_DISCOUNT_DELAYED_REFRESH_V1 */
+
+
+/* ZAPPY_CUSTOMER_DISCOUNT_RUNTIME_V1 */
+;(function() {
+  if (window.__zappyCustomerDiscountRuntimeV1) return;
+  window.__zappyCustomerDiscountRuntimeV1 = true;
+
+  function apiUrl(path) {
+    var base = window.ZAPPY_API_BASE || '';
+    if (base.endsWith('/')) base = base.slice(0, -1);
+    return base + path;
+  }
+
+  function getDiscount(productId) {
+    var cfg = window.__zappyCustomerDiscountConfig;
+    if (!cfg || !cfg.discountPercent) return null;
+    var excluded = cfg.excludedProductIds || [];
+    if (excluded.indexOf(productId) !== -1) return null;
+    return cfg;
+  }
+
+  function applyPercent(basePrice, productId) {
+    var d = getDiscount(productId);
+    if (!d || !Number.isFinite(basePrice) || basePrice <= 0) {
+      return { price: basePrice, applied: false };
+    }
+    var discounted = basePrice - (basePrice * parseFloat(d.discountPercent) / 100);
+    if (!Number.isFinite(discounted) || discounted >= basePrice) {
+      return { price: basePrice, applied: false };
+    }
+    return { price: discounted, applied: true, originalPrice: basePrice };
+  }
+
+  window.__zappyApplyCustomerPercentToPrice = applyPercent;
+
+  function currencyFromText(text) {
+    var m = String(text || '').match(/[₪$€£]/);
+    return m ? m[0] : '₪';
+  }
+
+  function isPriceAlreadyCustomerDiscounted(priceEl, productId) {
+    if (!priceEl) return true;
+    if (priceEl.getAttribute('data-customer-discount-applied')) return true;
+    // Sale / seasonal strikethrough also uses .original-price — only skip when the
+    // visible price already matches a customer discount computed from the
+    // strikethrough base (generator path that omits data-customer-discount-applied).
+    var origEl = priceEl.querySelector('.original-price');
+    if (!origEl || !productId) return false;
+    var raw = priceEl.textContent || '';
+    var nums = raw.match(/[\d,.]+/g);
+    if (!nums || !nums.length) return false;
+    var displayed = parseFloat(nums[0].replace(/,/g, ''));
+    var origNums = (origEl.textContent || '').match(/[\d,.]+/g);
+    if (!origNums || !origNums.length) return false;
+    var preCustomerBase = parseFloat(origNums[origNums.length - 1].replace(/,/g, ''));
+    if (!Number.isFinite(displayed) || !Number.isFinite(preCustomerBase)) return false;
+    var adj = applyPercent(preCustomerBase, productId);
+    if (!adj.applied) return false;
+    return Math.abs(displayed - adj.price) < 0.02;
+  }
+
+  function applyPricesToCards() {
+    if (!window.__zappyCustomerDiscountConfig || !window.__zappyCustomerDiscountConfig.discountPercent) return;
+    document.querySelectorAll('[data-product-id]').forEach(function(card) {
+      var pid = card.getAttribute('data-product-id');
+      var priceEl = card.querySelector('.price') || card.querySelector('.product-price');
+      if (!priceEl || isPriceAlreadyCustomerDiscounted(priceEl, pid)) return;
+      var raw = priceEl.textContent || '';
+      var starting = /(?:Starting at|החל מ)/i.test(raw);
+      var nums = raw.match(/[\d,.]+/g);
+      if (!nums || !nums.length) return;
+      var base = parseFloat(nums[0].replace(/,/g, ''));
+      if (!Number.isFinite(base) || base <= 0) return;
+      var adj = applyPercent(base, pid);
+      if (!adj.applied) return;
+      var sym = currencyFromText(raw);
+      if (starting) {
+        var prefix = raw.match(/(?:Starting at|החל מ)/i);
+        var label = prefix ? prefix[0] : 'Starting at';
+        priceEl.innerHTML = label + ' ' + sym + adj.price.toFixed(2) + ' <span class="original-price">' + sym + base.toFixed(2) + '</span>';
+      } else {
+        priceEl.innerHTML = sym + adj.price.toFixed(2) + ' <span class="original-price">' + sym + base.toFixed(2) + '</span>';
+      }
+      priceEl.setAttribute('data-customer-discount-applied', '1');
+    });
+  }
+
+  function refreshProductDetailPrice() {
+    if (!window.currentProduct || !window.__zappyCustomerDiscountConfig) return;
+    if (typeof window.__zappyUpdateVariantUI === 'function' && window.productTranslations) {
+      window.__zappyUpdateVariantUI(window.selectedVariant || null, window.currentProduct, window.productTranslations, {});
+      return;
+    }
+    var priceEl = document.getElementById('product-price-display');
+    if (!priceEl || isPriceAlreadyCustomerDiscounted(priceEl, window.currentProduct.id)) return;
+    var raw = priceEl.textContent || '';
+    var starting = /(?:Starting at|החל מ)/i.test(raw);
+    var nums = raw.match(/[\d,.]+/g);
+    if (!nums || !nums.length) return;
+    var base = parseFloat((starting && nums.length > 1 ? nums[nums.length - 1] : nums[0]).replace(/,/g, ''));
+    if (!Number.isFinite(base) || base <= 0) return;
+    var adj = applyPercent(base, window.currentProduct.id);
+    if (!adj.applied) return;
+    var sym = currencyFromText(raw);
+    if (starting) {
+      var prefix = raw.match(/(?:Starting at|החל מ)/i);
+      var label = prefix ? prefix[0] : 'Starting at';
+      priceEl.innerHTML = label + ' ' + sym + adj.price.toFixed(2) + ' <span class="original-price">' + sym + base.toFixed(2) + '</span>';
+    } else {
+      priceEl.innerHTML = sym + adj.price.toFixed(2) + ' <span class="original-price">' + sym + base.toFixed(2) + '</span>';
+    }
+    priceEl.setAttribute('data-customer-discount-applied', '1');
+  }
+
+  async function syncCustomerDiscount() {
+    if (typeof window.__zappyFetchCustomerDiscount === 'function') {
+      try {
+        await window.__zappyFetchCustomerDiscount();
+      } catch (e) {
+        console.warn('[ZAPPY] Customer discount runtime delegate failed', e);
+      }
+      applyPricesToCards();
+      refreshProductDetailPrice();
+      if (typeof window.loadProducts === 'function') {
+        try { window.loadProducts(); } catch (e) {}
+      }
+      if (typeof window.__zappyScheduleDynamicProductGridsDiscountRefresh === 'function') {
+        try { window.__zappyScheduleDynamicProductGridsDiscountRefresh(); } catch (e) {}
+      }
+      [800, 2500].forEach(function(ms) {
+        setTimeout(refreshProductDetailPrice, ms);
+      });
+      return;
+    }
+    var wid = window.ZAPPY_WEBSITE_ID;
+    if (!wid) return;
+    var token = localStorage.getItem('zappy_customer_token_' + wid);
+    if (!token) {
+      window.__zappyCustomerDiscountConfig = null;
+      return;
+    }
+    try {
+      var res = await fetch(apiUrl('/api/ecommerce/storefront/customer-discount?websiteId=' + encodeURIComponent(wid)), {
+        headers: { Authorization: 'Bearer ' + token }
+      });
+      var data = await res.json();
+      if (data.success && data.data && data.data.discountPercent > 0) {
+        window.__zappyCustomerDiscountConfig = data.data;
+      } else {
+        window.__zappyCustomerDiscountConfig = null;
+      }
+    } catch (e) {
+      console.warn('[ZAPPY] Customer discount runtime fetch failed', e);
+      window.__zappyCustomerDiscountConfig = null;
+    }
+    applyPricesToCards();
+    refreshProductDetailPrice();
+    if (typeof window.loadProducts === 'function') {
+      try { window.loadProducts(); } catch (e) {}
+    }
+    if (typeof window.__zappyScheduleDynamicProductGridsDiscountRefresh === 'function') {
+      try { window.__zappyScheduleDynamicProductGridsDiscountRefresh(); } catch (e) {}
+    }
+    [800, 2500].forEach(function(ms) {
+      setTimeout(refreshProductDetailPrice, ms);
+    });
+  }
+
+  function boot() {
+    syncCustomerDiscount();
+    var detail = document.getElementById('product-detail');
+    if (detail && typeof MutationObserver !== 'undefined') {
+      new MutationObserver(function() {
+        refreshProductDetailPrice();
+      }).observe(detail, { childList: true, subtree: true });
+    }
+    var grid = document.getElementById('zappy-product-grid');
+    if (grid && typeof MutationObserver !== 'undefined') {
+      new MutationObserver(function() {
+        applyPricesToCards();
+      }).observe(grid, { childList: true, subtree: true });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boot);
+  } else {
+    boot();
+  }
 })();
