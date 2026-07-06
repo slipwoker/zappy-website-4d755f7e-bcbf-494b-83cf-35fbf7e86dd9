@@ -161,26 +161,31 @@
       // Track button clicks (counted as actions)
       if (target.tagName === 'BUTTON' || target.closest('button')) {
         var button = target.tagName === 'BUTTON' ? target : target.closest('button');
-        trackEvent('click', {
+        var clickMeta = {
           element: 'button',
           text: button.textContent.trim().substring(0, 100),
           id: button.id || null,
           class: button.className || null
-        });
+        };
+        
+        trackEvent('click', clickMeta);
       }
       
       // Track link clicks (navigation - not counted as actions)
       else if (target.tagName === 'A' || target.closest('a')) {
         var link = target.tagName === 'A' ? target : target.closest('a');
-        trackEvent('navigation', {
+        var navMeta = {
           element: 'link',
           text: link.textContent.trim().substring(0, 100),
           href: link.href,
           external: link.hostname !== window.location.hostname
-        });
+        };
+        
+        trackEvent('navigation', navMeta);
       }
     }, true);
   }
+  
   
   // Track form submissions
   if (config.trackFormSubmissions) {
@@ -1685,7 +1690,7 @@ html[dir="rtl"] body {
     </div>
 
     <!-- 3-card grid -->
-    <div class="index-features-grid zappy-preserve-css-grid" id="zappy-auto-grid-1779202257825-wpnjq7" data-zappy-auto-grid="true" data-original-item-width="359" data-original-gap="32px" style="--zappy-grid-cols: repeat(3, minmax(0, 1fr)); grid-template-columns: repeat(3, minmax(0, 1fr)); display: grid; align-items: stretch !important;" data-zappy-explicit-columns="true">
+    <div class="index-features-grid zappy-preserve-css-grid" id="zappy-auto-grid-1779202257825-wpnjq7" data-zappy-auto-grid="true" data-original-item-width="359" data-original-gap="32px" style="--zappy-grid-cols: repeat(auto-fit, minmax(min(100%, 359px), 1fr)); grid-template-columns: repeat(auto-fit, minmax(min(100%, 359px), 1fr)); display: grid; align-items: stretch !important;" data-zappy-explicit-columns="true">
 
       <!-- Card 1: Precision Application -->
       <article class="index-features-card" data-grid-item-index="0" style="direction: rtl;">
@@ -1982,7 +1987,7 @@ html[dir="rtl"] body {
     </div>
 
     <!-- Testimonials Grid -->
-    <div class="index-testimonials-grid zappy-preserve-css-grid" id="zappy-auto-grid-1779205219224-jdgt5j" data-zappy-auto-grid="true" data-original-item-width="359" data-original-gap="32px" style="--zappy-grid-cols: repeat(3, minmax(0, 1fr)); grid-template-columns: repeat(3, minmax(0, 1fr)); display: grid; align-items: stretch !important;" data-zappy-explicit-columns="true">
+    <div class="index-testimonials-grid zappy-preserve-css-grid" id="zappy-auto-grid-1779205219224-jdgt5j" data-zappy-auto-grid="true" data-original-item-width="359" data-original-gap="32px" style="--zappy-grid-cols: repeat(auto-fit, minmax(min(100%, 359px), 1fr)); grid-template-columns: repeat(auto-fit, minmax(min(100%, 359px), 1fr)); display: grid; align-items: stretch !important;" data-zappy-explicit-columns="true">
 
       <!-- Card 1 -->
       <article class="index-testimonials-card" data-grid-item-index="0" style="direction: rtl;">
@@ -2054,7 +2059,7 @@ html[dir="rtl"] body {
     </div>
 
     <!-- Metrics Grid -->
-    <div class="index-stats-grid zappy-preserve-css-grid" id="zappy-auto-grid-1779205689815-onq8ou" data-zappy-auto-grid="true" data-original-item-width="292" data-original-gap="2px" style="--zappy-grid-cols: repeat(4, minmax(0, 1fr)); grid-template-columns: repeat(4, minmax(0, 1fr)); display: grid; align-items: stretch !important;" data-zappy-explicit-columns="true">
+    <div class="index-stats-grid zappy-preserve-css-grid" id="zappy-auto-grid-1779205689815-onq8ou" data-zappy-auto-grid="true" data-original-item-width="292" data-original-gap="2px" style="--zappy-grid-cols: repeat(auto-fit, minmax(min(100%, 292px), 1fr)); grid-template-columns: repeat(auto-fit, minmax(min(100%, 292px), 1fr)); display: grid; align-items: stretch !important;" data-zappy-explicit-columns="true">
 
       <article class="index-stats-card" data-grid-item-index="0">
         <div class="index-stats-value" data-i18n="home_div_132">3×</div>
@@ -2125,18 +2130,19 @@ html[dir="rtl"] body {
     </div>
 
     <!-- Team Cards Grid -->
-    <div class="grout-team-grid zappy-preserve-css-grid" id="zappy-auto-grid-1779205689829-jroz7y" data-zappy-auto-grid="true" data-original-item-width="361" data-original-gap="28px" style="--zappy-grid-cols: repeat(3, minmax(0, 1fr)); grid-template-columns: repeat(3, minmax(0, 1fr)); display: grid; align-items: stretch !important;" data-zappy-explicit-columns="true">
+    <div class="grout-team-grid zappy-preserve-css-grid" id="zappy-auto-grid-1779205689829-jroz7y" data-zappy-auto-grid="true" data-original-item-width="361" data-original-gap="28px" style="--zappy-grid-cols: repeat(auto-fit, minmax(min(100%, 361px), 1fr)); grid-template-columns: repeat(auto-fit, minmax(min(100%, 361px), 1fr)); display: grid; align-items: stretch !important;" data-zappy-explicit-columns="true">
 
       <!-- Card 1 -->
       <article class="grout-team-card" aria-label="חבר צוות: אבי לוי" data-i18n-aria-label="home_aria_label_159" style="background-color: rgb(255, 255, 255) !important; grid-area: auto !important; direction: rtl;" data-grid-item-index="0">
         <div class="grout-team-card-img-wrap">
-          <div data-zappy-zoom-wrapper="true" data-element-id="img-1779205689763-5h5zb5165-add-1779220329437-cqh36g-add-1779220359633-hw8oeu" data-element-type="image" data-zappy-zoom-wrapper-width="360px" data-zappy-zoom-wrapper-height="240px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 360px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 240px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-card-slot-fill="1"><img class="grout-team-card-img" src="/assets/image-1779220467870-a6xura.webp?v=1779220470166" alt="Image placeholder" data-placeholder="image-placeholder" data-context="Professional Israeli male project manager, confident smile, wearing smart casual clothing, clean modern background, headshot portrait style" data-element-type="image" data-element-id="new-grid-img-1779220359634-0-bln810bhn" style="cursor: pointer; display: block !important; position: absolute !important; top: 0% !important; left: 0% !important; width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: 55% 0% !important; margin: 0px !important; max-width: none !important; max-height: none !important" data-zappy-original-width="359.9895935058594" data-zappy-original-height="239.98959350585938" data-zappy-zoom="1" data-zappy-object-position="55% 0%" id="new-grid-img-1779220359634-0-bln810bhn" data-ai-slot="grid-item-image"></div>
+          <div data-zappy-zoom-wrapper="true" data-element-id="img-1779205689763-5h5zb5165-add-1779220329437-cqh36g-add-1779220359633-hw8oeu" data-element-type="image" data-zappy-zoom-wrapper-width="360px" data-zappy-zoom-wrapper-height="240px" data-zappy-zoom-wrapper-width-mode="card-slot" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 100% !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 240px !important; display: block !important; min-height: 0px !important; max-height: none !important; padding-bottom: 0px !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-card-slot-fill="1"><img class="grout-team-card-img" src="/assets/image-1779220467870-a6xura.webp?v=1779220470166" alt="Image placeholder" data-placeholder="image-placeholder" data-context="Professional Israeli male project manager, confident smile, wearing smart casual clothing, clean modern background, headshot portrait style" data-element-type="image" data-element-id="new-grid-img-1779220359634-0-bln810bhn" style="cursor: pointer; display: block !important; position: absolute !important; top: 0% !important; left: 0% !important; width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: 55% 0% !important; margin: 0px !important; max-width: none !important; max-height: none !important" data-zappy-original-width="359.9895935058594" data-zappy-original-height="239.98959350585938" data-zappy-zoom="1" data-zappy-object-position="55% 0%" id="new-grid-img-1779220359634-0-bln810bhn" data-ai-slot="grid-item-image"></div>
           <div class="grout-team-card-overlay"></div>
         </div>
         <div class="grout-team-card-body">
           <div class="grout-team-card-accent"></div>
           <h3 class="grout-team-card-name"  data-i18n="home_h3_19">מוטי שטרית</h3>
           <p data-i18n="new_p_194">מנכ"ל, יזם, ומיסד GROUTBOT</p><p class="grout-team-card-desc"  data-i18n="new_p_199">&nbsp;<br>&nbsp;
+&nbsp;
 עם יזמות באופי ואמונה גדולה, מוטי מביא איתו ניסיון רב מעולמות הבריאות . חשיבה קריטית החלטות מושכלות סבלנות ודבקות במטרה.</p>
           <div class="grout-team-card-divider"></div>
           <div class="grout-team-card-tags">
@@ -2146,13 +2152,13 @@ html[dir="rtl"] body {
         </div>
       </article><article class="grout-team-card" aria-label="חבר צוות: אבי לוי" data-i18n-aria-label="home_aria_label_159" style="background-color: rgb(255, 255, 255) !important; grid-area: auto !important; direction: rtl;" data-grid-item-index="1">
         <div class="grout-team-card-img-wrap">
-          <div data-zappy-zoom-wrapper="true" data-element-id="img-1779205689763-5h5zb5165-add-1779220329437-cqh36g" data-element-type="image" data-zappy-zoom-wrapper-width="360px" data-zappy-zoom-wrapper-height="240px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 360px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 240px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-card-slot-fill="1"><img class="grout-team-card-img" src="/assets/image-1779220535309-wdm7r6.webp?v=1779220537745" alt="Image placeholder" data-placeholder="image-placeholder" data-context="Professional Israeli male project manager, confident smile, wearing smart casual clothing, clean modern background, headshot portrait style" data-element-type="image" data-element-id="new-grid-img-1779220329438-0-4hpk8w7nj" style="cursor: pointer; display: block !important; position: absolute !important; top: -85.4112% !important; left: -23.7% !important; width: 130% !important; height: 261.153% !important; object-fit: cover !important; object-position: 79% 53% !important; margin: 0px !important; max-width: none !important; max-height: none !important" data-zappy-original-width="359.9895935058594" data-zappy-original-height="239.98959350585938" data-zappy-zoom="1.3" data-zappy-object-position="79% 53%" id="new-grid-img-1779220329438-0-4hpk8w7nj" data-ai-slot="grid-item-image"></div>
+          <div data-zappy-zoom-wrapper="true" data-element-id="img-1779205689763-5h5zb5165-add-1779220329437-cqh36g" data-element-type="image" data-zappy-zoom-wrapper-width="360px" data-zappy-zoom-wrapper-height="240px" data-zappy-zoom-wrapper-width-mode="card-slot" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 100% !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 240px !important; display: block !important; min-height: 0px !important; max-height: none !important; padding-bottom: 0px !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-card-slot-fill="1"></div>
           <div class="grout-team-card-overlay"></div>
         </div>
         <div class="grout-team-card-body">
           <div class="grout-team-card-accent"></div>
-          <h3 class="grout-team-card-name"  data-i18n="home_h3_20">עלי שלבי</h3>
-          <p data-i18n="home_p_50">מנהל הנדסה ופיתוח</p><p class="grout-team-card-desc"  data-i18n="new_p_183">עלי מהנדס מכונות מוסמך עתיר כשרון. מוביל תכנון ופיתוח מערכות רב-תחומיות, משלב מהקונספט ועד מוצר עובד, עם התמחות ברובוטיקה ומנגנונים מכאניים</p>
+          
+          <p data-i18n="home_p_50">מנהל הנדסה ופיתוח</p><p class="grout-team-card-desc"  data-i18n="new_p_183">מהנדס מכונות מוסמך עתיר כשרון. מוביל תכנון ופיתוח מערכות רב-תחומיות, משלב מהקונספט ועד מוצר עובד, עם התמחות ברובוטיקה ומנגנונים מכאניים</p>
           <div class="grout-team-card-divider"></div>
           <div class="grout-team-card-tags">
             
@@ -2167,12 +2173,12 @@ html[dir="rtl"] body {
       <!-- Card 3 -->
       <article class="grout-team-card" aria-label="חבר צוות: רון שפירא" data-grid-item-index="2" data-i18n-aria-label="home_aria_label_161" style="direction: rtl;">
         <div class="grout-team-card-img-wrap">
-          <div data-zappy-zoom-wrapper="true" data-element-id="img-1779205689763-vuj12sb3l" data-element-type="image" data-zappy-zoom-wrapper-width="360px" data-zappy-zoom-wrapper-height="251px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 360px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 251px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-card-slot-fill="1"><img class="grout-team-card-img" src="/assets/image-1779212623140-l1512e.webp?v=1779212625476" alt="רון שפירא — טכנאי ראשי" data-placeholder="team-member-3" data-context="Professional Israeli male senior technician, skilled craftsman look, wearing clean work uniform, tools in background, confident portrait headshot" data-element-type="image" data-element-id="img-1779205689763-vuj12sb3l" style="position: absolute !important; top: 0% !important; left: 0% !important; width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: center center; margin: 0px !important; max-width: none !important; max-height: none !important; display: block !important" data-zappy-original-width="359.9895935058594" data-zappy-original-height="251" data-i18n-alt="home_alt_154" data-zappy-zoom="1"></div>
+          
           <div class="grout-team-card-overlay"></div>
         </div>
         <div class="grout-team-card-body">
           <div class="grout-team-card-accent"></div>
-          <h3 class="grout-team-card-name"  data-i18n="home_h3_21">אבי קובלבסקי</h3>
+          
           <p  data-i18n="home_p_52">מנהל אסטרטגיית שיווק המוצר</p><p class="grout-team-card-desc"  data-i18n="home_p_53">אנליסט שטח ואחראי תיאום אפיון המוצר מול צרכני הקצה.</p>
           <div class="grout-team-card-divider"></div>
           <div class="grout-team-card-tags" >
@@ -2217,7 +2223,7 @@ html[dir="rtl"] body {
     <div class="index-cta-form-wrapper">
       <form class="contact-form index-cta-form" novalidate="">
 
-        <div class="index-cta-form-row zappy-preserve-css-grid" id="zappy-auto-grid-1779213546057-jt3tri" data-zappy-auto-grid="true" data-original-item-width="357" data-original-gap="24px" style="display: grid; --zappy-grid-cols: repeat(2, minmax(0, 1fr)); grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch !important;" data-zappy-explicit-columns="true">
+        <div class="index-cta-form-row zappy-preserve-css-grid" id="zappy-auto-grid-1779213546057-jt3tri" data-zappy-auto-grid="true" data-original-item-width="357" data-original-gap="24px" style="display: grid; --zappy-grid-cols: repeat(auto-fit, minmax(min(100%, 357px), 1fr)); grid-template-columns: repeat(auto-fit, minmax(min(100%, 357px), 1fr)); align-items: stretch !important;" data-zappy-explicit-columns="true">
           <div class="index-cta-field" data-grid-item-index="0">
             <label for="cta-name" data-i18n="home_label_117">שם מלא</label>
             <input type="text" id="cta-name" name="name" placeholder="הכניסו את שמכם" required="" data-i18n-placeholder="home_placeholder_145">
@@ -2228,7 +2234,7 @@ html[dir="rtl"] body {
           </div>
         </div>
 
-        <div class="index-cta-form-row zappy-preserve-css-grid" id="zappy-auto-grid-1779213546061-i5dn1z" data-zappy-auto-grid="true" data-original-item-width="357" data-original-gap="24px" style="display: grid; --zappy-grid-cols: repeat(2, minmax(0, 1fr)); grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch !important;" data-zappy-explicit-columns="true">
+        <div class="index-cta-form-row zappy-preserve-css-grid" id="zappy-auto-grid-1779213546061-i5dn1z" data-zappy-auto-grid="true" data-original-item-width="357" data-original-gap="24px" style="display: grid; --zappy-grid-cols: repeat(auto-fit, minmax(min(100%, 357px), 1fr)); grid-template-columns: repeat(auto-fit, minmax(min(100%, 357px), 1fr)); align-items: stretch !important;" data-zappy-explicit-columns="true">
           <div class="index-cta-field" data-grid-item-index="0">
             <label for="cta-phone" data-i18n="home_label_119">טלפון</label>
             <input type="tel" id="cta-phone" name="phone" placeholder="05X-XXXXXXX" data-i18n-placeholder="home_placeholder_147">
@@ -2257,13 +2263,19 @@ html[dir="rtl"] body {
 </section>
   </main>
   
-  <footer class="site-footer"><div class="footer-top-accent"></div><div class="footer-inner"><div class="footer-grid"><div class="footer-col footer-col--brand"><div class="footer-logo-wrap"><img src="/assets/groutbot-general-logo.webp" alt="GROUTBOT" class="logo" data-i18n-alt="home_alt_155" data-element-type="image" data-element-id="img-1779214742550-dm9zsrrdo" data-zappy-footer-image="true" ></div><p class="footer-brand-desc" data-i18n="home_p_57" >פתרונות מקצועיים למילוי פוגות בין משטחי אריחים — לקבלנים,&nbsp; ובעלי בתים.</p><div class="footer-social"><a href="#" aria-label="Facebook" style="display:none !important;" data-i18n-aria-label="home_aria_label_163"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram" style="display:none !important;" data-i18n-aria-label="home_aria_label_164"><i class="fab fa-instagram"></i></a><a href="https://wa.me/97255684233" aria-label="WhatsApp" data-i18n-aria-label="home_aria_label_165"><i class="fab fa-whatsapp" data-element-type="icon" data-element-id="icon-1779214742548-rbqtpqld5" data-icon-type="fontawesome"></i></a></div></div><div class="footer-col footer-col--links"><h4 class="footer-heading" data-i18n="home_h4_22">ניווט מהיר</h4><ul class="footer-nav"><li><a href="#features" data-i18n="home_link_102">תכונות</a></li><li><a href="#benefits" data-i18n="home_link_103">יתרונות</a></li><li><a href="#showcase" data-i18n="home_link_104">גלריה</a></li><li><a href="#testimonials" data-i18n="home_link_105">המלצות</a></li><li><a href="#stats" data-i18n="home_link_106">נתונים</a></li></ul></div><div class="footer-col footer-col--contact"><h4 class="footer-heading" data-i18n="home_h4_23">צור קשר</h4><ul class="footer-contact"><li><span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1779214742548-cwsdp8lzp" data-icon-type="fontawesome"></i></span><span class="contact-text" data-i18n="home_span_87"><a href="/cdn-cgi/l/email-protection#e98e9b869c9d8b869da98e84888085c78a8684" data-i18n="home_link_107" ><span class="__cf_email__" data-cfemail="2047524f5554424f5460474d41494c0e434f4d">[email&nbsp;protected]</span></a></span></li><li><span class="contact-icon"><i class="fas fa-phone" data-element-type="icon" data-element-id="icon-1779214742548-fliam08lj" data-icon-type="fontawesome"></i></span><span class="contact-text"><a href="tel:055684233">055684233</a></span></li><li><a href="/" data-i18n="home_link_108"><span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span><span class="contact-text">שפלה, ישראל</span></a></li></ul></div><div class="footer-col footer-col--extra"><h4 class="footer-heading" data-i18n="home_h4_24">שעות פעילות</h4><ul class="footer-hours"><li><a href="/" data-i18n="home_link_109"><span>ראשון – חמישי</span><span>08:00 – 18:00</span></a></li><li><a href="/" data-i18n="home_link_110"><span>שישי</span><span>08:00 – 13:00</span></a></li><li><a href="/" data-i18n="home_link_111"><span>שבת</span><span>סגור</span></a></li></ul></div></div></div><div class="footer-bottom-wrap"><div class="footer-bottom-inner"><p class="footer-copy" data-i18n="home_p_58">© 2026 GROUTBOT. כל הזכויות שמורות.</p><div class="footer-bottom-links"><a href="/privacy" data-i18n="home_link_112">מדיניות פרטיות</a><span class="footer-sep">|</span><a href="/terms" data-i18n="home_link_113">תנאי שימוש</a><span class="footer-sep">|</span><a href="/accessibility" data-i18n="home_link_114">נגישות</a><span class="footer-sep">|</span><a href="https://zappy5.com" target="_blank" class="zappy-attribution" data-i18n="home_link_115">נוצר באמצעות Zappy</a></div></div></div></footer>
+  <footer class="site-footer"><div class="footer-top-accent"></div><div class="footer-inner"><div class="footer-grid"><div class="footer-col footer-col--brand"><div class="footer-logo-wrap"><img src="/assets/groutbot-general-logo.webp" alt="GROUTBOT" class="logo" data-i18n-alt="home_alt_155" data-element-type="image" data-element-id="img-1779214742550-dm9zsrrdo" data-zappy-footer-image="true" ></div><p class="footer-brand-desc" data-i18n="home_p_57" >פתרונות מקצועיים למילוי פוגות בין משטחי אריחים — לקבלנים,&nbsp; ובעלי בתים.</p><div class="footer-social"><a href="#" aria-label="Facebook" style="display:none !important;" data-i18n-aria-label="home_aria_label_163"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram" style="display:none !important;" data-i18n-aria-label="home_aria_label_164"><i class="fab fa-instagram"></i></a><a href="https://wa.me/97255684233" aria-label="WhatsApp" data-i18n-aria-label="home_aria_label_165"><i class="fab fa-whatsapp" data-element-type="icon" data-element-id="icon-1779214742548-rbqtpqld5" data-icon-type="fontawesome"></i></a></div></div><div class="footer-col footer-col--links"><h4 class="footer-heading" data-i18n="home_h4_22">ניווט מהיר</h4><ul class="footer-nav"><li><a href="#features" data-i18n="home_link_102">תכונות</a></li><li><a href="#benefits" data-i18n="home_link_103">יתרונות</a></li><li><a href="#showcase" data-i18n="home_link_104">גלריה</a></li><li><a href="#testimonials" data-i18n="home_link_105">המלצות</a></li><li><a href="#stats" data-i18n="home_link_106">נתונים</a></li></ul></div><div class="footer-col footer-col--contact"><h4 class="footer-heading" data-i18n="home_h4_23">צור קשר</h4><ul class="footer-contact"><li><span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1779214742548-cwsdp8lzp" data-icon-type="fontawesome"></i></span><span class="contact-text" data-i18n="home_span_87"><a href="mailto:groutbot@gmail.com" data-i18n="home_link_107" ><span>groutbot@gmail.com</span></a></span></li><li><span class="contact-icon"><i class="fas fa-phone" data-element-type="icon" data-element-id="icon-1779214742548-fliam08lj" data-icon-type="fontawesome"></i></span><span class="contact-text"><a href="tel:055684233">055684233</a></span></li><li><a href="/" data-i18n="home_link_108"><span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span><span class="contact-text">שפלה, ישראל</span></a></li></ul></div><div class="footer-col footer-col--extra"><h4 class="footer-heading" data-i18n="home_h4_24">שעות פעילות</h4><ul class="footer-hours"><li><a href="/" data-i18n="home_link_109"><span>ראשון – חמישי</span><span>08:00 – 18:00</span></a></li><li><a href="/" data-i18n="home_link_110"><span>שישי</span><span>08:00 – 13:00</span></a></li><li><a href="/" data-i18n="home_link_111"><span>שבת</span><span>סגור</span></a></li></ul></div></div></div><div class="footer-bottom-wrap"><div class="footer-bottom-inner"><p class="footer-copy" data-i18n="home_p_58">© 2026 GROUTBOT. כל הזכויות שמורות.</p><div class="footer-bottom-links"><a href="/privacy" data-i18n="home_link_112">מדיניות פרטיות</a><span class="footer-sep">|</span><a href="/terms" data-i18n="home_link_113">תנאי שימוש</a><span class="footer-sep">|</span><a href="/accessibility" data-i18n="home_link_114">נגישות</a><span class="footer-sep">|</span><a href="https://zappy5.com" target="_blank" class="zappy-attribution" data-i18n="home_link_115">נוצר באמצעות Zappy</a></div></div></div></footer>
   
   <a href="https://wa.me/97255684233" class="whatsapp-float" aria-label="WhatsApp" data-i18n-aria-label="home_aria_label_166">
     <i class="fab fa-whatsapp"></i>
   </a>
   
   <div data-integration="accessibility:toolbar"></div>
+
+
+
+
+
+
 
 
 
@@ -2411,6 +2423,7 @@ html[dir="rtl"] body {
   const resources = {
   "he": {
     "translation": {
+      "ecom_loading": "טוען…",
       "ecom_accountWelcome": "ברוך הבא",
       "ecom_addAddress": "הוסף כתובת",
       "ecom_addBundleToCart": "הוספת {count} מוצרים לעגלה",
@@ -2428,7 +2441,18 @@ html[dir="rtl"] body {
       "ecom_apartmentExt": "דירה, קומה, קוד בניין, הערות וכו'",
       "ecom_applyCoupon": "החל",
       "ecom_backToProducts": "חזרה למוצרים",
+      "ecom_bookNow": "הזמינו עכשיו",
+      "ecom_bookingChooseTime": "בחרו שעה",
+      "ecom_bookingDate": "תאריך",
+      "ecom_bookingLoading": "טוען זמינות…",
+      "ecom_bookingNoSlots": "אין זמנים פנויים כרגע",
+      "ecom_bookingRemaining": "נותרו {count}",
+      "ecom_bookingSelectOption": "בחירה",
+      "ecom_bookingSelectTime": "בחרו שעה",
+      "ecom_bookingSelectTimeFirst": "אנא בחרו תאריך ושעה תחילה",
+      "ecom_bookingTime": "שעה",
       "ecom_browseFavorites": "גלו את כל המוצרים שלנו",
+      "ecom_bundleDiscount": "הנחת חבילה",
       "ecom_bundleTotal": "סה\"כ לעגלה",
       "ecom_callNow": "התקשר עכשיו",
       "ecom_cancel": "ביטול",
@@ -2567,6 +2591,10 @@ html[dir="rtl"] body {
       "ecom_noFeaturedProducts": "עוד לא נבחרו מוצרים מומלצים. צפו בכל המוצרים שלנו!",
       "ecom_noOrders": "אין עדיין הזמנות",
       "ecom_noProducts": "אין מוצרים להצגה כרגע",
+      "ecom_previewEmptyStoreTitle": "החנות שלך מוכנה למוצרים",
+      "ecom_previewEmptyStoreBody": "הוסף את המוצר הראשון במנהל החנות כדי לראות אותו מופיע כאן.",
+      "ecom_previewEmptyStoreButton": "הוסף מוצרים",
+      "ecom_previewOnlyBadge": "תצוגה מקדימה בלבד",
       "ecom_noShippingMethods": "אין אפשרויות משלוח זמינות",
       "ecom_notLoggedIn": "לא מחובר",
       "ecom_orderConfirmation": "אישור הזמנה נשלח לאימייל שלך",
@@ -2665,6 +2693,8 @@ html[dir="rtl"] body {
       "ecom_coursesEnrollmentCheckFailed": "לא ניתן לאמת בעלות על הקורס. אנא נסה שוב.",
       "ecom_coursesAlreadyEnrolledPrompt": "כבר נרשמת?",
       "ecom_coursesLoginLink": "לכניסה",
+      "ecom_yourCourse": "הקורס שלך",
+      "ecom_courseAccessMethod": "גישה דיגיטלית מקוונת",
       "ecom_processing": "מעבד...",
       "ecom_checkoutFailed": "שגיאה בתהליך התשלום. נסו שוב.",
       "home_h1_1": "מחסור בכוח אדם בענף העבודות גמר?",
@@ -2710,11 +2740,11 @@ html[dir="rtl"] body {
       "home_p_56": "GROUTBOT מביא עמו פיתוח טכנולוגיה מתקדמת למילוי רובה בפוגות — מהירה, מדויקת, ומקצועית. סבב הגיוס בעיצומו",
       "home_p_57": "פתרונות מקצועיים למילוי פוגות בין משטחי אריחים — לקבלנים,&nbsp; ובעלי בתים.",
       "home_p_58": "© 2026 GROUTBOT. כל הזכויות שמורות.",
-      "new_p_183": "עלי מהנדס מכונות מוסמך עתיר כשרון. מוביל תכנון ופיתוח מערכות רב-תחומיות, משלב מהקונספט ועד מוצר עובד, עם התמחות ברובוטיקה ומנגנונים מכאניים",
+      "new_p_183": "מהנדס מכונות מוסמך עתיר כשרון. מוביל תכנון ופיתוח מערכות רב-תחומיות, משלב מהקונספט ועד מוצר עובד, עם התמחות ברובוטיקה ומנגנונים מכאניים",
       "new_p_184": "טקסט כאן",
       "new_p_189": "מנכ\"ל, יזם, מיסד",
       "new_p_194": "מנכ\"ל, יזם, ומיסד GROUTBOT",
-      "new_p_199": "&nbsp;\n&nbsp;\nעם יזמות באופי ואמונה גדולה, מוטי מביא איתו ניסיון רב מעולמות הבריאות . חשיבה קריטית החלטות מושכלות סבלנות ודבקות במטרה.",
+      "new_p_199": "&nbsp;\n&nbsp;\n&nbsp;\nעם יזמות באופי ואמונה גדולה, מוטי מביא איתו ניסיון רב מעולמות הבריאות . חשיבה קריטית החלטות מושכלות סבלנות ודבקות במטרה.",
       "home_h3_10": "אנו מפתחים פתרון חכם ואמין לישום רובה [גרוט] בין אריחי ריצוף — תוצאות מעולות, יישום קל.",
       "home_h3_11": "קלות ומהירות",
       "home_h3_12": "גימור נקי ומסודר",
@@ -3205,6 +3235,7 @@ html[dir="rtl"] body {
   },
   "en": {
     "translation": {
+      "ecom_loading": "Loading…",
       "ecom_accountWelcome": "Welcome",
       "ecom_addAddress": "Add Address",
       "ecom_addBundleToCart": "Add {count} items to cart",
@@ -3222,7 +3253,18 @@ html[dir="rtl"] body {
       "ecom_apartmentExt": "Apt, Floor, Building Code, Notes, Etc.",
       "ecom_applyCoupon": "Apply",
       "ecom_backToProducts": "Back to Products",
+      "ecom_bookNow": "Book now",
+      "ecom_bookingChooseTime": "Choose a time",
+      "ecom_bookingDate": "Date",
+      "ecom_bookingLoading": "Loading availability…",
+      "ecom_bookingNoSlots": "No available times right now",
+      "ecom_bookingRemaining": "{count} left",
+      "ecom_bookingSelectOption": "Select",
+      "ecom_bookingSelectTime": "Select a time",
+      "ecom_bookingSelectTimeFirst": "Please choose a date and time first",
+      "ecom_bookingTime": "Time",
       "ecom_browseFavorites": "Discover all our products",
+      "ecom_bundleDiscount": "Bundle Discount",
       "ecom_bundleTotal": "Bundle total",
       "ecom_callNow": "Call Now",
       "ecom_cancel": "Cancel",
@@ -3361,6 +3403,10 @@ html[dir="rtl"] body {
       "ecom_noFeaturedProducts": "No featured products yet. Check out all our products!",
       "ecom_noOrders": "No orders yet",
       "ecom_noProducts": "No products to display",
+      "ecom_previewEmptyStoreTitle": "Your store is ready for products",
+      "ecom_previewEmptyStoreBody": "Add your first product in Store Manager to see it appear here.",
+      "ecom_previewEmptyStoreButton": "Add products",
+      "ecom_previewOnlyBadge": "Preview only",
       "ecom_noShippingMethods": "No shipping options available",
       "ecom_notLoggedIn": "Not Logged In",
       "ecom_orderConfirmation": "A confirmation email has been sent to you",
@@ -3459,6 +3505,8 @@ html[dir="rtl"] body {
       "ecom_coursesEnrollmentCheckFailed": "Could not verify course ownership. Please try again.",
       "ecom_coursesAlreadyEnrolledPrompt": "Already enrolled?",
       "ecom_coursesLoginLink": "Log in",
+      "ecom_yourCourse": "your course",
+      "ecom_courseAccessMethod": "Online course access",
       "ecom_processing": "Processing...",
       "ecom_checkoutFailed": "Checkout failed. Please try again.",
       "home_h1_1": "Shortage of manpower in the finishing work industry?",
@@ -3504,11 +3552,11 @@ html[dir="rtl"] body {
       "home_p_56": "GROUTBOT brings advanced technology development for fast, precise, and professional grout filling. Funding round in progress",
       "home_p_57": "Professional solutions for filling grout between tile surfaces — for contractors and&nbsp; homeowners.",
       "home_p_58": "© 2026 GROUTBOT. All rights reserved.",
-      "new_p_183": "Ali is a licensed mechanical engineer with exceptional talent. He leads the design and development of multidisciplinary systems, integrating from concept to working product, with specialization in robotics and mechanical mechanisms",
+      "new_p_183": "A highly talented certified mechanical engineer. Leads the design and development of multidisciplinary systems, integrating from concept to working product, with expertise in robotics and mechanical mechanisms",
       "new_p_184": "Text here",
       "new_p_189": "CEO, Entrepreneur, Founder",
       "new_p_194": "CEO, Entrepreneur, and Founder of GROUTBOT",
-      "new_p_199": "&nbsp;\n&nbsp;\nWith entrepreneurial spirit and great faith, Moti brings with him extensive experience from the healthcare world. Critical thinking, informed decisions, patience and dedication to the goal.",
+      "new_p_199": "&nbsp;\n&nbsp;\n&nbsp;\nWith an entrepreneurial nature and great belief, Moti brings with him extensive experience from the world of health. Critical thinking, informed decisions, patience, and dedication to the goal.",
       "home_h3_10": "We are developing a smart and reliable solution for applying grout between floor tiles — excellent results, easy application.",
       "home_h3_11": "Ease and speed",
       "home_h3_12": "Clean and organized finish",
@@ -4263,16 +4311,32 @@ html[dir="rtl"] body {
         }
       }
 
-      // Carry over inline formatting from the source element when the translation
-      // is plain text. E.g., source: <font color="#fff">Hebrew</font>,
-      // translation: "English" → wrap as <font color="#fff">English</font>.
+      // Carry over a single inline colour/format wrapper from the source element
+      // when the translation is plain text. The inline-editor colour picker wraps
+      // the selected text in <span style="color:#hex !important"> (legacy edits
+      // used <font color>). Without re-applying that wrapper, the
+      // textContent/innerHTML swap below destroys it and the user's picked text
+      // colour silently reverts to the CSS default on every load / language
+      // switch (the edit IS saved in the HTML — it's just re-rendered away here).
+      var wrappedFormatting = false;
       var fontChild = el.querySelector('font[color], font[face], font[size]');
-      if (fontChild && !inlineFormatPattern.test(translation)) {
-        var fontTag = '<font';
-        for (var ai = 0; ai < fontChild.attributes.length; ai++) {
-          fontTag += ' ' + fontChild.attributes[ai].name + '="' + fontChild.attributes[ai].value.replace(/"/g, '&quot;') + '"';
+      var styleWrapper = fontChild;
+      if (!styleWrapper && el.children.length === 1) {
+        var onlyChild = el.children[0];
+        if (onlyChild && onlyChild.tagName === 'SPAN' &&
+            /(^|;)\s*(color|background|background-color)\s*:/i.test(onlyChild.getAttribute('style') || '') &&
+            onlyChild.textContent.trim() === (el.textContent || '').trim()) {
+          styleWrapper = onlyChild;
         }
-        translation = fontTag + '>' + translation + '</font>';
+      }
+      if (styleWrapper && !inlineFormatPattern.test(translation) && !structuralTagPattern.test(translation)) {
+        var wrapperTag = styleWrapper.tagName.toLowerCase();
+        var openTag = '<' + wrapperTag;
+        for (var ai = 0; ai < styleWrapper.attributes.length; ai++) {
+          openTag += ' ' + styleWrapper.attributes[ai].name + '="' + styleWrapper.attributes[ai].value.replace(/"/g, '&quot;') + '"';
+        }
+        translation = openTag + '>' + translation + '</' + wrapperTag + '>';
+        wrappedFormatting = true;
       }
 
       var hasNewlines = translation.indexOf(newlineChar) !== -1;
@@ -4280,7 +4344,7 @@ html[dir="rtl"] body {
       var hasEntities = /&[a-zA-Z]+;|&#\d+;|&#x[0-9a-fA-F]+;/.test(translation);
       var elementHasBr = /<br\s*\/?>/i.test(el.innerHTML);
 
-      if (hasNewlines || hasInlineFormat || hasEntities || elementHasBr) {
+      if (hasNewlines || hasInlineFormat || hasEntities || elementHasBr || wrappedFormatting) {
         el.innerHTML = translation.split(newlineChar).join('<br>');
       } else {
         el.textContent = translation;
