@@ -29,8 +29,8 @@ Information about WCAG compliance and accessibility features.
 ## How to Contact Us
 
 - Email: groutbot@gmail.com
-- Phone: 055684233
-- Phone (tel): tel:055684233
+- Phone: 0556842533
+- Phone (tel): tel:0556842533
 - Address: שפלה, ישראל
 
 ### Contact form
