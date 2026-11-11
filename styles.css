@@ -11488,6 +11488,125 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 .pavel-problem .pavel-problem__card-desc {
   color: #1a1a1a !important;
 }
+
+.pavel-video {
+  background: #0b0d0f;
+  padding: 96px 24px;
+}
+
+#video .pavel-video__container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+#video .pavel-video__head {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 48px;
+}
+
+#video .pavel-video__title {
+  font-family: 'Frank Ruhl Libre', 'Heebo', serif !important;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 700;
+  color: var(--surface-color, var(--surface, #ffffff));
+  margin: 0 0 16px;
+  line-height: 1.2;
+}
+
+#video .pavel-video__subtitle {
+  font-family: 'Heebo', sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #c9cfd4;
+  margin: 0;
+  font-weight: 300;
+}
+
+#video .pavel-video__player {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #0b0d0f;
+  box-shadow: 0 28px 72px rgba(0,0,0,0.35);
+}
+
+#video .pavel-video__media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+
+#video .pavel-video__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: rgba(255,255,255,0.95);
+  color: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+  transition: transform 0.25s ease, background 0.25s ease;
+  z-index: 2;
+}
+
+#video .pavel-video__play svg {
+  width: 40px;
+  height: 40px;
+  margin-inline-start: 4px;
+}
+
+@media (max-width: 768px) {
+.pavel-video {
+  padding: 64px 16px;
+}
+
+#video .pavel-video__head {
+  margin-bottom: 32px;
+}
+
+#video .pavel-video__play {
+  width: 68px;
+  height: 68px;
+}
+
+#video .pavel-video__play svg {
+  width: 30px;
+  height: 30px;
+}
+}
+/* zappy-self-heal */
+.pavel-video { padding: 96px 24px !important; }
+#video .pavel-video__head { margin: 0 auto 48px !important; }
+#video .pavel-video__play { width: 92px !important; }
+#video .pavel-video__play { height: 92px !important; }
+
+
+#video .pavel-video__media::-webkit-media-controls-play-button {
+  display: none;
+}
+
+#video .pavel-video__play:hover {
+  transform: translate(-50%, -50%) scale(1.07);
+  background: var(--surface-color, var(--surface, #ffffff));
+}
+
+#video .pavel-video__player.is-playing .pavel-video__play {
+  display: none;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,

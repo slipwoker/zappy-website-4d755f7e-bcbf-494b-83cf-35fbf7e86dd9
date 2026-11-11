@@ -582,6 +582,41 @@ window.onload = function() {
     }
 })();
 
+/* ZAPPY_CUSTOM_JS_START:9146c1519a28 */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function () {
+  var players = document.querySelectorAll('.pavel-video__player');
+  if (!players.length) return;
+  players.forEach(function (player) {
+    var video = player.querySelector('.pavel-video__media');
+    var playBtn = player.querySelector('.pavel-video__play');
+    if (!video || !playBtn) return;
+    playBtn.addEventListener('click', function () {
+      if (video.getAttribute('src') || video.querySelector('source')) {
+        var p = video.play();
+        if (p && p.then) p.then(function () {
+          player.classList.add('is-playing');
+        }).catch(function () {});
+      }
+    });
+    video.addEventListener('play', function () { player.classList.add('is-playing'); });
+    video.addEventListener('ended', function () { player.classList.remove('is-playing'); });
+  });
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:9146c1519a28 */
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
