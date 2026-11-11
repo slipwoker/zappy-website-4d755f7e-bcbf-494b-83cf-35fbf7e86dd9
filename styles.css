@@ -10727,6 +10727,35 @@ nav.navbar .sub-menu li a {
   height: 240px !important;
 }
 }
+
+.pavel-how .pavel-how__container {
+  gap: 56px !important;
+}
+
+.pavel-how .pavel-how__cards {
+  flex: 1 1 62% !important;
+  gap: 20px !important;
+}
+
+.pavel-how .pavel-how__text {
+  flex: 1 1 38% !important;
+}
+
+.pavel-how .pavel-how__img-1,
+.pavel-how .pavel-how__img-2,
+.pavel-how .pavel-how__img-3 {
+  height: 340px !important;
+}
+
+.pavel-how .pavel-how__cap-title {
+  font-size: 18px !important;
+  line-height: 1.25 !important;
+}
+
+.pavel-how .pavel-how__cap-desc {
+  font-size: 15px !important;
+  line-height: 1.45 !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
