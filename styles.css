@@ -18316,6 +18316,48 @@ nav.navbar .nav-menu,
 .pavel-problem .pavel-solution__media .pavel-video-player__media[src] ~ .pavel-video-player__play {
   display: none;
 }
+
+@media (max-width: 768px) {
+#pavel-problem .pavel-solution {
+  grid-template-columns: 1fr !important;
+  justify-items: stretch !important;
+}
+
+#pavel-problem .pavel-solution__media {
+  width: 100% !important;
+  max-width: none !important;
+  justify-self: stretch !important;
+}
+
+#pavel-problem .pavel-video-player,
+  #pavel-problem #video {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+#pavel-problem .pavel-video-player__media {
+  width: 100% !important;
+}
+}
+
+@media (max-width: 768px) {
+#pavel-problem.pavel-problem {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+#pavel-problem .pavel-solution {
+  padding: 24px 20px !important;
+  gap: 28px !important;
+}
+
+#pavel-problem .pavel-solution__media,
+  #pavel-problem .pavel-video-player,
+  #pavel-problem #video {
+  width: 100% !important;
+  max-width: none !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
