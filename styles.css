@@ -16470,6 +16470,58 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
   display: flex !important;
   align-items: center !important;
 }
+
+.pavel-strip .pavel-strip__list {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 14px 44px !important;
+}
+
+.pavel-strip .pavel-strip__item {
+  white-space: nowrap !important;
+  font-weight: 700 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.pavel-strip .pavel-strip__item:not(:first-child)::before {
+  content: "\00B7" !important;
+  width: 6px !important;
+  height: 6px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.6) !important;
+  margin-left: 22px !important;
+  flex: 0 0 6px !important;
+  display: inline-block !important;
+}
+
+#groutbot-hero .pavel-lockup {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  opacity: 1 !important;
+}
+
+#groutbot-hero .pavel-lockup .pavel-wordmark {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.12em !important;
+  font-size: 20px !important;
+}
+
+#groutbot-hero .pavel-lockup .pavel-lockup-divider {
+  display: inline-block !important;
+  width: 1px !important;
+  height: 20px !important;
+  background: rgba(255, 255, 255, 0.4) !important;
+}
+
+#groutbot-hero .pavel-lockup .pavel-lockup-sub {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-size: 14px !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
