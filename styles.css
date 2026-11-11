@@ -8157,6 +8157,26 @@ body, .groutbot-hero, .groutbot-problem, .groutbot-comparison, .pavel-product, .
 .gbt-catalog .gbt-catalog-card-content {
   border-top: none !important;
 }
+
+section.groutbot-hero {
+  background: linear-gradient(160deg, rgba(26,26,26,0.92) 0%, rgba(5,5,5,0.88) 45%, rgba(45,45,45,0.85) 100%) !important;
+  background-image: none !important;
+}
+
+.groutbot-hero .groutbot-hero__bg-image {
+  opacity: 1 !important;
+  display: block !important;
+  z-index: 0 !important;
+}
+
+.groutbot-hero .groutbot-hero__content {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.groutbot-hero .groutbot-hero__overlay {
+  background: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.55) 100%) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
