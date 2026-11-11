@@ -11226,6 +11226,14 @@ nav.navbar .sub-menu li a {
 .site-footer .footer-legal .separator {
   color: var(--text-secondary-color, var(--text-secondary, var(--text-muted, #6b7075))) !important;
 }
+
+section.groutbot-hero .pavel-hero .pavel-hero__cta > span:first-child,
+section.groutbot-hero .pavel-hero__cta > span:first-child {
+  color: #111111 !important;
+  -webkit-text-fill-color: #111111 !important;
+  font-size: 15px !important;
+  opacity: 1 !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
