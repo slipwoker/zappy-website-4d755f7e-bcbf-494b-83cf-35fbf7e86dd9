@@ -12687,6 +12687,206 @@ html body .groutbot-hero .pavel-glass-card { -webkit-backdrop-filter: blur(14px)
 .pavel-partners .pavel-partners__carousel {
   position: relative !important;
 }
+
+.groutbot-hero .pavel-hero__cta-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.groutbot-hero .pavel-hero__cta--outline {
+  background: transparent !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  border: 2px solid var(--surface-color, var(--surface, #ffffff)) !important;
+  box-shadow: none !important;
+}
+
+.pavel-contact .pavel-contact__phone a {
+  color: var(--text-color, var(--text, var(--text-dark, #2b2f33)));
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.pavel-contact .pavel-contact__whatsapp {
+  display: inline-block;
+  margin-top: 12px;
+  background: #25D366;
+  color: var(--surface-color, var(--surface, #ffffff));
+  padding: 12px 22px;
+  border-radius: 100px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.footer-menu-links, .footer-phone {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.footer-menu-links a, .footer-phone a {
+  color: #cfcfcf !important;
+  text-decoration: none;
+}
+
+.footer-menu-links a:hover, .footer-phone a:hover {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .groutbot-hero__headline {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero h1.groutbot-hero__headline {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .groutbot-hero__subheadline {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero p.groutbot-hero__subheadline {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .groutbot-hero__cta {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__wordmark {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__title {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__subtitle {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-glass-card__title {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-glass-card__desc {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__cta {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__cta-arrow {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__cta > span:first-child {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+section.groutbot-hero .pavel-hero .pavel-hero__cta > span:first-child {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+section.groutbot-hero .pavel-hero__cta > span:first-child {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-glass-card {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__cta--outline:hover {
+  background: rgba(255,255,255,0.15) !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__whatsapp:hover {
+  background: #1ebe5b !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.site-footer .footer-menu-links a {
+  color: #cfcfcf !important;
+}
+
+.site-footer .footer-phone a {
+  color: #cfcfcf !important;
+}
+
+.site-footer .footer-menu-links a:hover {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.site-footer .footer-phone a:hover {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.site-footer .footer-menu-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.site-footer .footer-phone {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.site-footer .contact-list a {
+  color: #cfcfcf !important;
+}
+
+.site-footer .contact-list li {
+  color: #cfcfcf !important;
+}
+
+.site-footer .contact-list span {
+  color: #cfcfcf !important;
+}
+
+.site-footer .footer-legal a {
+  color: #cfcfcf !important;
+}
+
+.site-footer .copyright p {
+  color: #cfcfcf !important;
+}
+
+.site-footer .footer-bottom a {
+  color: #cfcfcf !important;
+}
+
+.site-footer .footer-bottom p {
+  color: #cfcfcf !important;
+}
+
+.site-footer .footer-bottom span:not(.separator) {
+  color: #cfcfcf !important;
+}
+
+.site-footer .footer-legal .separator {
+  color: #cfcfcf !important;
+}
+
+.site-footer .footer-bottom-links a {
+  color: #cfcfcf !important;
+}
+
+.site-footer .footer-bottom-links .footer-sep {
+  color: #cfcfcf !important;
+}
+
+.site-footer .pavel-footbar span {
+  color: #cfcfcf !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
