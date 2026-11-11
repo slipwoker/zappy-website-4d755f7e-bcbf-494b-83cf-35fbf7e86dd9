@@ -18631,6 +18631,42 @@ section#how.pavel-how,
 .pavel-contact .pavel-contact__whatsapp svg {
   color: #111111 !important;
 }
+
+.pavel-problem .pavel-problem__container > p:first-child,
+.pavel-partners .pavel-partners__head > p {
+  display: inline-block !important;
+  width: auto !important;
+  background: #0f766e !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  font-family: 'Heebo', sans-serif !important;
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+  line-height: 1.4 !important;
+  padding: 6px 16px !important;
+  border-radius: 100px !important;
+  margin: 0 0 18px 0 !important;
+}
+
+.pavel-problem .pavel-problem__container > p:first-child span {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__container > p:first-child i {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__container > p:first-child b {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-partners .pavel-pcard .pavel-pcard__tag {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-partners .pavel-pcard .pavel-pcard__btn--dark {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
