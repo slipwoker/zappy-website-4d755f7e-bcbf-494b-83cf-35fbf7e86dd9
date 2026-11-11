@@ -8117,6 +8117,46 @@ body, .groutbot-hero, .groutbot-problem, .groutbot-comparison, .pavel-product, .
 .nav-cta-btn { color: #FFFFFF !important; }
 /* === BUTTON TEXT OVERRIDES END === */
 
+
+.groutbot-hero .groutbot-hero__headline,
+.groutbot-hero h1.groutbot-hero__headline {
+  color: var(--surface-color, var(--surface, #FFFFFF)) !important;
+  background: none !important;
+  -webkit-text-fill-color: var(--surface-color, var(--surface, #FFFFFF)) !important;
+  -webkit-background-clip: initial !important;
+}
+
+.groutbot-hero .groutbot-hero__subheadline,
+.groutbot-hero p.groutbot-hero__subheadline {
+  color: rgba(255,255,255,0.85) !important;
+}
+
+.groutbot-hero .groutbot-hero__cta {
+  background: var(--surface-color, var(--surface, #FFFFFF)) !important;
+  color: var(--text-color, var(--text, var(--text-dark, #1A1A1A))) !important;
+  border-radius: 100px !important;
+  padding: 16px 32px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.groutbot-hero .groutbot-hero__cta svg {
+  stroke: var(--text-color, var(--text, var(--text-dark, #1A1A1A))) !important;
+}
+
+.gbt-catalog .gbt-catalog-card {
+  background: var(--surface-color, var(--surface, #FFFFFF)) !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.08) !important;
+}
+
+.gbt-catalog .gbt-catalog-card-content {
+  border-top: none !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
