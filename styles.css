@@ -11114,6 +11114,7 @@ nav.navbar .sub-menu li a {
   border-radius: 100px !important;
   cursor: pointer !important;
   transition: opacity .2s ease !important;
+  fill: #ffffff !important;
 }
 
 @media (max-width: 900px) {
@@ -12717,6 +12718,7 @@ html body .groutbot-hero .pavel-glass-card { -webkit-backdrop-filter: blur(14px)
   border-radius: 100px;
   text-decoration: none;
   font-weight: 700;
+  fill: #ffffff !important;
 }
 
 .footer-menu-links, .footer-phone {
@@ -13060,6 +13062,7 @@ html, body {
 .pavel-contact .pavel-contact__whatsapp {
   background: #0f766e !important;
   color: #ffffff !important;
+  fill: #ffffff !important;
 }
 
 .footer-menu-links a:hover, .footer-bottom-links a:hover {
@@ -13718,6 +13721,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 .pavel-contact .pavel-contact__submit {
   color: #ffffff !important;
   background: #111111 !important;
+  fill: #ffffff !important;
 }
 
 .pavel-how {
@@ -13804,6 +13808,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
   background: #111111 !important;
   color: #ffffff !important;
   border-radius: 100px !important;
+  fill: #ffffff !important;
 }
 
 .pavel-how .pavel-how__btn {
@@ -14007,6 +14012,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 .pavel-contact .pavel-contact__submit {
   color: #ffffff !important;
   background: #111111 !important;
+  fill: #ffffff !important;
 }
 
 .pavel-contact .pavel-contact__phone a {
@@ -15198,6 +15204,7 @@ nav.navbar .sub-menu li a {
 .pavel-contact .pavel-contact__whatsapp {
   background: #0f766e !important;
   color: #ffffff !important;
+  fill: #ffffff !important;
 }
 
 .pavel-contact .pavel-contact__whatsapp:hover {
@@ -15208,6 +15215,7 @@ nav.navbar .sub-menu li a {
 .pavel-contact .pavel-contact__submit {
   background: #111111 !important;
   color: #ffffff !important;
+  fill: #ffffff !important;
 }
 
 .pavel-contact .pavel-contact__submit:hover {
@@ -15845,6 +15853,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 .pavel-contact .pavel-contact__submit {
   color: #ffffff !important;
   background: #111111 !important;
+  fill: #ffffff !important;
 }
 
 .pavel-contact .zappy-label-pill {
@@ -16039,6 +16048,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 .pavel-contact .pavel-contact__submit {
   color: #ffffff !important;
   background: #111111 !important;
+  fill: #ffffff !important;
 }
 
 .pavel-contact .zappy-label-pill {
@@ -16052,6 +16062,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 .pavel-contact .pavel-contact__whatsapp {
   color: #ffffff !important;
   background: #0f766e !important;
+  fill: #ffffff !important;
 }
 
 .pavel-founder .zappy-label-pill {
@@ -16236,11 +16247,13 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 .pavel-contact .pavel-contact__submit {
   color: #ffffff !important;
   background: #111111 !important;
+  fill: #ffffff !important;
 }
 
 .pavel-contact .pavel-contact__whatsapp {
   color: #ffffff !important;
   background: #0f766e !important;
+  fill: #ffffff !important;
 }
 
 .pavel-contact .pavel-contact__title {
@@ -16282,11 +16295,13 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 .pavel-contact .pavel-contact__whatsapp {
   color: #ffffff !important;
   background: #0f766e !important;
+  fill: #ffffff !important;
 }
 
 .pavel-contact .pavel-contact__submit {
   color: #ffffff !important;
   background: #111111 !important;
+  fill: #ffffff !important;
 }
 
 #pavel-problem .pavel-solution__media .pavel-tilegrid {
@@ -16453,11 +16468,13 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 .pavel-contact .pavel-contact__whatsapp {
   color: #ffffff !important;
   background: #0f766e !important;
+  fill: #ffffff !important;
 }
 
 .pavel-contact .pavel-contact__submit {
   color: #ffffff !important;
   background: #111111 !important;
+  fill: #ffffff !important;
 }
 
 #groutbot-hero .pavel-hero__cards .pavel-glass-card__title {
@@ -16582,11 +16599,13 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 .pavel-contact .pavel-contact__whatsapp {
   color: #ffffff !important;
   background: #0f766e !important;
+  fill: #ffffff !important;
 }
 
 .pavel-contact .pavel-contact__submit {
   color: #ffffff !important;
   background: #111111 !important;
+  fill: #ffffff !important;
 }
 
 .pavel-contact .pavel-contact__line {
@@ -16616,6 +16635,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 .pavel-contact .pavel-contact__submit {
   color: #ffffff !important;
   background: #111111 !important;
+  fill: #ffffff !important;
 }
 
 .pavel-contact .zappy-label-pill {
@@ -16629,6 +16649,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 .pavel-contact .pavel-contact__whatsapp {
   color: #ffffff !important;
   background: #0f766e !important;
+  fill: #ffffff !important;
 }
 
 .pavel-contact .pavel-contact__submit span {
@@ -16640,7 +16661,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-contact .pavel-contact__whatsapp i {
-  color: #111111 !important;
+  color: #ffffff !important;
 }
 
 .pavel-contact .pavel-contact__whatsapp svg {
