@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500&family=Heebo:wght@300;400;500&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Heebo:wght@300;400;500;600;700;800&display=swap');
@@ -9841,6 +9843,529 @@ nav.navbar .sub-menu li a {
     font-size: 0.85rem;
   }
 }
+
+:root {
+  --font-heading: 'Frank Ruhl Libre', 'Heebo', serif !important;
+  --font-body: 'Heebo', system-ui, sans-serif !important;
+  --radius-card: 24px !important;
+  --radius-img: 24px !important;
+  --radius-btn: 100px !important;
+}
+
+body {
+  font-family: 'Heebo', system-ui, sans-serif !important;
+  background-color: #F4C99B !important;
+}
+
+body {
+  padding: 20px !important;
+}
+
+.groutbot-hero h1,
+.groutbot-hero h2,
+.groutbot-hero h3,
+.groutbot-about h1,
+.groutbot-about h2,
+.groutbot-about h3,
+.grout-catalog h1,
+.grout-catalog h2,
+.grout-catalog h3,
+.gr-how-we-work h1,
+.gr-how-we-work h2,
+.gr-how-we-work h3 {
+  font-family: 'Frank Ruhl Libre', 'Heebo', serif !important;
+  font-weight: 400 !important;
+}
+
+.groutbot-hero,
+.groutbot-about,
+.grout-catalog,
+.gr-how-we-work {
+  background: #fff !important;
+}
+
+.groutbot-hero,
+.groutbot-about,
+.grout-catalog,
+.gr-how-we-work {
+  background: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar {
+  background: transparent !important;
+}
+
+.navbar .nav-menu {
+  display: flex !important;
+  gap: 6px !important;
+  align-items: center !important;
+}
+
+.navbar .nav-menu .nav-pill {
+  font-family: 'Heebo', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: rgba(255,255,255,0.9) !important;
+  padding: 9px 18px !important;
+  border-radius: 100px !important;
+  text-decoration: none !important;
+  background: rgba(255,255,255,0.12) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  transition: background 0.25s ease !important;
+}
+
+.navbar .nav-menu .nav-pill:hover {
+  background: rgba(255,255,255,0.25) !important;
+  color: #fff !important;
+}
+
+.navbar .nav-pilot-btn {
+  font-family: 'Heebo', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: #111 !important;
+  background: var(--surface-color, var(--surface, #ffffff)) !important;
+  padding: 10px 22px !important;
+  border-radius: 100px !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+}
+
+.navbar .nav-menu > .nav-item > a {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar .nav-menu .sub-menu a {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar .nav-menu .sub-menu li a {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar .zappy-products-dropdown .sub-menu a {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar .nav-search-box .nav-search-input {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar .cart-link.nav-cart {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar .login-link.nav-login {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar .cart-link.nav-cart svg {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar .login-link.nav-login svg {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-item {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-all {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-item {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-all {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled .nav-menu > li > a {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled .nav-menu > .nav-item > a {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled .nav-link {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled a:not(.nav-cta-btn) {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled .navbar-brand {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled .navbar-brand a {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled .dropdown-toggle {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled .mobile-hamburger-btn {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled .mobile-close-btn {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled .phone-header-btn {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled .mobile-toggle {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled .mobile-toggle svg {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled .mobile-hamburger-btn svg {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled .mobile-close-btn svg {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled .phone-header-btn svg {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled .navbar-brand svg {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled .logo-link svg {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled .nav-search-btn {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled .cart-link.nav-cart {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled .login-link.nav-login {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled .nav-search-toggle {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar.scrolled .search-toggle {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar .nav-menu > li > a {
+  color: #111 !important;
+}
+
+.navbar .nav-link {
+  color: #111 !important;
+}
+
+.navbar a:not(.nav-cta-btn) {
+  color: #111 !important;
+}
+
+.navbar .navbar-brand {
+  color: #111 !important;
+}
+
+.navbar .navbar-brand a {
+  color: #111 !important;
+}
+
+.navbar .dropdown-toggle {
+  color: #111 !important;
+}
+
+.navbar .mobile-hamburger-btn {
+  color: #111 !important;
+}
+
+.navbar .mobile-close-btn {
+  color: #111 !important;
+}
+
+.navbar .dropdown-menu li a {
+  color: #111 !important;
+}
+
+.navbar .sub-menu a {
+  color: #111 !important;
+}
+
+.navbar .sub-menu li a {
+  color: #111 !important;
+}
+
+nav.navbar .sub-menu li a {
+  color: #111 !important;
+}
+
+.navbar .mobile-submenu-toggle {
+  color: #111 !important;
+}
+
+.navbar .phone-header-btn {
+  color: #111 !important;
+}
+
+.navbar .nav-search-input {
+  color: #111 !important;
+}
+
+.navbar .nav-search-input::placeholder {
+  color: #111 !important;
+}
+
+.navbar .nav-search-result-name {
+  color: #111 !important;
+}
+
+.navbar .nav-search-result-item a {
+  color: #111 !important;
+}
+
+.navbar .nav-search-result-price {
+  color: #111 !important;
+}
+
+.navbar .nav-search-no-results {
+  color: #111 !important;
+}
+
+.navbar .search-no-results {
+  color: #111 !important;
+}
+
+.navbar .nav-search-toggle {
+  color: #111 !important;
+}
+
+.navbar .search-toggle {
+  color: #111 !important;
+}
+
+.navbar .nav-search-toggle svg {
+  color: #111 !important;
+}
+
+.navbar .search-toggle svg {
+  color: #111 !important;
+}
+
+.navbar .nav-cta-btn {
+  color: #111 !important;
+}
+
+.navbar .nav-menu a {
+  color: #111 !important;
+}.groutbot-hero{background: #fff !important;padding: 28px !important;min-height: auto !important;display: block !important;overflow: visible !important;}html[dir="rtl"] .groutbot-hero{direction: rtl !important;}
+
+.groutbot-hero::before {
+  content: '';
+  display: none !important;
+}
+
+.groutbot-hero .pavel-hero {
+  position: relative !important;
+  border-radius: 28px !important;
+  overflow: hidden !important;
+  min-height: 640px !important;
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+.groutbot-hero .pavel-hero__bg {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 0 !important;
+}
+
+.groutbot-hero .pavel-hero__img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+.groutbot-hero .pavel-hero__scrim {
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(180deg, rgba(20,20,22,0.35) 0%, rgba(20,20,22,0.15) 45%, rgba(20,20,22,0.55) 100%) !important;
+}
+
+.groutbot-hero .pavel-hero__wordmark {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 1 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: 'Frank Ruhl Libre', serif !important;
+  font-weight: 400 !important;
+  font-size: clamp(120px, 22vw, 320px) !important;
+  line-height: 1 !important;
+  color: rgba(255,255,255,0.16) !important;
+  letter-spacing: 0.04em !important;
+  pointer-events: none !important;
+  user-select: none !important;
+}
+
+.groutbot-hero .pavel-hero__content {
+  position: relative !important;
+  z-index: 2 !important;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  padding: 40px 44px !important;
+}
+
+.groutbot-hero .pavel-hero__top {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  gap: 32px !important;
+  align-items: flex-start !important;
+}
+
+.groutbot-hero .pavel-hero__headline-block {
+  max-width: 520px !important;
+  margin-top: 8px !important;
+}
+
+.groutbot-hero .pavel-hero__title {
+  font-family: 'Frank Ruhl Libre', serif !important;
+  font-weight: 400 !important;
+  font-size: clamp(40px, 5.4vw, 74px) !important;
+  line-height: 1.05 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  margin: 0 0 16px !important;
+  letter-spacing: 0 !important;
+}
+
+.groutbot-hero .pavel-hero__subtitle {
+  font-family: 'Heebo', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 17px !important;
+  line-height: 1.6 !important;
+  color: rgba(255,255,255,0.85) !important;
+  margin: 0 !important;
+  max-width: 440px !important;
+}
+
+.groutbot-hero .pavel-hero__cards {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  margin-top: 8px !important;
+  width: 270px !important;
+}
+
+.groutbot-hero .pavel-glass-card {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 4px !important;
+  padding: 16px 18px !important;
+  border-radius: 16px !important;
+  background: rgba(255,255,255,0.12) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(255,255,255,0.22) !important;
+}
+
+.groutbot-hero .pavel-glass-card__title {
+  font-family: 'Heebo', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-glass-card__desc {
+  font-family: 'Heebo', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 300 !important;
+  color: rgba(255,255,255,0.72) !important;
+  line-height: 1.5 !important;
+}
+
+.groutbot-hero .pavel-hero__cta-wrap {
+  display: flex !important;
+  justify-content: center !important;
+  margin-top: 32px !important;
+}
+
+.groutbot-hero .pavel-hero__cta {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  background: var(--surface-color, var(--surface, #ffffff)) !important;
+  color: #111111 !important;
+  font-family: 'Heebo', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  padding: 13px 16px 13px 24px !important;
+  border-radius: 100px !important;
+  text-decoration: none !important;
+}
+
+.groutbot-hero .pavel-hero__cta-arrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 50% !important;
+  background: #111111 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .groutbot-hero__headline {
+  color: rgba(255,255,255,0.16) !important;
+}
+
+.groutbot-hero h1.groutbot-hero__headline {
+  color: rgba(255,255,255,0.16) !important;
+}
+
+.groutbot-hero .groutbot-hero__subheadline {
+  color: rgba(255,255,255,0.16) !important;
+}
+
+.groutbot-hero p.groutbot-hero__subheadline {
+  color: rgba(255,255,255,0.16) !important;
+}
+
+.groutbot-hero .groutbot-hero__cta {
+  color: rgba(255,255,255,0.16) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
@@ -9875,6 +10400,15 @@ body:has(.zappy-announcement-bar) nav.navbar:not(.zappy-catalog-menu),
 body:has(.zappy-announcement-bar) header.navbar,
 body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-search-panel) {
   top: var(--zappy-announcement-height, 40px) !important;
+}
+/* First-paint: pull fullscreen heroes behind the fixed announcement+nav so a
+   transparent --nav-bg does not flash the cream body strip (live FOUC that
+   preview never showed because preview injects the same underlap eagerly). */
+body:has(.zappy-announcement-bar) section[data-hero-type^="fullscreen"],
+body:has(.zappy-announcement-bar) .index-hero-section,
+body:has(.zappy-announcement-bar) main > section[class*="hero"]:first-of-type {
+  margin-top: calc(-1 * var(--zappy-header-stack-height)) !important;
+  padding-top: calc(var(--zappy-header-stack-height)) !important;
 }
 
 

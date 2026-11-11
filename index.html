@@ -1216,7 +1216,7 @@ div.lang-switcher > div.lang-switcher-dropdown[style] {
 .navbar .lang-switcher-dropdown .lang-option *,
 .navbar .lang-option,
 .navbar .lang-option * {
-  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  color: rgba(255,255,255,0.9) !important;
 }
 
 html[dir="rtl"] .lang-option {
@@ -1759,7 +1759,7 @@ body:has(.zappy-announcement-bar) main > section[class*="hero"]:first-of-type {
       <a href="/" class="logo-link">
         <img src="/assets/groutbot-general-logo.webp" alt="GROUTBOT" class="logo" data-i18n-alt="home_alt_149" decoding="async" width="35" height="35">
       </a>
-    </div><ul class="nav-menu" id="navMenu"></ul></div>
+    </div><ul class="nav-menu" id="navMenu"><li><a href="#problem" class="nav-pill">הבעיה</a></li><li><a href="#why-epoxy" class="nav-pill">למה אפוקסי</a></li><li><a href="#pavel" class="nav-pill">PAVEL</a></li><li><a href="#who" class="nav-pill">למי זה</a></li><li><a href="#contact" class="nav-pill">צרו קשר</a></li></ul></div>
 
     
 
@@ -1772,7 +1772,7 @@ body:has(.zappy-announcement-bar) main > section[class*="hero"]:first-of-type {
     <button class="lang-option" data-lang="en" style="display:flex;align-items:center;gap:8px;width:100%;padding:10px 14px;background:none;border:none;text-align:left;cursor:pointer;font-size:14px;color:#333;"><img src="https://api.iconify.design/circle-flags/us.svg" width="20" height="20" alt="" style="display:inline-block;vertical-align:middle;border-radius:50%;" decoding="async"> English</button>
   </div>
 </div>
-<script data-no-icon-edit="true">(function(){function f(){var b=document.querySelector('.lang-switcher-current');if(!b)return;var n=b.closest('nav')||b.closest('header')||b.closest('.navbar');if(!n)return;var a=n.querySelector('.nav-menu a,.nav-links a');if(!a)a=n.querySelector('a:not(.lang-option):not(.lang-switcher-current):not([class*="logo"])');if(a){var c=getComputedStyle(a).color;if(c&&c!=='rgb(0, 0, 0)'&&c!=='rgba(0, 0, 0, 0)'){b.style.color=c;return;}}var s=getComputedStyle(n).backgroundColor;if(s&&s!=='rgba(0, 0, 0, 0)'&&s!=='transparent'){var m=s.match(/rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/);if(m){var l=(0.299*parseInt(m[1])+0.587*parseInt(m[2])+0.114*parseInt(m[3]))/255;b.style.color=l>0.5?'#2b2f33':'#F3FAFF';}}}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',f);}else{setTimeout(f,0);}})()</script><div class="nav-cta-container"></div>
+<script data-no-icon-edit="true">(function(){function f(){var b=document.querySelector('.lang-switcher-current');if(!b)return;var n=b.closest('nav')||b.closest('header')||b.closest('.navbar');if(!n)return;var a=n.querySelector('.nav-menu a,.nav-links a');if(!a)a=n.querySelector('a:not(.lang-option):not(.lang-switcher-current):not([class*="logo"])');if(a){var c=getComputedStyle(a).color;if(c&&c!=='rgb(0, 0, 0)'&&c!=='rgba(0, 0, 0, 0)'){b.style.color=c;return;}}var s=getComputedStyle(n).backgroundColor;if(s&&s!=='rgba(0, 0, 0, 0)'&&s!=='transparent'){var m=s.match(/rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/);if(m){var l=(0.299*parseInt(m[1])+0.587*parseInt(m[2])+0.114*parseInt(m[3]))/255;b.style.color=l>0.5?'#2b2f33':'#F3FAFF';}}}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',f);}else{setTimeout(f,0);}})()</script><div class="nav-cta-container"><a href="#pilot" class="nav-pilot-btn">להצטרף לפיילוט</a></div>
   </div>
 </nav>
 <script>
@@ -2264,42 +2264,42 @@ body:has(.zappy-announcement-bar) main > section[class*="hero"]:first-of-type {
 
 
 
-<section class="groutbot-hero" dir="rtl" aria-label="גרוטבוט — מילוי פוגות בקלות">
-  <div class="groutbot-hero__media" aria-hidden="true">
-    <img data-placeholder="section-hero-1" data-context="Professional tiled surface with dark grout lines in modern construction setting, close-up view of ceramic tiles with clean grout filling, industrial professional atmosphere, grayscale photography, dark moody lighting, high contrast" src="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%271600%27 height=%27900%27%3E%3Cdefs%3E%3ClinearGradient id=%27grad%27 x1=%270%25%27 y1=%270%25%27 x2=%27100%25%27 y2=%27100%25%27%3E%3Cstop offset=%270%25%27 style=%27stop-color:%23FF0083;stop-opacity:1%27 /%3E%3Cstop offset=%27100%25%27 style=%27stop-color:%23FF008320;stop-opacity:1%27 /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27url(%23grad)%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 font-family=%27Arial, sans-serif%27 font-size=%2724%27 fill=%27white%27 text-anchor=%27middle%27 dy=%27.3em%27 font-weight=%27500%27%3EClick%20to%20add%20image%3C/text%3E%3C/svg%3E" alt="משטח אריחים מקצועי עם פוגות נקיות" class="groutbot-hero__img" decoding="async">
+<section class="groutbot-hero" dir="rtl" aria-label="גרוטבוט — מילוי פוגות בקלות"><div class="pavel-hero">
+  <div class="pavel-hero__bg">
+    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='900'%3E%3Cdefs%3E%3ClinearGradient id='sunset' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%232b2f33'/%3E%3Cstop offset='0.5' stop-color='%23b97a4a'/%3E%3Cstop offset='1' stop-color='%23f4c99b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='1600' height='900' fill='url(%23sunset)'/%3E%3Cg stroke='%23f5e9dc' stroke-width='2' fill='none' opacity='0.35'%3E%3Cline x1='0' y1='100' x2='1600' y2='100'/%3E%3Cline x1='0' y1='200' x2='1600' y2='200'/%3E%3Cline x1='0' y1='300' x2='1600' y2='300'/%3E%3Cline x1='0' y1='400' x2='1600' y2='400'/%3E%3Cline x1='0' y1='500' x2='1600' y2='500'/%3E%3Cline x1='0' y1='600' x2='1600' y2='600'/%3E%3Cline x1='0' y1='700' x2='1600' y2='700'/%3E%3Cline x1='0' y1='800' x2='1600' y2='800'/%3E%3Cline x1='200' y1='0' x2='200' y2='900'/%3E%3Cline x1='400' y1='0' x2='400' y2='900'/%3E%3Cline x1='600' y1='0' x2='600' y2='900'/%3E%3Cline x1='800' y1='0' x2='800' y2='900'/%3E%3Cline x1='1000' y1='0' x2='1000' y2='900'/%3E%3Cline x1='1200' y1='0' x2='1200' y2='900'/%3E%3Cline x1='1400' y1='0' x2='1400' y2='900'/%3E%3C/g%3E%3C/svg%3E" alt="קיר פסיפס בבריכה עם פוגות נקיות ומבריקות באור שקיעה חם" class="pavel-hero__img" decoding="async">
+    <div class="pavel-hero__scrim"></div>
   </div>
 
-  <div class="groutbot-hero__overlay" aria-hidden="true"></div>
+  <span class="pavel-hero__wordmark" aria-hidden="true">PAVEL</span>
 
-  <div class="groutbot-hero__content">
-    <div class="groutbot-hero__badge" data-i18n="new_div_501">
-      <span class="groutbot-hero__badge-dot"></span>
-      מכונת מילוי פוגות מקצועית
+  <div class="pavel-hero__content">
+    <div class="pavel-hero__top">
+      <div class="pavel-hero__headline-block">
+        <h1 class="pavel-hero__title">רובה אפוקסית, בלי הסבל.</h1>
+        <p class="pavel-hero__subtitle">מערכת הזנה בלחץ שמכניסה רובה אפוקסית ישר לפוגה, לכל עומקה.</p>
+      </div>
+      <div class="pavel-hero__cards">
+        <div class="pavel-glass-card">
+          <span class="pavel-glass-card__title">בלי ניקוי ציוד</span>
+          <span class="pavel-glass-card__desc">נקניק, צינור וראש מילוי — חד פעמיים</span>
+        </div>
+        <div class="pavel-glass-card">
+          <span class="pavel-glass-card__title">כל רובה אפוקסית</span>
+          <span class="pavel-glass-card__desc">עובד עם החומרים שכבר יש בשוק</span>
+        </div>
+      </div>
     </div>
 
-    <h1 class="groutbot-hero__title" data-i18n="new_h1_502">GROUTBOT — מילוי פוגות בקלות</h1>
-
-    <p class="groutbot-hero__subtitle" data-i18n="new_p_503">
-      פתרון אוטומטי ומדויק למילוי פוגות — חוסך זמן, מפחית פסולת ומבטיח תוצאה אחידה בכל פרויקט.
-    </p>
-
-    <div class="groutbot-hero__actions">
-      <a href="#contact" class="groutbot-hero__cta">
-        התחלת שיתוף פעולה
-        <svg class="groutbot-hero__cta-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M19 12H5M5 12L11 6M5 12L11 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-      </a>
-      <a href="#features" class="groutbot-hero__secondary-link" data-i18n="new_a_504">
-        למידע נוסף
+    <div class="pavel-hero__cta-wrap">
+      <a href="#how" class="pavel-hero__cta">
+        <span>גלו איך זה עובד</span>
+        <span class="pavel-hero__cta-arrow" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M5 12L11 6M5 12L11 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </span>
       </a>
     </div>
   </div>
-
-  <div class="groutbot-hero__scroll-indicator" aria-hidden="true">
-    <span class="groutbot-hero__scroll-line"></span>
-  </div>
-</section>
+</div></section>
 
 
 
