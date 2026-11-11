@@ -16354,6 +16354,99 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
   text-align: center !important;
 }
 }
+
+#groutbot-hero .pavel-hero__cards .pavel-glass-card__title {
+  display: block !important;
+  margin-bottom: 4px !important;
+}
+
+#groutbot-hero .pavel-hero__cards .pavel-glass-card__text {
+  display: block !important;
+}
+
+.pavel-strip .pavel-strip__list {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px 36px !important;
+}
+
+.pavel-strip .pavel-strip__dot {
+  margin: 0 -24px !important;
+}
+
+#groutbot-hero .pavel-hero__cta,
+#groutbot-hero .pavel-hero__cta span,
+#groutbot-hero .pavel-hero__cta svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  -webkit-text-fill-color: var(--surface-color, var(--surface, #ffffff)) !important;
+  fill: currentColor !important;
+}
+
+#pavel-problem .pavel-solution__btn--dark {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  -webkit-text-fill-color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__submit,
+.pavel-contact .pavel-contact__submit span {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  -webkit-text-fill-color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__whatsapp,
+.pavel-contact .pavel-contact__whatsapp span,
+.pavel-contact .pavel-contact__whatsapp i,
+.pavel-contact .pavel-contact__whatsapp svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  -webkit-text-fill-color: var(--surface-color, var(--surface, #ffffff)) !important;
+  fill: currentColor !important;
+}
+
+.pavel-contact .pavel-contact__title {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__line {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__name {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__field label {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__field input {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__field select {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__field textarea {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .zappy-label-pill {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__phone a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__whatsapp {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__submit {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
