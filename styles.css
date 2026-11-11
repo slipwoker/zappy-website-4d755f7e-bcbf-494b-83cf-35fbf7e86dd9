@@ -14363,6 +14363,50 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
   order: 1 !important;
 }
 }
+
+.pavel-strip {
+  background: #0f766e;
+}
+
+.pavel-strip .pavel-strip__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4px 14px;
+  padding: 18px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pavel-strip .pavel-strip__item {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  font-weight: 700;
+  font-size: 17px;
+  white-space: nowrap;
+}
+
+.pavel-strip .pavel-strip__dot {
+  color: var(--surface-color, var(--surface, #ffffff));
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+.pavel-strip .pavel-strip__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 10px 12px;
+}
+
+.pavel-strip .pavel-strip__dot {
+  display: none;
+}
+}
+/* zappy-self-heal */
+.pavel-strip .pavel-strip__list { display: flex !important; }
+.pavel-strip .pavel-strip__list { gap: 4px 14px !important; }
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
