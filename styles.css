@@ -18406,6 +18406,27 @@ nav.navbar .nav-menu,
   padding: 20px !important;
 }
 }
+
+#founder .pavel-founder__chips {
+  width: 100% !important;
+  max-width: none !important;
+  font-size: 13px !important;
+  gap: 10px !important;
+}
+
+#founder .pavel-founder__chips,
+#founder .pavel-founder__chips * {
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+}
+
+#founder .pavel-founder__chips > span,
+#founder .pavel-founder__chips .pavel-founder__chip {
+  padding: 8px 14px !important;
+  border-radius: 100px !important;
+  background: #f0f0ee !important;
+  color: var(--text-color, var(--text, var(--text-dark, #2b2f33))) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
