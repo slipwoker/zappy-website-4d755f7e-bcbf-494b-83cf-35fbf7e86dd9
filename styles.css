@@ -16522,6 +16522,26 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
   color: rgba(255, 255, 255, 0.85) !important;
   font-size: 14px !important;
 }
+
+.pavel-strip .pavel-strip__item {
+  white-space: nowrap !important;
+  font-weight: 700 !important;
+  display: flex !important;
+  align-items: center !important;
+  position: relative !important;
+}
+
+.pavel-strip .pavel-strip__item:not(:first-child)::before {
+  content: "" !important;
+  width: 6px !important;
+  height: 6px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.6) !important;
+  flex-shrink: 0 !important;
+  margin-left: 22px !important;
+  margin-right: 22px !important;
+  display: inline-block !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
