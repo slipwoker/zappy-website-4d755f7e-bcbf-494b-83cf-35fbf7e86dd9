@@ -17280,6 +17280,29 @@ nav.navbar .sub-menu li a {
 .navbar .mobile-toggle {
   color: var(--surface-color, var(--surface, #ffffff)) !important;
 }
+
+.navbar #mobileToggle, #mobileToggle svg, #mobileToggle .hamburger-icon, #mobileToggle .close-icon {
+  color: #111111 !important;
+  stroke: #111111 !important;
+  fill: #111111 !important;
+}
+
+#mobileToggle .hamburger-icon path,
+#mobileToggle .close-icon path {
+  stroke: #111111 !important;
+}
+
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-item {
+  color: #111111 !important;
+}
+
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-all {
+  color: #111111 !important;
+}
+
+.navbar #navMenu a {
+  color: #111111 !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
