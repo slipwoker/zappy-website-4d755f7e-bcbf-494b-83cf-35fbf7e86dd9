@@ -1066,6 +1066,23 @@ window.onload = function() {
 })();
 /* ZAPPY_CUSTOM_JS_END:8e9236806793 */
 
+/* ZAPPY_CUSTOM_JS_START:977236bf40ea */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function(){var n=document.querySelector('nav.navbar');if(!n)return;function f(){n.style.setProperty('background-color','#ffffff','important');n.style.setProperty('backdrop-filter','none','important');n.style.setProperty('-webkit-backdrop-filter','none','important');n.style.setProperty('--frosted-text','#111111');}f();new MutationObserver(f).observe(n,{attributes:true,attributeFilter:['style','class']});addEventListener('scroll',f,{passive:true});})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:977236bf40ea */
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
