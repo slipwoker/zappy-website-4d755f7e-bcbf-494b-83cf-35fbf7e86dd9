@@ -13826,7 +13826,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 
 .pavel-partners .pavel-pcard .pavel-pcard__btn--dark {
   background: #111111 !important;
-  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  color: #ffffff !important;
 }
 
 .pavel-contact .pavel-contact__phone a {
@@ -14115,7 +14115,8 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-partners .pavel-pcard .pavel-pcard__btn--dark {
-  color: #0f766e !important;
+  color: #ffffff !important;
+  background: #111111 !important;
 }
 
 .nav-pilot-btn {
@@ -15798,7 +15799,8 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-partners .pavel-pcard .pavel-pcard__btn--dark {
-  color: #111111 !important;
+  color: #ffffff !important;
+  background: #111111 !important;
 }
 
 .pavel-partners .pavel-pcard__btn {
@@ -15994,7 +15996,8 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-partners .pavel-pcard .pavel-pcard__btn--dark {
-  color: #111111 !important;
+  color: #ffffff !important;
+  background: #111111 !important;
 }
 
 .pavel-video .zappy-label-pill {
