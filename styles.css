@@ -12669,6 +12669,20 @@ html body .groutbot-hero .pavel-glass-card { -webkit-backdrop-filter: blur(14px)
   opacity: 1 !important;
   z-index: 2;
 }
+
+.pavel-partners .pavel-pcard__media {
+  background: #ececea;
+  min-height: 200px;
+}
+
+.pavel-partners .pavel-pcard__media img {
+  min-height: 200px;
+  display: block;
+}
+
+.pavel-partners .pavel-pcard {
+  min-height: 300px;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
