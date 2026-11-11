@@ -18427,6 +18427,45 @@ nav.navbar .nav-menu,
   background: #f0f0ee !important;
   color: var(--text-color, var(--text, var(--text-dark, #2b2f33))) !important;
 }
+
+#pavel-problem, #how, #pavel-partners, #founder, .pavel-contact {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+}
+
+#pavel-problem .pavel-problem__title {
+  margin: 0 auto 28px !important;
+}
+
+#pavel-problem .pavel-problem__grid {
+  margin-bottom: 40px !important;
+}
+
+#pavel-problem .pavel-problem__container .pavel-solution {
+  margin-top: 40px !important;
+}
+
+@media (max-width: 768px) {
+#pavel-problem, #how, #pavel-partners, #founder, .pavel-contact {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+}
+
+@media (max-width: 768px) {
+section#founder.pavel-founder,
+  #founder.pavel-founder,
+  .pavel-founder {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+
+section#how.pavel-how,
+  .pavel-how {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
