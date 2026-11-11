@@ -10368,6 +10368,57 @@ nav.navbar .sub-menu li a {
 .groutbot-hero .groutbot-hero__cta {
   color: rgba(255,255,255,0.16) !important;
 }
+
+.groutbot-hero .pavel-hero__wordmark {
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-size: 220px !important;
+  line-height: 1 !important;
+  letter-spacing: 0.03em !important;
+}
+
+.groutbot-hero .groutbot-hero__headline {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.groutbot-hero h1.groutbot-hero__headline {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.groutbot-hero .groutbot-hero__subheadline {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.groutbot-hero p.groutbot-hero__subheadline {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.groutbot-hero .groutbot-hero__cta {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.groutbot-hero .pavel-hero__title {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.groutbot-hero .pavel-hero__subtitle {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.groutbot-hero .pavel-glass-card__title {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.groutbot-hero .pavel-glass-card__desc {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.groutbot-hero .pavel-hero__cta {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.groutbot-hero .pavel-hero__cta-arrow {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
