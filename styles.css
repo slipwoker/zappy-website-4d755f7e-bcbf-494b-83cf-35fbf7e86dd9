@@ -18358,6 +18358,54 @@ nav.navbar .nav-menu,
   max-width: none !important;
 }
 }
+
+#pavel-partners, #pavel-partners .pavel-partners__carousel, #pavel-partners .pavel-carousel-dots, #pavel-partners .pavel-carousel-arrow {
+  overflow: visible !important;
+  scrollbar-width: none !important;
+}
+
+#pavel-partners *::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+}
+
+#founder.pavel-founder {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+}
+
+#founder .pavel-founder__card {
+  padding: 36px !important;
+}
+
+#founder .pavel-founder__title {
+  font-size: 28px !important;
+}
+
+#founder .pavel-founder__bio {
+  font-size: 16px !important;
+  line-height: 1.65 !important;
+}
+
+#founder .pavel-founder__name {
+  font-size: 19px !important;
+}
+
+#founder .pavel-founder__chip {
+  padding: 8px 14px !important;
+  font-size: 13px !important;
+}
+
+#founder .pavel-founder__logoimg {
+  height: 28px !important;
+  width: auto !important;
+}
+
+@media (max-width: 768px) {
+#founder .pavel-founder__card {
+  padding: 20px !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
