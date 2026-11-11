@@ -18244,6 +18244,78 @@ nav.navbar .nav-menu,
   display: none !important;
 }
 }
+
+.pavel-problem .pavel-solution__media {
+  width: 100% !important;
+}
+
+.pavel-problem .pavel-solution__media .pavel-video-player {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 24px;
+  overflow: hidden;
+  background: rgb(16,20,24);
+  box-shadow: 0 16px 48px rgba(26,43,56,0.12);
+}
+
+.pavel-problem .pavel-solution__media .pavel-video-player__poster {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(15,118,110,0.9) 1px, transparent 1px), linear-gradient(90deg, rgba(15,118,110,0.9) 1px, transparent 1px), linear-gradient(rgba(15,118,110,0.35) 1px, transparent 1px), linear-gradient(90deg, rgba(15,118,110,0.35) 1px, transparent 1px), linear-gradient(135deg, rgb(21,27,32) 0%, rgb(12,16,20) 100%);
+  background-size: 120px 120px, 120px 120px, 30px 30px, 30px 30px, 100% 100%;
+}
+
+.pavel-problem .pavel-solution__media .pavel-video-player__media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.pavel-problem .pavel-solution__media .pavel-video-player__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,0.95);
+  color: #0f766e;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  transition: transform 0.25s ease;
+  z-index: 2;
+}
+
+.pavel-problem .pavel-solution__media .pavel-video-player__play:hover {
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+.pavel-problem .pavel-solution__media .pavel-video-player__play svg {
+  width: 28px;
+  height: 28px;
+  margin-left: 4px;
+}
+
+.pavel-problem .pavel-solution__media .pavel-video-player__media:not([src]) {
+  visibility: hidden;
+}
+
+.pavel-problem .pavel-solution__media .pavel-video-player__media[src] ~ .pavel-video-player__poster {
+  display: none;
+}
+
+.pavel-problem .pavel-solution__media .pavel-video-player__media[src] ~ .pavel-video-player__play {
+  display: none;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
