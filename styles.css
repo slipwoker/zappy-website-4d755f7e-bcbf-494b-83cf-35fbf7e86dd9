@@ -11105,7 +11105,7 @@ nav.navbar .sub-menu li a {
   align-items: center !important;
   justify-content: center !important;
   background: #111111 !important;
-  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  color: #ffffff !important;
   border: none !important;
   font-family: 'Heebo', sans-serif !important;
   font-size: 15px !important;
@@ -12711,8 +12711,8 @@ html body .groutbot-hero .pavel-glass-card { -webkit-backdrop-filter: blur(14px)
 .pavel-contact .pavel-contact__whatsapp {
   display: inline-block;
   margin-top: 12px;
-  background: #25D366;
-  color: var(--surface-color, var(--surface, #ffffff));
+  background: #0f766e !important;
+  color: #ffffff !important;
   padding: 12px 22px;
   border-radius: 100px;
   text-decoration: none;
@@ -13059,6 +13059,7 @@ html, body {
 
 .pavel-contact .pavel-contact__whatsapp {
   background: #0f766e !important;
+  color: #ffffff !important;
 }
 
 .footer-menu-links a:hover, .footer-bottom-links a:hover {
@@ -13715,7 +13716,8 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-contact .pavel-contact__submit {
-  color: #0f766e !important;
+  color: #ffffff !important;
+  background: #111111 !important;
 }
 
 .pavel-how {
@@ -13800,7 +13802,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 
 .pavel-contact .pavel-contact__submit {
   background: #111111 !important;
-  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  color: #ffffff !important;
   border-radius: 100px !important;
 }
 
@@ -14003,7 +14005,8 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-contact .pavel-contact__submit {
-  color: #0f766e !important;
+  color: #ffffff !important;
+  background: #111111 !important;
 }
 
 .pavel-contact .pavel-contact__phone a {
@@ -15194,7 +15197,7 @@ nav.navbar .sub-menu li a {
 
 .pavel-contact .pavel-contact__whatsapp {
   background: #0f766e !important;
-  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  color: #ffffff !important;
 }
 
 .pavel-contact .pavel-contact__whatsapp:hover {
@@ -15204,7 +15207,7 @@ nav.navbar .sub-menu li a {
 
 .pavel-contact .pavel-contact__submit {
   background: #111111 !important;
-  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  color: #ffffff !important;
 }
 
 .pavel-contact .pavel-contact__submit:hover {
@@ -15840,7 +15843,8 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-contact .pavel-contact__submit {
-  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  color: #ffffff !important;
+  background: #111111 !important;
 }
 
 .pavel-contact .zappy-label-pill {
@@ -16033,7 +16037,8 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-contact .pavel-contact__submit {
-  color: #111111 !important;
+  color: #ffffff !important;
+  background: #111111 !important;
 }
 
 .pavel-contact .zappy-label-pill {
@@ -16045,7 +16050,8 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-contact .pavel-contact__whatsapp {
-  color: #111111 !important;
+  color: #ffffff !important;
+  background: #0f766e !important;
 }
 
 .pavel-founder .zappy-label-pill {
@@ -16228,11 +16234,13 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-contact .pavel-contact__submit {
-  color: #fff !important;
+  color: #ffffff !important;
+  background: #111111 !important;
 }
 
 .pavel-contact .pavel-contact__whatsapp {
-  color: #fff !important;
+  color: #ffffff !important;
+  background: #0f766e !important;
 }
 
 .pavel-contact .pavel-contact__title {
@@ -16272,11 +16280,13 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-contact .pavel-contact__whatsapp {
-  color: #fff !important;
+  color: #ffffff !important;
+  background: #0f766e !important;
 }
 
 .pavel-contact .pavel-contact__submit {
-  color: #fff !important;
+  color: #ffffff !important;
+  background: #111111 !important;
 }
 
 #pavel-problem .pavel-solution__media .pavel-tilegrid {
@@ -16441,11 +16451,13 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-contact .pavel-contact__whatsapp {
-  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  color: #ffffff !important;
+  background: #0f766e !important;
 }
 
 .pavel-contact .pavel-contact__submit {
-  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  color: #ffffff !important;
+  background: #111111 !important;
 }
 
 #groutbot-hero .pavel-hero__cards .pavel-glass-card__title {
@@ -16568,11 +16580,13 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-contact .pavel-contact__whatsapp {
-  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  color: #ffffff !important;
+  background: #0f766e !important;
 }
 
 .pavel-contact .pavel-contact__submit {
-  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  color: #ffffff !important;
+  background: #111111 !important;
 }
 
 .pavel-contact .pavel-contact__line {
@@ -16600,7 +16614,8 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-contact .pavel-contact__submit {
-  color: #111111 !important;
+  color: #ffffff !important;
+  background: #111111 !important;
 }
 
 .pavel-contact .zappy-label-pill {
@@ -16612,7 +16627,8 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-contact .pavel-contact__whatsapp {
-  color: #111111 !important;
+  color: #ffffff !important;
+  background: #0f766e !important;
 }
 
 .pavel-contact .pavel-contact__submit span {
