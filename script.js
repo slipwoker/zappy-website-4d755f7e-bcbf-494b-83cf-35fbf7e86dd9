@@ -808,47 +808,69 @@ window.onload = function() {
 })();
 /* ZAPPY_CUSTOM_JS_END:0ce49f9215dd */
 
-/* ZAPPY_CUSTOM_JS_START:cce94c643f47 */
+/* ZAPPY_CUSTOM_JS_START:51c4565a7ca5 */
 (function () {
   function __zappyCustomInit() {
     try {
 (function() {
-  if (window.__zappyFadeUpInit) return;
-  window.__zappyFadeUpInit = true;
+  if (window.__zappyFadeUpInit2) return;
+  window.__zappyFadeUpInit2 = true;
 
   var sections = document.querySelectorAll(
     'section.pavel-problem, section.pavel-how, section.pavel-video, section.pavel-partners, section.pavel-contact'
   );
-
   if (!sections.length) return;
 
-  var style = document.getElementById('zappy-fadeup-css');
-  if (!style) {
-    style = document.createElement('style');
-    style.id = 'zappy-fadeup-css';
-    style.textContent =
-      'section.pavel-problem, section.pavel-how, section.pavel-video, section.pavel-partners, section.pavel-contact {' +
-      '  opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease;' +
-      '}' +
-      'section.pavel-problem.zappy-fadeup-in, section.pavel-how.zappy-fadeup-in, section.pavel-video.zappy-fadeup-in,' +
-      'section.pavel-partners.zappy-fadeup-in, section.pavel-contact.zappy-fadeup-in {' +
-      '  opacity: 1 !important; transform: translateY(0) !important;' +
-      '}';
-    document.head.appendChild(style);
-  }
+  // Remove old style if present (the one that forced opacity:0 as base)
+  var old = document.getElementById('zappy-fadeup-css');
+  if (old) old.parentNode.removeChild(old);
 
+  // Base state: VISIBLE. We only animate via JS adding classes, never leave opacity:0.
+  sections.forEach(function(s) {
+    // Ensure initial visible + set up transition-ready state
+    s.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+    s.style.opacity = '1';
+    s.style.transform = 'none';
+  });
+
+  // If IntersectionObserver is missing, leave everything visible (already done above).
   if (!('IntersectionObserver' in window)) return;
 
+  // For sections already in viewport on load, leave visible.
+  // For sections below fold, add a subtle animation class that reveals on scroll,
+  // but we set a safe fallback: reveal after a short timeout if observer never fires.
   var observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
       if (entry.isIntersecting) {
-        entry.target.classList.add('zappy-fadeup-in');
+        entry.target.classList.add('zappy-fadeup-visible');
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
 
-  sections.forEach(function(s) { observer.observe(s); });
+  sections.forEach(function(s) {
+    // Only below-fold sections get the hidden starting point; above-fold stay visible.
+    var rect = s.getBoundingClientRect();
+    if (rect.top > window.innerHeight) {
+      s.classList.add('zappy-fadeup-hide');
+    } else {
+      s.classList.add('zappy-fadeup-visible');
+    }
+    observer.observe(s);
+  });
+
+  // Safety net: reveal everything after 2.5s regardless of observer state.
+  setTimeout(function() {
+    sections.forEach(function(s) { s.classList.add('zappy-fadeup-visible'); });
+  }, 2500);
+
+  // Inject CSS for the two classes (transitions only affect .zappy-fadeup-hide → visible)
+  var style = document.createElement('style');
+  style.id = 'zappy-fadeup-css2';
+  style.textContent =
+    'section.zappy-fadeup-hide { opacity: 0; transform: translateY(24px); }' +
+    'section.zappy-fadeup-visible { opacity: 1 !important; transform: none !important; }';
+  document.head.appendChild(style);
 })();
     } catch (e) {
       if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
@@ -860,7 +882,7 @@ window.onload = function() {
     __zappyCustomInit();
   }
 })();
-/* ZAPPY_CUSTOM_JS_END:cce94c643f47 */
+/* ZAPPY_CUSTOM_JS_END:51c4565a7ca5 */
 
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
