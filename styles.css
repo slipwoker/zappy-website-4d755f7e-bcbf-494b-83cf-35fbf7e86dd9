@@ -16542,6 +16542,153 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
   margin-right: 22px !important;
   display: inline-block !important;
 }
+
+.pavel-contact .pavel-contact__title {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__line {
+  color: #444444 !important;
+}
+
+.pavel-contact .pavel-contact__name {
+  color: #444444 !important;
+}
+
+.pavel-contact .pavel-contact__field label {
+  color: #444444 !important;
+}
+
+.pavel-contact .pavel-contact__phone a {
+  color: #0f766e !important;
+}
+
+.pavel-contact .pavel-contact__phone a:hover {
+  color: #0f766e !important;
+}
+
+.pavel-contact .pavel-contact__whatsapp {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__submit {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__line {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__name {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__field label {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__field input {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__field select {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__field textarea {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__submit {
+  color: #111111 !important;
+}
+
+.pavel-contact .zappy-label-pill {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__phone a {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__whatsapp {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__submit span {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__whatsapp span {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__whatsapp i {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__whatsapp svg {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__title {
+  color: #444444 !important;
+}
+
+.nav-pilot-btn {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.nav-cta-container .nav-pilot-btn {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.nav-pilot-btn svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+@media (max-width: 768px) {
+.nav-menu, .navbar #navMenu {
+  background: var(--surface-color, var(--surface, var(--surface-color, var(--surface, #ffffff)))) !important;
+}
+
+.nav-menu a, #navMenu a, .nav-menu .nav-pill, #navMenu .nav-pill {
+  color: #111111 !important;
+}
+}
+
+#video .pavel-video__play {
+  position: absolute !important;
+  inset: 0 !important;
+  margin: auto !important;
+}
+
+@media (max-width: 768px) {
+.navbar .nav-menu, .navbar #navMenu {
+  background: var(--surface-color, var(--surface, var(--surface-color, var(--surface, #ffffff)))) !important;
+  box-shadow: none !important;
+}
+
+.navbar .nav-menu a, .navbar #navMenu a, .navbar .nav-pill {
+  color: #111111 !important;
+}
+}
+
+.navbar .mobile-lang-menu,
+.navbar .mobile-lang-toggle,
+.navbar .mobile-lang-option {
+  display: none !important;
+}
+
+#video .pavel-video__player .pavel-video__play {
+  position: absolute !important;
+  inset: 0 !important;
+  margin: auto !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
