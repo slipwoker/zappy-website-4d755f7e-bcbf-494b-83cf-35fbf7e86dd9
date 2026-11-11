@@ -14939,6 +14939,147 @@ nav.navbar .sub-menu li a {
 #founder .pavel-founder__grid { grid-template-columns: 1fr 1.4fr !important; }
 #founder .pavel-founder__grid { gap: 48px !important; }
 
+
+.pavel-founder {
+  background: var(--surface-color, var(--surface, #ffffff)) !important;
+  padding-top: 110px !important;
+  padding-bottom: 110px !important;
+}
+
+#founder .pavel-founder__container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.pavel-founder .zappy-label-pill {
+  color: #0f766e !important;
+  background: rgba(15,118,110,0.08) !important;
+}
+
+#founder .pavel-founder__title {
+  font-weight: 800 !important;
+  font-size: 44px !important;
+  line-height: 1.15 !important;
+  margin: 16px 0 40px !important;
+  color: #1a1a1a !important;
+}
+
+#founder .pavel-founder__grid {
+  display: flex !important;
+  flex-direction: row-reverse !important;
+  align-items: flex-start !important;
+  gap: 56px !important;
+}
+
+#founder .pavel-founder__badge {
+  flex: 0 0 160px !important;
+  width: 160px !important;
+  height: 160px !important;
+  border-radius: 50% !important;
+  background: linear-gradient(135deg, #0f766e 0%, #05363b 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+#founder .pavel-founder__badge-letter {
+  font-size: 88px !important;
+  font-weight: 800 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  line-height: 1 !important;
+}
+
+#founder .pavel-founder__body {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+}
+
+#founder .pavel-founder__name {
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  color: #1a1a1a !important;
+  margin: 0 0 16px !important;
+}
+
+#founder .pavel-founder__bio {
+  font-size: 17px !important;
+  line-height: 1.7 !important;
+  color: #3a3a3a !important;
+  margin: 0 0 16px !important;
+}
+
+#founder .pavel-founder__cards {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 16px !important;
+  margin: 24px 0 28px !important;
+}
+
+#founder .pavel-founder__card {
+  background: var(--surface-color, var(--surface, #ffffff)) !important;
+  border: 1px solid #eee !important;
+  border-radius: 24px !important;
+  padding: 20px 18px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 12px !important;
+  box-shadow: 0 8px 32px rgba(26,43,56,0.05) !important;
+}
+
+#founder .pavel-founder__card-icon {
+  color: #0f766e !important;
+  width: 28px !important;
+  height: 28px !important;
+}
+
+#founder .pavel-founder__card-icon svg {
+  width: 28px !important;
+  height: 28px !important;
+}
+
+#founder .pavel-founder__card-title {
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  color: #1a1a1a !important;
+}
+
+#founder .pavel-founder__cta {
+  display: inline-block !important;
+  background: #000000 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  padding: 14px 30px !important;
+  border-radius: 100px !important;
+  text-decoration: none !important;
+  transition: all 0.25s ease !important;
+}
+
+@media (max-width: 768px) {
+#founder .pavel-founder__title {
+  font-size: 30px !important;
+}
+
+#founder .pavel-founder__grid {
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+#founder .pavel-founder__cards {
+  grid-template-columns: 1fr !important;
+}
+
+#founder .pavel-founder__badge {
+  margin-bottom: 8px;
+}
+}
+
+#founder .pavel-founder__cta:hover {
+  background: #0f766e !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
