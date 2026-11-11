@@ -17303,6 +17303,48 @@ nav.navbar .sub-menu li a {
 .navbar #navMenu a {
   color: #111111 !important;
 }
+
+nav.navbar div.nav-cta-container a.nav-pilot-btn,
+nav.navbar div.nav-cta-container a.nav-pilot-btn span {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  -webkit-text-fill-color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-item {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-all {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-item {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-all {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .nav-menu > .nav-item > a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .cart-link.nav-cart {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .login-link.nav-login {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar #navMenu a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar #mobileToggle {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
