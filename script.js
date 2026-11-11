@@ -617,6 +617,180 @@ window.onload = function() {
 })();
 /* ZAPPY_CUSTOM_JS_END:9146c1519a28 */
 
+/* ZAPPY_CUSTOM_JS_START:57208a583140 */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function(){
+  var wrap = document.querySelector('.pavel-partners__carousel');
+  if (!wrap) return;
+  if (wrap.__groutCarouselInit) return;
+  wrap.__groutCarouselInit = true;
+
+  var cards = Array.prototype.slice.call(wrap.querySelectorAll('.pavel-pcard'));
+  if (cards.length < 3) return;
+
+  // Build order state: index in cards array -> visual slot [left, center, right]
+  var order = [0, 1, 2];
+  var slots = ['--side', '--center', '--side'];
+  var sides = ['--side-left', '--side-right'];
+
+  function apply() {
+    cards.forEach(function(c, i){
+      var slot = i === 1 ? '--center' : '--side';
+      c.classList.remove('pavel-pcard--center', 'pavel-pcard--side', 'pavel-pcard--side-left', 'pavel-pcard--side-right');
+      c.classList.add('pavel-pcard' + slot);
+      if (slot === '--side') {
+        c.classList.add(i === 0 ? 'pavel-pcard--side-left' : 'pavel-pcard--side-right');
+      }
+    });
+  }
+
+  function render() {
+    // order = [leftIdx, centerIdx, rightIdx]
+    var frag = document.createDocumentFragment();
+    for (var i = 0; i < order.length; i++) {
+      frag.appendChild(cards[order[i]]);
+    }
+    wrap.appendChild(frag);
+    apply();
+    updateDots();
+  }
+
+  function activeIndex() { return order[1]; }
+
+  function goTo(centerIdx) {
+    // Set center to centerIdx, left = previous, right = next (circular)
+    var n = cards.length;
+    var ci = cards.indexOf(centerIdx);
+    if (ci === -1) return;
+    order = [
+      order[2],   // old right becomes new left
+      centerIdx,  // new center
+      order[0]    // old left becomes new right
+    ];
+    // Actually compute cleanly:
+    var idx = order.indexOf(centerIdx);
+    // Recompute neighbors based on array position
+    var pos = cards.indexOf(centerIdx);
+    var left = cards[(pos - 1 + n) % n];
+    var right = cards[(pos + 1) % n];
+    order = [left, centerIdx, right];
+    render();
+    restart();
+  }
+
+  function next() {
+    var n = cards.length;
+    var cur = activeIndex();
+    var pos = cards.indexOf(cur);
+    goTo(cards[(pos + 1) % n]);
+  }
+  function prev() {
+    var n = cards.length;
+    var cur = activeIndex();
+    var pos = cards.indexOf(cur);
+    goTo(cards[(pos - 1 + n) % n]);
+  }
+
+  // Dots
+  var dotsWrap = document.createElement('div');
+  dotsWrap.className = 'pavel-carousel-dots';
+  var dots = [];
+  for (var d = 0; d < cards.length; d++) {
+    var dot = document.createElement('button');
+    dot.type = 'button';
+    dot.className = 'pavel-carousel-dot';
+    dot.setAttribute('aria-label', 'עבור לכרטיס ' + (d + 1));
+    (function(dd){
+      dot.addEventListener('click', function(){ goTo(cards[dd]); });
+    })(d);
+    dots.push(dot);
+    dotsWrap.appendChild(dot);
+  }
+  wrap.parentNode.insertBefore(dotsWrap, wrap.nextSibling);
+
+  function updateDots() {
+    dots.forEach(function(dt, i){
+      dt.classList.toggle('is-active', cards[i] === cards[activeIndex()]);
+    });
+  }
+
+  // Arrows
+  function makeArrow(cls, label, handler) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'pavel-carousel-arrow ' + cls;
+    b.setAttribute('aria-label', label);
+    b.innerHTML = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    b.addEventListener('click', handler);
+    return b;
+  }
+  var parent = wrap.parentNode;
+  // Insert arrows around the carousel region
+  var mount = wrap.parentNode;
+  var prevBtn = makeArrow('pavel-carousel-arrow--prev', 'הקודם', prev);
+  var nextBtn = makeArrow('pavel-carousel-arrow--next', 'הבא', next);
+  mount.insertBefore(prevBtn, wrap);
+  mount.appendChild(nextBtn);
+
+  // Swipe
+  var startX = null;
+  wrap.addEventListener('touchstart', function(e){ startX = e.touches[0].clientX; }, {passive:true});
+  wrap.addEventListener('touchend', function(e){
+    if (startX === null) return;
+    var dx = e.changedTouches[0].clientX - startX;
+    if (Math.abs(dx) > 40) {
+      if (dx < 0) next(); else prev();
+    }
+    startX = null;
+  }, {passive:true});
+
+  // Click side card -> center
+  cards.forEach(function(c){
+    c.addEventListener('click', function(){
+      if (cards.indexOf(c) !== activeIndex()) {
+        goTo(c);
+      }
+    });
+  });
+
+  // Auto rotate + pause on hover
+  var timer = null;
+  var INTERVAL = 6000;
+  function restart() {
+    stop();
+    if (!paused) start();
+  }
+  function start() {
+    timer = setInterval(next, INTERVAL);
+  }
+  function stop() { if (timer) { clearInterval(timer); timer = null; } }
+  var paused = false;
+  wrap.addEventListener('mouseenter', function(){ paused = true; stop(); });
+  wrap.addEventListener('mouseleave', function(){ paused = false; restart(); });
+  // Also pause on arrows/dots hover
+  [prevBtn, nextBtn, dotsWrap].forEach(function(el){
+    el.addEventListener('mouseenter', function(){ paused = true; stop(); });
+    el.addEventListener('mouseleave', function(){ paused = false; restart(); });
+  });
+
+  // Init
+  render();
+  start();
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:57208a583140 */
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
