@@ -14328,6 +14328,41 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 .pavel-how .pavel-how__row { gap: 64px !important; }
 .pavel-how .pavel-how__info { flex: 0 0 42% !important; }
 
+
+.pavel-how .pavel-how__step {
+  border-bottom: 1px solid rgba(255,255,255,0.22) !important;
+}
+
+@media (max-width: 768px) {
+.pavel-how .pavel-how__row {
+  flex-direction: column !important;
+  gap: 40px !important;
+}
+
+.pavel-how .pavel-how__info {
+  flex: 1 1 auto !important;
+  width: 100% !important;
+}
+
+.pavel-how .pavel-how__steps {
+  width: 100% !important;
+}
+}
+
+@media (max-width: 768px) {
+.pavel-how .pavel-how__row {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.pavel-how .pavel-how__info {
+  order: 0 !important;
+}
+
+.pavel-how .pavel-how__steps {
+  order: 1 !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
