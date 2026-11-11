@@ -16226,6 +16226,134 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
   width: auto !important;
   margin: 12px 0 18px !important;
 }
+
+.pavel-contact .pavel-contact__submit {
+  color: #fff !important;
+}
+
+.pavel-contact .pavel-contact__whatsapp {
+  color: #fff !important;
+}
+
+.pavel-contact .pavel-contact__title {
+  color: #fff !important;
+}
+
+.pavel-contact .pavel-contact__line {
+  color: #fff !important;
+}
+
+.pavel-contact .pavel-contact__name {
+  color: #fff !important;
+}
+
+.pavel-contact .pavel-contact__field label {
+  color: #fff !important;
+}
+
+.pavel-contact .pavel-contact__field input {
+  color: #fff !important;
+}
+
+.pavel-contact .pavel-contact__field select {
+  color: #fff !important;
+}
+
+.pavel-contact .pavel-contact__field textarea {
+  color: #fff !important;
+}
+
+.pavel-contact .zappy-label-pill {
+  color: #fff !important;
+}
+
+.pavel-contact .pavel-contact__phone a {
+  color: #fff !important;
+}
+
+.pavel-contact .pavel-contact__whatsapp {
+  color: #fff !important;
+}
+
+.pavel-contact .pavel-contact__submit {
+  color: #fff !important;
+}
+
+#pavel-problem .pavel-solution__media .pavel-tilegrid {
+  width: 100%;
+  height: 100%;
+  min-height: 460px;
+  border-radius: 24px;
+  background-color: #101418;
+  background-image: linear-gradient(rgba(15,118,110,0.9) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15,118,110,0.9) 1px, transparent 1px),
+    linear-gradient(rgba(15,118,110,0.35) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15,118,110,0.35) 1px, transparent 1px),
+    linear-gradient(135deg, #151b20 0%, #0c1014 100%);
+  background-size: 120px 120px, 120px 120px, 30px 30px, 30px 30px, 100% 100%;
+  box-shadow: inset 0 0 60px rgba(15,118,110,0.25);
+}
+
+@media (max-width: 768px) {
+#groutbot-hero .pavel-hero__title {
+  font-size: 30px !important;
+  line-height: 1.15 !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+#groutbot-hero .pavel-hero__cta-wrap {
+  flex-direction: column !important;
+  align-items: stretch !important;
+  width: 100% !important;
+}
+
+#groutbot-hero .pavel-hero__cta-wrap .pavel-hero__cta {
+  width: 100% !important;
+  justify-content: center !important;
+  text-align: center !important;
+  margin: 0 !important;
+}
+
+.pavel-strip .pavel-strip__list {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 12px 16px !important;
+}
+
+.pavel-strip .pavel-strip__list .pavel-strip__dot {
+  display: none !important;
+}
+
+.pavel-strip .pavel-strip__list .pavel-strip__item {
+  text-align: center !important;
+}
+
+#pavel-problem .pavel-solution__media .pavel-tilegrid {
+  min-height: 320px !important;
+}
+}
+
+@media (max-width: 768px) {
+#groutbot-hero .pavel-hero__cta-wrap {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+}
+
+#groutbot-hero .pavel-hero__cta-wrap .pavel-hero__cta {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
