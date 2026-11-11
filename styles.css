@@ -15080,6 +15080,978 @@ nav.navbar .sub-menu li a {
   background: #0f766e !important;
   color: var(--surface-color, var(--surface, #ffffff)) !important;
 }
+
+.navbar .nav-pilot-btn {
+  background: #111111 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-pilot-btn:hover {
+  background: #000000 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__cta {
+  background: #111111 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  border: none !important;
+}
+
+.groutbot-hero .pavel-hero__cta span,
+.groutbot-hero .pavel-hero__cta .pavel-hero__cta-arrow,
+.groutbot-hero .pavel-hero__cta .pavel-hero__cta-arrow svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  fill: var(--surface-color, var(--surface, #ffffff)) !important;
+  stroke: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__cta:hover {
+  background: #000000 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__cta:hover span,
+.groutbot-hero .pavel-hero__cta:hover .pavel-hero__cta-arrow svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  stroke: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__cta--outline {
+  background: transparent !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  border: 2px solid var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__cta--outline:hover {
+  background: var(--surface-color, var(--surface, #ffffff)) !important;
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-solution__btn--dark {
+  background: #111111 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  border: 1px solid #111111 !important;
+}
+
+.pavel-problem .pavel-solution__btn--dark:hover {
+  background: #000000 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-solution__btn--outline {
+  background: transparent !important;
+  color: #111111 !important;
+  border: 1px solid #111111 !important;
+}
+
+.pavel-problem .pavel-solution__btn--outline:hover {
+  background: #111111 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-how .pavel-how__cta {
+  background: #111111 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-how .pavel-how__cta:hover {
+  background: #000000 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-partners .pavel-pcard__btn {
+  background: var(--surface-color, var(--surface, #ffffff)) !important;
+  color: #111111 !important;
+  border: 1px solid #111111 !important;
+}
+
+.pavel-partners .pavel-pcard__btn:hover {
+  background: #111111 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-partners .pavel-pcard__btn--dark {
+  background: #111111 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  border: 1px solid #111111 !important;
+}
+
+.pavel-partners .pavel-pcard__btn--dark:hover {
+  background: #000000 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-founder .pavel-founder__cta {
+  background: #000000 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-founder .pavel-founder__cta:hover {
+  background: #111111 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__whatsapp {
+  background: #0f766e !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__whatsapp:hover {
+  background: #0d6157 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__submit {
+  background: #111111 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__submit:hover {
+  background: #000000 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-menu a,
+.navbar #navMenu a,
+.navbar .nav-menu .nav-pill {
+  color: #111111 !important;
+}
+
+.navbar .nav-menu a:hover,
+.navbar #navMenu a:hover {
+  color: #0f766e !important;
+}
+
+.pavel-problem .pavel-problem__card-title {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__card-desc,
+.pavel-video .pavel-video__subtitle,
+.pavel-partners .pavel-partners__intro,
+.pavel-contact .pavel-contact__line,
+.pavel-contact .pavel-contact__name {
+  color: #444444 !important;
+}
+
+.pavel-problem .pavel-solution__heading {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-solution__item-text {
+  color: #444444 !important;
+}
+
+.pavel-problem .pavel-solution__note {
+  color: #444444 !important;
+}
+
+.pavel-how .pavel-how__heading {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-how .pavel-how__lead {
+  color: #d0d0d0 !important;
+}
+
+.pavel-how .pavel-how__step-title {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-how .pavel-how__step-text {
+  color: #d0d0d0 !important;
+}
+
+.pavel-problem .pavel-solution__heading {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__card-icon {
+  background: #e6f4f2 !important;
+  color: #0f766e !important;
+  border-radius: 50% !important;
+  width: 56px !important;
+  height: 56px !important;
+}
+
+.pavel-problem .pavel-problem__card-icon svg, 
+.pavel-problem .pavel-problem__card-icon svg path {
+  stroke: #0f766e !important;
+  fill: none !important;
+  color: #0f766e !important;
+}
+
+.groutbot-hero .pavel-glass-card {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+}
+
+.groutbot-hero .pavel-glass-card__title {
+  display: block !important;
+  font-weight: 700 !important;
+}
+
+.groutbot-hero .pavel-glass-card__text {
+  display: block !important;
+}
+
+.pavel-partners .zappy-carousel-dot.active,
+.pavel-partners .pavel-carousel-dot.is-active {
+  background: #0f766e !important;
+}
+
+.navbar .nav-menu > li > a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-menu > .nav-item > a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-link {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar a:not(.nav-cta-btn) {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .navbar-brand {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .navbar-brand a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .dropdown-toggle {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .mobile-hamburger-btn {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .mobile-close-btn {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .dropdown-menu li a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .sub-menu a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .sub-menu li a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-menu .sub-menu a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-menu .sub-menu li a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .zappy-products-dropdown .sub-menu a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+nav.navbar .sub-menu li a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .mobile-submenu-toggle {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .phone-header-btn {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-search-input {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-search-box .nav-search-input {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-search-input::placeholder {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-search-result-name {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-search-result-item a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-search-result-price {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-search-no-results {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .search-no-results {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .cart-link.nav-cart {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .login-link.nav-login {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-search-toggle {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .search-toggle {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .cart-link.nav-cart svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .login-link.nav-login svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-search-toggle svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .search-toggle svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-item {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-all {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-item {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-all {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .nav-menu > li > a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .nav-menu > .nav-item > a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .nav-link {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled a:not(.nav-cta-btn) {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .navbar-brand {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .navbar-brand a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .dropdown-toggle {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .mobile-hamburger-btn {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .mobile-close-btn {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .phone-header-btn {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .mobile-toggle {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .mobile-toggle svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .mobile-hamburger-btn svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .mobile-close-btn svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .phone-header-btn svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .navbar-brand svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .logo-link svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .nav-search-btn {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .cart-link.nav-cart {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .login-link.nav-login {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .nav-search-toggle {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .search-toggle {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-cta-btn {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-menu a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-menu .nav-pill {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-pill {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-container a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .mobile-toggle {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .groutbot-hero__headline {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero h1.groutbot-hero__headline {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .groutbot-hero__subheadline {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero p.groutbot-hero__subheadline {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .groutbot-hero__cta {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__wordmark {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__title {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__subtitle {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-glass-card__title {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-glass-card__desc {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__cta-arrow {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__cta > span:first-child {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+section.groutbot-hero .pavel-hero .pavel-hero__cta > span:first-child {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+section.groutbot-hero .pavel-hero__cta > span:first-child {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-glass-card {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__cta--outline {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__cta {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__title {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__subhead {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__body {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__btn {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__note {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__itemTitle {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__itemDesc {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__patent {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__patent svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__card-icon {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__card-title {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__card-desc {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-solution__heading {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-solution__check {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-solution__item-text {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-solution__note {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-solution__btn--outline {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .zappy-label-pill {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-solution__btn--dark {
+  color: #111111 !important;
+}
+
+.pavel-how .pavel-how__cap-title {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-how .pavel-how__cap-desc {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-how .pavel-how__title {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-how .pavel-how__body {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-how .pavel-how__btn {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-how .zappy-label-pill {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-how .pavel-how__label {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-how .pavel-how__heading {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-how .pavel-how__lead {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-how .pavel-how__num {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-how .pavel-how__step-title {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-how .pavel-how__step-text {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-partners .pavel-partners__title {
+  color: #111111 !important;
+}
+
+.pavel-partners .pavel-partners__intro {
+  color: #111111 !important;
+}
+
+.pavel-partners .pavel-pcard__tag {
+  color: #111111 !important;
+}
+
+.pavel-partners .pavel-pcard__title {
+  color: #111111 !important;
+}
+
+.pavel-partners .pavel-pcard__line {
+  color: #111111 !important;
+}
+
+.pavel-partners .pavel-pcard__btn--dark {
+  color: #111111 !important;
+}
+
+.pavel-partners .zappy-label-pill {
+  color: #111111 !important;
+}
+
+.pavel-partners .pavel-pcard .pavel-pcard__tag {
+  color: #111111 !important;
+}
+
+.pavel-partners .pavel-pcard .pavel-pcard__btn--dark {
+  color: #111111 !important;
+}
+
+.pavel-partners .pavel-pcard__btn {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-founder .zappy-label-pill {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__title {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__line {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__name {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__field label {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__field input {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__field select {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__field textarea {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__submit {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .zappy-label-pill {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-contact .pavel-contact__phone a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-video .zappy-label-pill {
+  color: #444444 !important;
+}
+
+.pavel-video .pavel-video__title {
+  color: #444444 !important;
+}
+
+.pavel-how .pavel-how__cta {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__title {
+  color: #111111 !important;
+}
+
+.pavel-partners .pavel-partners__title {
+  color: #111111 !important;
+}
+
+.pavel-video .pavel-video__title {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__title {
+  color: #111111 !important;
+}
+
+.pavel-founder .pavel-founder__title {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__subhead {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__body {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__btn {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__note {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__itemTitle {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__itemDesc {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__patent {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__patent svg {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__card-icon {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__card-title {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__card-desc {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-solution__heading {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-solution__check {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-solution__item-text {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-solution__note {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-solution__btn--dark {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-solution__btn--outline {
+  color: #111111 !important;
+}
+
+.pavel-problem .zappy-label-pill {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__card-icon svg {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__card-icon svg path {
+  color: #111111 !important;
+}
+
+.pavel-partners .pavel-partners__intro {
+  color: #111111 !important;
+}
+
+.pavel-partners .pavel-pcard__tag {
+  color: #111111 !important;
+}
+
+.pavel-partners .pavel-pcard__title {
+  color: #111111 !important;
+}
+
+.pavel-partners .pavel-pcard__line {
+  color: #111111 !important;
+}
+
+.pavel-partners .pavel-pcard__btn {
+  color: #111111 !important;
+}
+
+.pavel-partners .pavel-pcard__btn--dark {
+  color: #111111 !important;
+}
+
+.pavel-partners .zappy-label-pill {
+  color: #111111 !important;
+}
+
+.pavel-partners .pavel-pcard .pavel-pcard__tag {
+  color: #111111 !important;
+}
+
+.pavel-partners .pavel-pcard .pavel-pcard__btn--dark {
+  color: #111111 !important;
+}
+
+.pavel-video .zappy-label-pill {
+  color: #111111 !important;
+}
+
+.pavel-video .pavel-video__subtitle {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__line {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__name {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__field label {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__field input {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__field select {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__field textarea {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__submit {
+  color: #111111 !important;
+}
+
+.pavel-contact .zappy-label-pill {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__phone a {
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__whatsapp {
+  color: #111111 !important;
+}
+
+.pavel-founder .zappy-label-pill {
+  color: #111111 !important;
+}
+
+.pavel-founder .pavel-founder__cta {
+  color: #111111 !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
