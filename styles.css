@@ -18117,6 +18117,45 @@ nav.navbar div.nav-cta-container a.nav-pilot-btn {
 nav.navbar div.nav-cta-container a.nav-pilot-btn span {
   color: #111111 !important;
 }
+
+nav.navbar {
+  background: var(--surface-color, var(--surface, #ffffff)) !important;
+  background-color: var(--surface-color, var(--surface, #ffffff)) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-bottom: 1px solid #ececea !important;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.06) !important;
+}
+
+nav.navbar.scrolled {
+  background: var(--surface-color, var(--surface, #ffffff)) !important;
+  background-color: var(--surface-color, var(--surface, #ffffff)) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-bottom: 1px solid #ececea !important;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.06) !important;
+}
+
+@media (max-width: 768px) {
+nav.navbar {
+  background: var(--surface-color, var(--surface, var(--surface-color, var(--surface, #ffffff)))) !important;
+  background-color: var(--surface-color, var(--surface, var(--surface-color, var(--surface, #ffffff)))) !important;
+}
+
+nav.navbar .nav-menu,
+  nav.navbar #navMenu {
+  background: var(--surface-color, var(--surface, var(--surface-color, var(--surface, #ffffff)))) !important;
+  background-color: var(--surface-color, var(--surface, var(--surface-color, var(--surface, #ffffff)))) !important;
+  border: 1px solid #ececea !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10) !important;
+}
+}
+/* zappy-self-heal */
+nav.navbar { -webkit-backdrop-filter: none !important; }
+
+/* zappy-self-heal */
+html body nav.navbar { -webkit-backdrop-filter: none !important; }
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
