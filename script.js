@@ -808,6 +808,60 @@ window.onload = function() {
 })();
 /* ZAPPY_CUSTOM_JS_END:0ce49f9215dd */
 
+/* ZAPPY_CUSTOM_JS_START:cce94c643f47 */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function() {
+  if (window.__zappyFadeUpInit) return;
+  window.__zappyFadeUpInit = true;
+
+  var sections = document.querySelectorAll(
+    'section.pavel-problem, section.pavel-how, section.pavel-video, section.pavel-partners, section.pavel-contact'
+  );
+
+  if (!sections.length) return;
+
+  var style = document.getElementById('zappy-fadeup-css');
+  if (!style) {
+    style = document.createElement('style');
+    style.id = 'zappy-fadeup-css';
+    style.textContent =
+      'section.pavel-problem, section.pavel-how, section.pavel-video, section.pavel-partners, section.pavel-contact {' +
+      '  opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease;' +
+      '}' +
+      'section.pavel-problem.zappy-fadeup-in, section.pavel-how.zappy-fadeup-in, section.pavel-video.zappy-fadeup-in,' +
+      'section.pavel-partners.zappy-fadeup-in, section.pavel-contact.zappy-fadeup-in {' +
+      '  opacity: 1 !important; transform: translateY(0) !important;' +
+      '}';
+    document.head.appendChild(style);
+  }
+
+  if (!('IntersectionObserver' in window)) return;
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('zappy-fadeup-in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  sections.forEach(function(s) { observer.observe(s); });
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:cce94c643f47 */
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){

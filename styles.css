@@ -12996,6 +12996,727 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 .site-footer .footer-menu-links a {
   color: #cfcfcf !important;
 }
+
+html, body {
+  background: #f6f6f4 !important;
+}
+
+.navbar {
+  background: var(--surface-color, var(--surface, #ffffff)) !important;
+  background-image: none !important;
+  position: sticky !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #e6e6e2 !important;
+}
+
+.navbar.scrolled {
+  background: var(--surface-color, var(--surface, #ffffff)) !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06) !important;
+}
+
+.navbar .nav-menu a,
+.navbar .nav-pill,
+.navbar .nav-container a {
+  color: #111111 !important;
+}
+
+.navbar .nav-menu a:hover {
+  color: #0f766e !important;
+}
+
+.navbar .mobile-toggle {
+  color: #111111 !important;
+}
+
+.navbar .nav-pilot-btn {
+  background: #111111 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  border-radius: 100px !important;
+}
+
+.navbar .nav-pilot-btn:hover {
+  background: #0f766e !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__card-icon {
+  background: #0f766e !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+#pavel-problem .pavel-solution .pavel-solution__check {
+  color: #0f766e !important;
+}
+
+#pavel-problem .pavel-solution .pavel-solution__check svg {
+  color: #0f766e !important;
+  stroke: #0f766e !important;
+}
+
+.pavel-contact .pavel-contact__phone a:hover {
+  color: #0f766e !important;
+}
+
+.pavel-contact .pavel-contact__whatsapp {
+  background: #0f766e !important;
+}
+
+.footer-menu-links a:hover, .footer-bottom-links a:hover {
+  color: #0f766e !important;
+}
+
+.pavel-partners .zappy-carousel-dot.active,
+.pavel-partners .zappy-carousel-dots .zappy-carousel-dot.active,
+.pavel-partners .pavel-carousel-dot.is-active {
+  background: #0f766e !important;
+}
+
+#groutbot-hero .pavel-hero {
+  margin: 0 20px !important;
+  border-radius: 28px !important;
+  overflow: hidden !important;
+}
+
+#groutbot-hero .pavel-hero__scrim {
+  background: linear-gradient(270deg, rgba(10,14,17,0.85) 0%, rgba(10,14,17,0.45) 45%, rgba(10,14,17,0.05) 100%) !important;
+}
+
+.groutbot-hero .pavel-hero__title, #groutbot-hero .pavel-hero__title {
+  font-weight: 800 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  font-size: clamp(2.6rem, 6vw, 5rem) !important;
+  line-height: 1.05 !important;
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  -webkit-text-fill-color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+#groutbot-hero .pavel-hero__subtitle {
+  color: rgba(255,255,255,0.88) !important;
+}
+
+.pavel-problem .pavel-problem__card {
+  background: var(--surface-color, var(--surface, #ffffff)) !important;
+  border: 1px solid #f0f0ee !important;
+  border-radius: 24px !important;
+  box-shadow: 0 8px 30px rgba(26,43,56,0.06) !important;
+  transition: transform .3s ease, box-shadow .3s ease !important;
+}
+
+.pavel-problem .pavel-problem__card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 18px 44px rgba(26,43,56,0.12) !important;
+}
+
+.pavel-partners .pavel-pcard {
+  border-radius: 24px !important;
+  box-shadow: 0 8px 30px rgba(26,43,56,0.06) !important;
+}
+
+#pavel-problem .pavel-solution {
+  background: var(--surface-color, var(--surface, #ffffff)) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 8px 30px rgba(26,43,56,0.06) !important;
+  padding: 40px !important;
+}
+
+.pavel-problem .pavel-problem__title,
+.pavel-partners .pavel-partners__title,
+.pavel-contact .pavel-contact__title,
+.pavel-video .pavel-video__title {
+  font-weight: 800 !important;
+  line-height: 1.05 !important;
+  font-size: clamp(30px, 4.2vw, 44px) !important;
+  font-family: 'Heebo', sans-serif !important;
+}
+
+.pavel-how .pavel-how__title {
+  font-weight: 800 !important;
+  line-height: 1.05 !important;
+  font-size: clamp(30px, 4.2vw, 44px) !important;
+  font-family: 'Heebo', sans-serif !important;
+}
+
+.pavel-problem {
+  padding-top: 110px !important;
+  padding-bottom: 110px !important;
+}
+
+.pavel-partners {
+  padding-top: 110px !important;
+  padding-bottom: 110px !important;
+}
+
+.navbar .nav-menu > li > a {
+  color: #111111 !important;
+}
+
+.navbar .nav-menu > .nav-item > a {
+  color: #111111 !important;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #111111 !important;
+}
+
+.navbar a:not(.nav-cta-btn) {
+  color: #111111 !important;
+}
+
+.navbar .navbar-brand a {
+  color: #111111 !important;
+}
+
+.navbar .dropdown-menu li a {
+  color: #111111 !important;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: #111111 !important;
+}
+
+.navbar .sub-menu a {
+  color: #111111 !important;
+}
+
+.navbar .sub-menu li a {
+  color: #111111 !important;
+}
+
+.navbar .nav-menu .sub-menu a {
+  color: #111111 !important;
+}
+
+.navbar .nav-menu .sub-menu li a {
+  color: #111111 !important;
+}
+
+.navbar .zappy-products-dropdown .sub-menu a {
+  color: #111111 !important;
+}
+
+nav.navbar .sub-menu li a {
+  color: #111111 !important;
+}
+
+.navbar .nav-search-box .nav-search-input {
+  color: #111111 !important;
+}
+
+.navbar .nav-search-input::placeholder {
+  color: #111111 !important;
+}
+
+.navbar .nav-search-result-item a {
+  color: #111111 !important;
+}
+
+.navbar .cart-link.nav-cart {
+  color: #111111 !important;
+}
+
+.navbar .login-link.nav-login {
+  color: #111111 !important;
+}
+
+.navbar .cart-link.nav-cart svg {
+  color: #111111 !important;
+}
+
+.navbar .login-link.nav-login svg {
+  color: #111111 !important;
+}
+
+.navbar .nav-search-toggle svg {
+  color: #111111 !important;
+}
+
+.navbar .search-toggle svg {
+  color: #111111 !important;
+}
+
+.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-item {
+  color: #111111 !important;
+}
+
+.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-all {
+  color: #111111 !important;
+}
+
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-item {
+  color: #111111 !important;
+}
+
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-all {
+  color: #111111 !important;
+}
+
+.navbar.scrolled .nav-menu > li > a {
+  color: #111111 !important;
+}
+
+.navbar.scrolled .nav-menu > .nav-item > a {
+  color: #111111 !important;
+}
+
+.navbar.scrolled .nav-link {
+  color: #111111 !important;
+}
+
+.navbar.scrolled a:not(.nav-cta-btn) {
+  color: #111111 !important;
+}
+
+.navbar.scrolled .navbar-brand {
+  color: #111111 !important;
+}
+
+.navbar.scrolled .navbar-brand a {
+  color: #111111 !important;
+}
+
+.navbar.scrolled .dropdown-toggle {
+  color: #111111 !important;
+}
+
+.navbar.scrolled .mobile-hamburger-btn {
+  color: #111111 !important;
+}
+
+.navbar.scrolled .mobile-close-btn {
+  color: #111111 !important;
+}
+
+.navbar.scrolled .phone-header-btn {
+  color: #111111 !important;
+}
+
+.navbar.scrolled .mobile-toggle {
+  color: #111111 !important;
+}
+
+.navbar.scrolled .mobile-toggle svg {
+  color: #111111 !important;
+}
+
+.navbar.scrolled .mobile-hamburger-btn svg {
+  color: #111111 !important;
+}
+
+.navbar.scrolled .mobile-close-btn svg {
+  color: #111111 !important;
+}
+
+.navbar.scrolled .phone-header-btn svg {
+  color: #111111 !important;
+}
+
+.navbar.scrolled .navbar-brand svg {
+  color: #111111 !important;
+}
+
+.navbar.scrolled .logo-link svg {
+  color: #111111 !important;
+}
+
+.navbar.scrolled .nav-search-btn {
+  color: #111111 !important;
+}
+
+.navbar.scrolled .cart-link.nav-cart {
+  color: #111111 !important;
+}
+
+.navbar.scrolled .login-link.nav-login {
+  color: #111111 !important;
+}
+
+.navbar.scrolled .nav-search-toggle {
+  color: #111111 !important;
+}
+
+.navbar.scrolled .search-toggle {
+  color: #111111 !important;
+}
+
+.navbar .nav-menu .nav-pill {
+  color: #111111 !important;
+}
+
+.navbar .nav-link {
+  color: #111111 !important;
+}
+
+.navbar .navbar-brand {
+  color: #111111 !important;
+}
+
+.navbar .dropdown-toggle {
+  color: #111111 !important;
+}
+
+.navbar .mobile-hamburger-btn {
+  color: #111111 !important;
+}
+
+.navbar .mobile-close-btn {
+  color: #111111 !important;
+}
+
+.navbar .mobile-submenu-toggle {
+  color: #111111 !important;
+}
+
+.navbar .phone-header-btn {
+  color: #111111 !important;
+}
+
+.navbar .nav-search-input {
+  color: #111111 !important;
+}
+
+.navbar .nav-search-result-name {
+  color: #111111 !important;
+}
+
+.navbar .nav-search-result-price {
+  color: #111111 !important;
+}
+
+.navbar .nav-search-no-results {
+  color: #111111 !important;
+}
+
+.navbar .search-no-results {
+  color: #111111 !important;
+}
+
+.navbar .nav-search-toggle {
+  color: #111111 !important;
+}
+
+.navbar .search-toggle {
+  color: #111111 !important;
+}
+
+.navbar .nav-cta-btn {
+  color: #111111 !important;
+}
+
+.navbar .nav-menu a {
+  color: #111111 !important;
+}
+
+.navbar .nav-pilot-btn {
+  color: #111111 !important;
+}
+
+.navbar .nav-pill {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__title {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__subhead {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__body {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__btn {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__note {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__itemTitle {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__itemDesc {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__patent {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__patent svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__card-title {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__card-desc {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-solution__heading {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-solution__check {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-solution__item-text {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-solution__note {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-solution__btn--dark {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-solution__btn--outline {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .groutbot-hero__headline {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero h1.groutbot-hero__headline {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .groutbot-hero__subheadline {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero p.groutbot-hero__subheadline {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .groutbot-hero__cta {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__wordmark {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__subtitle {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-glass-card__title {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-glass-card__desc {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__cta {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__cta-arrow {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__cta > span:first-child {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+section.groutbot-hero .pavel-hero .pavel-hero__cta > span:first-child {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+section.groutbot-hero .pavel-hero__cta > span:first-child {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-glass-card {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.groutbot-hero .pavel-hero__cta--outline {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .zappy-label-pill,
+.pavel-how .zappy-label-pill,
+.pavel-video .zappy-label-pill,
+.pavel-partners .zappy-label-pill,
+.pavel-contact .zappy-label-pill {
+  display: inline-block;
+  background: rgba(15,118,110,0.12);
+  color: #0f766e !important;
+  font-family: 'Heebo', sans-serif;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 6px 16px;
+  border-radius: 100px;
+  margin: 0 0 18px 0;
+  border: 1px solid rgba(15,118,110,0.25);
+}
+
+.pavel-problem .pavel-problem__title {
+  color: #0f766e !important;
+}
+
+.pavel-problem .pavel-problem__subhead {
+  color: #0f766e !important;
+}
+
+.pavel-problem .pavel-problem__body {
+  color: #0f766e !important;
+}
+
+.pavel-problem .pavel-problem__btn {
+  color: #0f766e !important;
+}
+
+.pavel-problem .pavel-problem__note {
+  color: #0f766e !important;
+}
+
+.pavel-problem .pavel-problem__itemTitle {
+  color: #0f766e !important;
+}
+
+.pavel-problem .pavel-problem__itemDesc {
+  color: #0f766e !important;
+}
+
+.pavel-problem .pavel-problem__patent {
+  color: #0f766e !important;
+}
+
+.pavel-problem .pavel-problem__patent svg {
+  color: #0f766e !important;
+}
+
+.pavel-problem .pavel-problem__card-icon {
+  color: #0f766e !important;
+}
+
+.pavel-problem .pavel-problem__card-title {
+  color: #0f766e !important;
+}
+
+.pavel-problem .pavel-problem__card-desc {
+  color: #0f766e !important;
+}
+
+.pavel-problem .pavel-solution__heading {
+  color: #0f766e !important;
+}
+
+.pavel-problem .pavel-solution__check {
+  color: #0f766e !important;
+}
+
+.pavel-problem .pavel-solution__item-text {
+  color: #0f766e !important;
+}
+
+.pavel-problem .pavel-solution__note {
+  color: #0f766e !important;
+}
+
+.pavel-problem .pavel-solution__btn--dark {
+  color: #0f766e !important;
+}
+
+.pavel-problem .pavel-solution__btn--outline {
+  color: #0f766e !important;
+}
+
+.pavel-how .pavel-how__cap-title {
+  color: #0f766e !important;
+}
+
+.pavel-how .pavel-how__cap-desc {
+  color: #0f766e !important;
+}
+
+.pavel-how .pavel-how__title {
+  color: #0f766e !important;
+}
+
+.pavel-how .pavel-how__body {
+  color: #0f766e !important;
+}
+
+.pavel-how .pavel-how__btn {
+  color: #0f766e !important;
+}
+
+.pavel-partners .pavel-partners__title {
+  color: #0f766e !important;
+}
+
+.pavel-partners .pavel-partners__intro {
+  color: #0f766e !important;
+}
+
+.pavel-partners .pavel-pcard__tag {
+  color: #0f766e !important;
+}
+
+.pavel-partners .pavel-pcard__title {
+  color: #0f766e !important;
+}
+
+.pavel-partners .pavel-pcard__line {
+  color: #0f766e !important;
+}
+
+.pavel-partners .pavel-pcard__btn {
+  color: #0f766e !important;
+}
+
+.pavel-partners .pavel-pcard__btn--dark {
+  color: #0f766e !important;
+}
+
+.pavel-contact .pavel-contact__title {
+  color: #0f766e !important;
+}
+
+.pavel-contact .pavel-contact__line {
+  color: #0f766e !important;
+}
+
+.pavel-contact .pavel-contact__name {
+  color: #0f766e !important;
+}
+
+.pavel-contact .pavel-contact__field label {
+  color: #0f766e !important;
+}
+
+.pavel-contact .pavel-contact__field input {
+  color: #0f766e !important;
+}
+
+.pavel-contact .pavel-contact__field select {
+  color: #0f766e !important;
+}
+
+.pavel-contact .pavel-contact__field textarea {
+  color: #0f766e !important;
+}
+
+.pavel-contact .pavel-contact__submit {
+  color: #0f766e !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
@@ -13030,15 +13751,6 @@ body:has(.zappy-announcement-bar) nav.navbar:not(.zappy-catalog-menu),
 body:has(.zappy-announcement-bar) header.navbar,
 body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-search-panel) {
   top: var(--zappy-announcement-height, 40px) !important;
-}
-/* First-paint: pull fullscreen heroes behind the fixed announcement+nav so a
-   transparent --nav-bg does not flash the cream body strip (live FOUC that
-   preview never showed because preview injects the same underlap eagerly). */
-body:has(.zappy-announcement-bar) section[data-hero-type^="fullscreen"],
-body:has(.zappy-announcement-bar) .index-hero-section,
-body:has(.zappy-announcement-bar) main > section[class*="hero"]:first-of-type {
-  margin-top: calc(-1 * var(--zappy-header-stack-height)) !important;
-  padding-top: calc(var(--zappy-header-stack-height)) !important;
 }
 
 
@@ -14274,6 +14986,19 @@ html[dir="ltr"] .solution-item.solution-reverse .solution-image { order: -1 !imp
 html[dir="ltr"] .solution-item.solution-reverse .solution-content { order: 1 !important; }
 html[dir="ltr"] .service-detail.service-reverse .service-detail-image { order: -1 !important; }
 html[dir="ltr"] .service-detail.service-reverse .service-detail-content { order: 1 !important; }
+
+/* ENSURE: navbar-text-contrast */
+:root {
+  --nav-bg: #ffffff !important;
+  --nav-text: var(--text-dark, #1a1a1a) !important;
+}
+
+/* ENSURE: navbar-logo-isolation */
+.navbar .logo,
+.nav-brand .logo,
+.logo-link .logo {
+  filter: none !important;
+}
 
 /* ENSURE: nav-cta-btn-text-visible */
 .nav-cta-btn { position: relative !important; isolation: isolate !important; }
