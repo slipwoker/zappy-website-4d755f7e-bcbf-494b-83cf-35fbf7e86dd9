@@ -947,6 +947,99 @@ window.onload = function() {
 })();
 /* ZAPPY_CUSTOM_JS_END:cef13027c2b1 */
 
+/* ZAPPY_CUSTOM_JS_START:65a42f34846a */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function () {
+  function splitGlassCards() {
+    var cards = document.querySelectorAll('#groutbot-hero .pavel-glass-card');
+    if (!cards.length) return;
+    cards.forEach(function (card) {
+      if (card.querySelector('.pavel-glass-card__title')) return; // already split
+      var raw = (card.textContent || '').trim();
+      if (!raw) return;
+      // Known pairs
+      var pairs = [
+        { title: 'בלי מריחה, בלי ניקוי', text: 'החומר מגיע רק למקום שבו הוא צריך להיות.' },
+        { title: 'עם כל רובה אפוקסית', text: 'עובדת עם החומרים הדו רכיביים שכבר נמכרים בשוק.' }
+      ];
+      var match = null;
+      pairs.forEach(function (p) {
+        if (raw.indexOf(p.title) === 0) {
+          match = p;
+        }
+      });
+      if (!match) return;
+      card.innerHTML = '';
+      var t = document.createElement('strong');
+      t.className = 'pavel-glass-card__title';
+      t.textContent = match.title;
+      var s = document.createElement('span');
+      s.className = 'pavel-glass-card__text';
+      s.textContent = match.text;
+      card.appendChild(t);
+      card.appendChild(s);
+    });
+  }
+
+  function splitStrip() {
+    var list = document.querySelector('.pavel-strip .pavel-strip__list');
+    if (!list) return;
+    // If items already structured correctly, skip
+    var existingItems = list.querySelectorAll('.pavel-strip__item');
+    var raw = (list.textContent || '').trim();
+    var items = ['בלי דלי', 'בלי מריחה על האריח', 'בלי שטיפת כלים', 'בלי מרוץ נגד השעון'];
+    var expected = items.join('');
+    // Heuristic: if we have exactly the 4 items already (with separators removed), check text
+    if (existingItems.length === 4 && list.textContent.indexOf('·') === -1) {
+      // already fine
+      return;
+    }
+    var joined = existingItems.length === 4 ? Array.prototype.map.call(existingItems, function (e) { return e.textContent.trim(); }).join('') : '';
+    if (joined === expected) return; // already correct
+    // Rebuild
+    list.innerHTML = '';
+    items.forEach(function (itemText) {
+      var span = document.createElement('span');
+      span.className = 'pavel-strip__item';
+      span.textContent = itemText;
+      list.appendChild(span);
+    });
+  }
+
+  function run() {
+    splitGlassCards();
+    splitStrip();
+  }
+
+  // Run after translations load if possible, otherwise immediately
+  if (window.zappyI18n && typeof window.zappyI18n.onLanguageChange === 'function') {
+    window.zappyI18n.onLanguageChange(run);
+  }
+  // Also run after a delay to catch post-load flattening
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+      setTimeout(run, 0);
+      setTimeout(run, 600);
+    });
+  } else {
+    setTimeout(run, 0);
+    setTimeout(run, 600);
+  }
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:65a42f34846a */
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){

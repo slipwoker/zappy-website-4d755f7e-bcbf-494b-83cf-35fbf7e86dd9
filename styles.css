@@ -16447,6 +16447,29 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 .pavel-contact .pavel-contact__submit {
   color: var(--surface-color, var(--surface, #ffffff)) !important;
 }
+
+#groutbot-hero .pavel-hero__cards .pavel-glass-card__title {
+  display: block !important;
+  margin-bottom: 4px !important;
+  font-weight: 700 !important;
+}
+
+#groutbot-hero .pavel-hero__cards .pavel-glass-card__text {
+  display: block !important;
+}
+
+.pavel-strip .pavel-strip__list {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0 !important;
+}
+
+.pavel-strip .pavel-strip__item {
+  display: flex !important;
+  align-items: center !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
