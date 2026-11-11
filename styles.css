@@ -16916,6 +16916,26 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 .pavel-founder .pavel-founder__title {
   color: #0f766e !important;
 }
+
+#pavel-contact .pavel-contact__submit,
+#pavel-contact .pavel-contact__submit span,
+#pavel-contact .pavel-contact__submit i,
+#pavel-contact .pavel-contact__submit svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  -webkit-text-fill-color: var(--surface-color, var(--surface, #ffffff)) !important;
+  fill: var(--surface-color, var(--surface, #ffffff)) !important;
+  stroke: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+#pavel-contact .pavel-contact__whatsapp,
+#pavel-contact .pavel-contact__whatsapp span,
+#pavel-contact .pavel-contact__whatsapp i,
+#pavel-contact .pavel-contact__whatsapp svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  -webkit-text-fill-color: var(--surface-color, var(--surface, #ffffff)) !important;
+  fill: var(--surface-color, var(--surface, #ffffff)) !important;
+  stroke: var(--surface-color, var(--surface, #ffffff)) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
