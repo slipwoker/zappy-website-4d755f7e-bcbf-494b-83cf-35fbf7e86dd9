@@ -10418,6 +10418,149 @@ nav.navbar .sub-menu li a {
 
 .groutbot-hero .pavel-hero__cta-arrow {
   color: rgba(255, 255, 255, 0.5) !important;
+}.pavel-problem{background: var(--surface-color, var(--surface, #ffffff)) !important;padding: 140px 44px 120px !important;}html[dir="rtl"] .pavel-problem{direction: rtl !important;}
+
+.pavel-problem .pavel-problem__container {
+  max-width: 1224px !important;
+  margin: 0 auto !important;
+}
+
+.pavel-problem .pavel-problem__title {
+  font-family: 'Frank Ruhl Libre', serif !important;
+  font-weight: 400 !important;
+  font-size: clamp(40px, 5vw, 66px) !important;
+  line-height: 1.08 !important;
+  color: #1a1a1a !important;
+  text-align: center !important;
+  margin: 0 auto 90px !important;
+  letter-spacing: 0 !important;
+}
+
+.pavel-problem .pavel-problem__grid {
+  display: grid !important;
+  grid-template-columns: 1fr 0.9fr 1fr !important;
+  gap: 56px !important;
+  align-items: start !important;
+}
+
+.pavel-problem .pavel-problem__col {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.pavel-problem .pavel-problem__subhead {
+  font-family: 'Heebo', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  color: #1a1a1a !important;
+  margin: 0 0 20px !important;
+  line-height: 1.35 !important;
+}
+
+.pavel-problem .pavel-problem__body {
+  font-family: 'Heebo', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 15px !important;
+  line-height: 1.9 !important;
+  color: #555555 !important;
+  margin: 0 0 32px !important;
+}
+
+.pavel-problem .pavel-problem__btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #111111 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  font-family: 'Heebo', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  padding: 16px 30px !important;
+  border-radius: 100px !important;
+  text-decoration: none !important;
+  width: fit-content !important;
+  transition: background 0.25s ease !important;
+}
+
+.pavel-problem .pavel-problem__note {
+  font-family: 'Heebo', sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 300 !important;
+  color: #888888 !important;
+  margin-top: 20px !important;
+  letter-spacing: 0.02em !important;
+}
+
+.pavel-problem .pavel-problem__col--middle {
+  align-self: stretch !important;
+}
+
+.pavel-problem .pavel-problem__img {
+  width: 100% !important;
+  height: 520px !important;
+  object-fit: cover !important;
+  border-radius: 20px !important;
+  display: block !important;
+}
+
+.pavel-problem .pavel-problem__item {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+.pavel-problem .pavel-problem__itemTitle {
+  font-family: 'Heebo', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 19px !important;
+  color: #1a1a1a !important;
+  margin: 0 !important;
+  line-height: 1.35 !important;
+}
+
+.pavel-problem .pavel-problem__itemDesc {
+  font-family: 'Heebo', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 15px !important;
+  line-height: 1.85 !important;
+  color: #555555 !important;
+  margin: 0 !important;
+}
+
+.pavel-problem .pavel-problem__divider {
+  height: 1px !important;
+  background: #e6e0d8 !important;
+  margin: 28px 0 !important;
+  width: 100% !important;
+}
+
+.pavel-problem .pavel-problem__patent {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin-top: 36px !important;
+  font-family: 'Heebo', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  color: var(--text-secondary-color, var(--text-secondary, var(--text-muted, #6b7075))) !important;
+}
+
+.pavel-problem .pavel-problem__patent svg {
+  width: 20px !important;
+  height: 20px !important;
+  color: #111111 !important;
+  flex-shrink: 0 !important;
+}
+
+@media (max-width: 900px) {
+.pavel-problem .pavel-problem__grid {
+  grid-template-columns: 1fr !important;
+  gap: 44px !important;
+}
+
+.pavel-problem .pavel-problem__img {
+  height: 360px !important;
+}
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
