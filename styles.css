@@ -14874,7 +14874,7 @@ nav.navbar .sub-menu li a {
   font-weight: 800;
   font-size: 44px;
   line-height: 1.15;
-  color: var(--text-dark, var(--text-color, var(--text, var(--text-dark, #2b2f33))));
+  color: #ffffff !important;
   margin: 0 0 40px;
 }
 
@@ -14902,14 +14902,14 @@ nav.navbar .sub-menu li a {
 #founder .pavel-founder__name {
   font-size: 18px;
   font-weight: 700;
-  color: #0f766e;
+  color: #ffffff !important;
   margin: 0 0 16px;
 }
 
 #founder .pavel-founder__bio {
   font-size: 18px;
   line-height: 1.8;
-  color: var(--text-secondary-color, var(--text-secondary-color, var(--text-secondary, var(--text-muted, #6b7075))));
+  color: #c9ced3 !important;
   margin: 0 0 24px;
 }
 
@@ -14966,7 +14966,7 @@ nav.navbar .sub-menu li a {
   font-size: 44px !important;
   line-height: 1.15 !important;
   margin: 16px 0 40px !important;
-  color: #1a1a1a !important;
+  color: #ffffff !important;
 }
 
 #founder .pavel-founder__grid {
@@ -15002,14 +15002,14 @@ nav.navbar .sub-menu li a {
 #founder .pavel-founder__name {
   font-weight: 700 !important;
   font-size: 20px !important;
-  color: #1a1a1a !important;
+  color: #ffffff !important;
   margin: 0 0 16px !important;
 }
 
 #founder .pavel-founder__bio {
   font-size: 17px !important;
   line-height: 1.7 !important;
-  color: #3a3a3a !important;
+  color: #c9ced3 !important;
   margin: 0 0 16px !important;
 }
 
