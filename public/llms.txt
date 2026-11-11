@@ -33,6 +33,17 @@ Information about WCAG compliance and accessibility features.
 - Phone (tel): tel:0556842533
 - Address: שפלה, ישראל
 
+### Contact form
+- URL: https://groutbot.co.il
+- Endpoint: https://groutbot.co.il/api/email/contact-form
+- Method: POST
+- Content-Type: application/json
+- Fields:
+  - `name` (text, required)
+  - `phone` (tel, required)
+  - `email` (email, required)
+  - `message` (textarea, required)
+
 ---
 
 # Business Context (for LLM understanding)
