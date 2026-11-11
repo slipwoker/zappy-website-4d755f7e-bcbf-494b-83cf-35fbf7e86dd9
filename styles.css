@@ -16705,6 +16705,196 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
   left: 0 !important;
   right: 0 !important;
 }
+
+.pavel-founder {
+  background: transparent !important;
+}
+
+.pavel-founder .pavel-founder__container {
+  max-width: 1120px !important;
+  margin: 0 auto !important;
+  padding: 0 24px !important;
+}
+
+.pavel-founder .pavel-founder__card {
+  background: #0b0b0c !important;
+  border-radius: 28px !important;
+  padding: 56px !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.pavel-founder .pavel-founder__card::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  width: 4px !important;
+  background: #0f766e !important;
+}
+
+.pavel-founder .pavel-founder__cols {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 48px !important;
+  align-items: flex-start !important;
+}
+
+.pavel-founder .pavel-founder__col--main {
+  flex: 1 1 62% !important;
+}
+
+.pavel-founder .pavel-founder__col--side {
+  flex: 0 0 38% !important;
+}
+
+.pavel-founder .pavel-founder__label {
+  display: inline-block !important;
+  color: #0f766e !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  margin-bottom: 14px !important;
+}
+
+.pavel-founder .pavel-founder__title {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  font-weight: 700 !important;
+  font-size: 34px !important;
+  line-height: 1.25 !important;
+  margin: 0 0 22px 0 !important;
+}
+
+.pavel-founder .pavel-founder__bio {
+  color: #c9ced3 !important;
+  font-size: 17px !important;
+  line-height: 1.7 !important;
+  margin: 0 0 18px 0 !important;
+}
+
+.pavel-founder .pavel-founder__logoplate {
+  display: inline-flex !important;
+  align-items: center !important;
+  background: var(--surface-color, var(--surface, #ffffff)) !important;
+  border-radius: 12px !important;
+  padding: 10px !important;
+  margin-bottom: 18px !important;
+}
+
+.pavel-founder .pavel-founder__logoimg {
+  height: 34px !important;
+  width: auto !important;
+  display: block !important;
+}
+
+.pavel-founder .pavel-founder__name {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  margin: 0 0 4px 0 !important;
+  line-height: 1.4 !important;
+}
+
+.pavel-founder .pavel-founder__role {
+  color: #0f766e !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  margin: 0 0 16px 0 !important;
+}
+
+.pavel-founder .pavel-founder__divider {
+  height: 1px !important;
+  background: rgba(255,255,255,0.15) !important;
+  margin: 16px 0 !important;
+}
+
+.pavel-founder .pavel-founder__loc {
+  color: #9aa0a6 !important;
+  font-size: 14px !important;
+  margin: 0 !important;
+}
+
+.pavel-founder .pavel-founder__chips {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  margin-top: 40px !important;
+}
+
+.pavel-founder .pavel-founder__chip {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  background: rgba(255,255,255,0.08) !important;
+  border: 1px solid rgba(255,255,255,0.12) !important;
+  border-radius: 999px !important;
+  padding: 10px 18px !important;
+  color: #e5e7eb !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.pavel-founder .pavel-founder__chip-dot {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50% !important;
+  background: #0f766e !important;
+  flex-shrink: 0 !important;
+}
+
+.pavel-founder .pavel-founder__cta {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: var(--surface-color, var(--surface, #ffffff)) !important;
+  color: #111111 !important;
+  border-radius: 999px !important;
+  padding: 14px 32px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  margin-top: 32px !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.pavel-founder .pavel-founder__cta:hover {
+  background: #f0f0ee !important;
+  color: #111111 !important;
+  transform: translateY(-2px) !important;
+}
+
+@media (max-width: 768px) {
+.pavel-founder .pavel-founder__card {
+  padding: 28px !important;
+}
+
+.pavel-founder .pavel-founder__cols {
+  flex-direction: column !important;
+  gap: 28px !important;
+}
+
+.pavel-founder .pavel-founder__col--side {
+  flex: 1 1 auto !important;
+}
+
+.pavel-founder .pavel-founder__title {
+  font-size: 26px !important;
+}
+}
+
+.pavel-founder .zappy-label-pill {
+  color: #0f766e !important;
+}
+
+.pavel-founder .pavel-founder__cta {
+  color: #0f766e !important;
+}
+
+.pavel-founder .pavel-founder__title {
+  color: #0f766e !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
