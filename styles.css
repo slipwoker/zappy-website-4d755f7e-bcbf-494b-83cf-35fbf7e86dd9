@@ -18173,6 +18173,41 @@ body nav.navbar div.nav-cta-container a.nav-pilot-btn:focus {
   background: #111111 !important;
   background-color: #111111 !important;
 }
+
+nav.navbar,
+nav.navbar.scrolled,
+nav.navbar.navbar--scrolled,
+.navbar,
+.navbar.scrolled,
+.navbar.navbar--scrolled {
+  background-color: var(--surface-color, var(--surface, #ffffff)) !important;
+  background-image: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+/* zappy-self-heal */
+nav.navbar { -webkit-backdrop-filter: none !important; }
+
+/* zappy-self-heal */
+html body nav.navbar { -webkit-backdrop-filter: none !important; }
+
+
+@media (max-width: 768px) {
+nav.navbar .mobile-toggle {
+  background-color: var(--surface-color, var(--surface, var(--surface-color, var(--surface, #ffffff)))) !important;
+  background-image: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+nav.navbar .nav-menu,
+  nav.navbar #navMenu {
+  background-color: var(--surface-color, var(--surface, var(--surface-color, var(--surface, #ffffff)))) !important;
+  background-image: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
