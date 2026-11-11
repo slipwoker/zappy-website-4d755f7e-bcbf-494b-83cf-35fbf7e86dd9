@@ -947,7 +947,7 @@ window.onload = function() {
 })();
 /* ZAPPY_CUSTOM_JS_END:cef13027c2b1 */
 
-/* ZAPPY_CUSTOM_JS_START:c83224f2f7c6 */
+/* ZAPPY_CUSTOM_JS_START:8e9236806793 */
 (function () {
   function __zappyCustomInit() {
     try {
@@ -955,38 +955,32 @@ window.onload = function() {
   function rebuildLockup() {
     var lockup = document.querySelector('#groutbot-hero .pavel-lockup');
     if (!lockup) return;
-    // Already rebuilt?
-    if (lockup.querySelector('.pavel-wordmark') && lockup.querySelector('.pavel-lockup-sub')) {
-      // ensure divider exists
-      if (!lockup.querySelector('.pavel-lockup-divider')) {
-        var d = document.createElement('span');
-        d.className = 'pavel-lockup-divider';
-        lockup.insertBefore(d, lockup.querySelector('.pavel-lockup-sub'));
-      }
-      return;
+    if (!lockup.querySelector('.pavel-wordmark') || !lockup.querySelector('.pavel-lockup-sub')) {
+      lockup.removeAttribute('data-i18n');
+      lockup.innerHTML = '';
+      var wm = document.createElement('span');
+      wm.className = 'pavel-wordmark';
+      wm.textContent = 'PAVEL';
+      var div = document.createElement('span');
+      div.className = 'pavel-lockup-divider';
+      var sub = document.createElement('span');
+      sub.className = 'pavel-lockup-sub';
+      sub.setAttribute('data-i18n', 'pavel_lockup_sub');
+      sub.textContent = 'מבית GROUTBOT';
+      lockup.appendChild(wm);
+      lockup.appendChild(div);
+      lockup.appendChild(sub);
     }
-    var raw = (lockup.textContent || '').trim();
-    // Rebuild wrapper WITHOUT data-i18n
-    lockup.removeAttribute('data-i18n');
-    lockup.innerHTML = '';
-    var wm = document.createElement('span');
-    wm.className = 'pavel-wordmark';
-    wm.textContent = 'PAVEL';
-    var div = document.createElement('span');
-    div.className = 'pavel-lockup-divider';
-    var sub = document.createElement('span');
-    sub.className = 'pavel-lockup-sub';
-    sub.setAttribute('data-i18n', 'pavel_lockup_sub');
-    sub.textContent = 'מבית GROUTBOT';
-    lockup.appendChild(wm);
-    lockup.appendChild(div);
-    lockup.appendChild(sub);
+    if (!lockup.querySelector('.pavel-lockup-divider')) {
+      var d = document.createElement('span');
+      d.className = 'pavel-lockup-divider';
+      lockup.insertBefore(d, lockup.querySelector('.pavel-lockup-sub'));
+    }
     lockup.style.opacity = '1';
   }
 
   function rebuildGlassCards() {
     var cards = document.querySelectorAll('#groutbot-hero .pavel-glass-card');
-    if (!cards.length) return;
     cards.forEach(function (card) {
       if (card.querySelector('.pavel-glass-card__title')) return;
       var raw = (card.textContent || '').trim();
@@ -1014,21 +1008,30 @@ window.onload = function() {
     var list = document.querySelector('.pavel-strip .pavel-strip__list');
     if (!list) return;
     var items = ['בלי דלי', 'בלי מריחה על האריח', 'בלי שטיפת כלים', 'בלי מרוץ נגד השעון'];
-    var existing = list.querySelectorAll('.pavel-strip__item');
-    // If already 4 clean items, skip
-    if (existing.length === 4) {
-      var ok = true;
-      existing.forEach(function (e, i) { if ((e.textContent || '').trim() !== items[i]) ok = false; });
-      if (ok) { list.removeAttribute('data-i18n'); return; }
+    var existing = list.querySelectorAll(':scope > .pavel-strip__item');
+    if (existing.length !== 4) {
+      list.removeAttribute('data-i18n');
+      list.innerHTML = '';
+      items.forEach(function (txt) {
+        var span = document.createElement('span');
+        span.className = 'pavel-strip__item';
+        span.textContent = txt;
+        list.appendChild(span);
+      });
+      existing = list.querySelectorAll(':scope > .pavel-strip__item');
     }
+    // Re-apply text just in case, and strip data-i18n from wrapper
     list.removeAttribute('data-i18n');
-    list.innerHTML = '';
-    items.forEach(function (txt) {
-      var span = document.createElement('span');
-      span.className = 'pavel-strip__item';
-      span.textContent = txt;
-      list.appendChild(span);
-    });
+    // Remove old injected dots
+    list.querySelectorAll(':scope > .pavel-strip-sep').forEach(function (s) { s.remove(); });
+    // Insert a dot before every item except the first
+    for (var i = 1; i < existing.length; i++) {
+      var dot = document.createElement('span');
+      dot.className = 'pavel-strip-sep';
+      dot.setAttribute('aria-hidden', 'true');
+      dot.style.cssText = 'width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.6);flex-shrink:0;align-self:center;display:inline-block;';
+      list.insertBefore(dot, existing[i]);
+    }
   }
 
   function run() {
@@ -1040,17 +1043,16 @@ window.onload = function() {
   if (window.zappyI18n && typeof window.zappyI18n.onLanguageChange === 'function') {
     window.zappyI18n.onLanguageChange(run);
   }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function () {
-      setTimeout(run, 0);
-      setTimeout(run, 600);
-      setTimeout(run, 1500);
-    });
-  } else {
-    setTimeout(run, 0);
-    setTimeout(run, 600);
-    setTimeout(run, 1500);
+  function schedule() {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(run, 0); setTimeout(run, 600); setTimeout(run, 1500);
+      });
+    } else {
+      setTimeout(run, 0); setTimeout(run, 600); setTimeout(run, 1500);
+    }
   }
+  schedule();
 })();
     } catch (e) {
       if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
@@ -1062,7 +1064,7 @@ window.onload = function() {
     __zappyCustomInit();
   }
 })();
-/* ZAPPY_CUSTOM_JS_END:c83224f2f7c6 */
+/* ZAPPY_CUSTOM_JS_END:8e9236806793 */
 
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
