@@ -12683,6 +12683,10 @@ html body .groutbot-hero .pavel-glass-card { -webkit-backdrop-filter: blur(14px)
 .pavel-partners .pavel-pcard {
   min-height: 300px;
 }
+
+.pavel-partners .pavel-partners__carousel {
+  position: relative !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,

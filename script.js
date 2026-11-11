@@ -791,6 +791,23 @@ window.onload = function() {
 })();
 /* ZAPPY_CUSTOM_JS_END:57208a583140 */
 
+/* ZAPPY_CUSTOM_JS_START:0ce49f9215dd */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function(){var w=document.querySelector('.pavel-partners__carousel');if(!w||w.__g2)return;w.__g2=1;var s=w.closest('section'),c=[].slice.call(w.querySelectorAll('.pavel-pcard')),a=1,d=[].slice.call(s.querySelectorAll('[aria-label^="עבור לכרטיס"]'));function r(){var n=c.length,L=(a+n-1)%n;c.forEach(function(x,i){x.classList.remove('pavel-pcard--center','pavel-pcard--side','pavel-pcard--side-left','pavel-pcard--side-right');x.style.order=i==a?1:i==L?0:2;x.classList.add(i==a?'pavel-pcard--center':'pavel-pcard--side',i==a?'x':i==L?'pavel-pcard--side-left':'pavel-pcard--side-right')});d.forEach(function(x,i){x.classList.toggle('is-active',i==a)})}function g(i){a=(i+c.length)%c.length;r()}function on(el,f){el&&el.addEventListener('click',function(e){e.stopImmediatePropagation();f(e)},true)}c.forEach(function(x,i){x.addEventListener('click',function(e){if(i!=a&&!e.target.closest('a')){e.preventDefault();g(i)}},true)});d.forEach(function(x,i){on(x,function(){g(i)})});on(s.querySelector('[aria-label="הקודם"]'),function(){g(a-1)});on(s.querySelector('[aria-label="הבא"]'),function(){g(a+1)});var t;function st(){clearInterval(t);t=setInterval(function(){g(a+1)},6000)}w.onmouseenter=function(){clearInterval(t)};w.onmouseleave=st;r();st()})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:0ce49f9215dd */
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
