@@ -10670,7 +10670,7 @@ nav.navbar .sub-menu li a {
   font-weight: 300 !important;
   font-size: 14px !important;
   line-height: 1.5 !important;
-  color: rgba(255, 255, 255, 0.55) !important;
+  color: #d0d0d0 !important;
   margin: 0 !important;
 }
 
@@ -10755,6 +10755,7 @@ nav.navbar .sub-menu li a {
 .pavel-how .pavel-how__cap-desc {
   font-size: 15px !important;
   line-height: 1.45 !important;
+  color: #d0d0d0 !important;
 }
 
 .groutbot-hero .pavel-hero__wordmark {
