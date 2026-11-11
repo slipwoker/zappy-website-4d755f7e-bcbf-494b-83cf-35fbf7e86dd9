@@ -17830,6 +17830,7 @@ nav.navbar div.nav-cta-container a.nav-pilot-btn span {
 
 nav.navbar div.nav-cta-container a.nav-pilot-btn {
   color: #ffffff !important;
+  background: #111111 !important;
 }
 
 nav.navbar div.nav-cta-container a.nav-pilot-btn span {
@@ -18111,7 +18112,8 @@ nav.navbar div.nav-cta-container a.nav-pilot-btn span {
 }
 
 nav.navbar div.nav-cta-container a.nav-pilot-btn {
-  color: #111111 !important;
+  color: #ffffff !important;
+  background: #111111 !important;
 }
 
 nav.navbar div.nav-cta-container a.nav-pilot-btn span {
@@ -18156,6 +18158,21 @@ nav.navbar { -webkit-backdrop-filter: none !important; }
 /* zappy-self-heal */
 html body nav.navbar { -webkit-backdrop-filter: none !important; }
 
+
+body nav.navbar div.nav-cta-container a.nav-pilot-btn {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  -webkit-text-fill-color: var(--surface-color, var(--surface, #ffffff)) !important;
+  background: #111111 !important;
+  background-color: #111111 !important;
+}
+
+body nav.navbar div.nav-cta-container a.nav-pilot-btn:hover,
+body nav.navbar div.nav-cta-container a.nav-pilot-btn:focus {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  -webkit-text-fill-color: var(--surface-color, var(--surface, #ffffff)) !important;
+  background: #111111 !important;
+  background-color: #111111 !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
