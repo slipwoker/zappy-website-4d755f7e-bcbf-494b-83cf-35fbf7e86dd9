@@ -11005,6 +11005,129 @@ nav.navbar .sub-menu li a {
 .pavel-partners .pavel-pcard--side .pavel-pcard__img-side-r,
 .pavel-partners .pavel-pcard--side .pavel-pcard__img-side-l {
   height: 220px !important;
+}.pavel-contact{background: var(--surface-color, var(--surface, #ffffff)) !important;padding: 60px 44px 140px !important;}html[dir="rtl"] .pavel-contact{direction: rtl !important;}
+
+.pavel-contact .pavel-contact__card {
+  max-width: 1180px !important;
+  margin: 0 auto !important;
+  background: var(--surface-color, var(--surface, #ffffff)) !important;
+  border: 1px solid #d9d9d9 !important;
+  border-radius: 24px !important;
+  padding: 64px 64px 64px !important;
+  display: flex !important;
+  gap: 60px !important;
+  align-items: flex-start !important;
+}
+
+.pavel-contact .pavel-contact__col--info {
+  flex: 0 0 34% !important;
+}
+
+.pavel-contact .pavel-contact__col--form {
+  flex: 1 1 auto !important;
+}
+
+.pavel-contact .pavel-contact__title {
+  font-family: 'Frank Ruhl Libre', serif !important;
+  font-weight: 400 !important;
+  font-size: clamp(44px, 5vw, 64px) !important;
+  line-height: 1.05 !important;
+  color: #111111 !important;
+  margin: 0 0 20px !important;
+  letter-spacing: -0.01em !important;
+}
+
+.pavel-contact .pavel-contact__line {
+  font-family: 'Heebo', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 17px !important;
+  line-height: 1.6 !important;
+  color: var(--text-secondary-color, var(--text-secondary, var(--text-muted, #6b7075))) !important;
+  margin: 0 0 28px !important;
+}
+
+.pavel-contact .pavel-contact__name {
+  font-family: 'Heebo', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  color: #111111 !important;
+  margin: 0 !important;
+}
+
+.pavel-contact .pavel-contact__form {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 20px 24px !important;
+}
+
+.pavel-contact .pavel-contact__field {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 7px !important;
+}
+
+.pavel-contact .pavel-contact__field--full {
+  grid-column: 1 / -1 !important;
+}
+
+.pavel-contact .pavel-contact__field label {
+  font-family: 'Heebo', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 13.5px !important;
+  color: #111111 !important;
+}
+
+.pavel-contact .pavel-contact__field input, .pavel-contact .pavel-contact__field select, .pavel-contact .pavel-contact__field textarea {
+  font-family: 'Heebo', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 15px !important;
+  color: #111111 !important;
+  background: var(--surface-color, var(--surface, #ffffff)) !important;
+  border: 1px solid #d9d9d9 !important;
+  border-radius: 10px !important;
+  padding: 13px 16px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  outline: none !important;
+  transition: border-color .2s ease !important;
+}
+
+.pavel-contact .pavel-contact__field textarea {
+  resize: vertical !important;
+  min-height: 110px !important;
+}
+
+.pavel-contact .pavel-contact__submit {
+  grid-column: 1 / -1 !important;
+  justify-self: start !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #111111 !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  border: none !important;
+  font-family: 'Heebo', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  padding: 14px 34px !important;
+  border-radius: 100px !important;
+  cursor: pointer !important;
+  transition: opacity .2s ease !important;
+}
+
+@media (max-width: 900px) {
+.pavel-contact .pavel-contact__card {
+  flex-direction: column !important;
+  padding: 40px 28px !important;
+}
+
+.pavel-contact .pavel-contact__col--info {
+  flex: 1 1 auto !important;
+}
+
+.pavel-contact .pavel-contact__form {
+  grid-template-columns: 1fr !important;
+}
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
