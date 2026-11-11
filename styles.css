@@ -8835,6 +8835,7 @@ body {
 
 .navbar a:not(.nav-cta-btn) {
   color: var(--surface-color, var(--surface, #ffffff)) !important;
+  font-family: "Frank Ruhl Libre", "Heebo", serif !important;
 }
 
 .navbar .navbar-brand a {
@@ -10090,6 +10091,7 @@ body {
 
 .navbar a:not(.nav-cta-btn) {
   color: #111 !important;
+  font-family: "Frank Ruhl Libre", "Heebo", serif !important;
 }
 
 .navbar .navbar-brand {
