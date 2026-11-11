@@ -884,6 +884,69 @@ window.onload = function() {
 })();
 /* ZAPPY_CUSTOM_JS_END:51c4565a7ca5 */
 
+/* ZAPPY_CUSTOM_JS_START:cef13027c2b1 */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function () {
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function build() {
+    var hero = document.querySelector('.groutbot-hero');
+    if (!hero || hero.querySelector('.grp-light-layer')) return;
+    var bg = hero.querySelector('.pavel-hero__bg');
+    if (!bg) return;
+
+    var layer = document.createElement('div');
+    layer.className = 'grp-light-layer';
+    layer.setAttribute('aria-hidden', 'true');
+    var cs = {
+      position: 'absolute',
+      left: '-25%',
+      right: '-25%',
+      top: '32%',
+      height: '120%',
+      pointerEvents: 'none',
+      zIndex: '1',
+      mixBlendMode: 'screen',
+      transform: 'perspective(850px) rotateX(55deg)',
+      transformOrigin: 'top center',
+      backgroundImage: 'radial-gradient(140px 140px at 50% 50%, rgba(20,183,166,0.9), rgba(20,183,166,0.25) 45%, rgba(20,183,166,0) 70%)',
+      backgroundRepeat: 'no-repeat',
+      willChange: 'background-position'
+    };
+    for (var k in cs) layer.style[k] = cs[k];
+    bg.appendChild(layer);
+
+    if (reduced) return;
+    var t0 = null;
+    var DUR = 8000;
+    function tick(ts) {
+      if (t0 === null) t0 = ts;
+      var p = ((ts - t0) % DUR) / DUR; // 0..1
+      var x = (p * 100) * 2 - 50; // -50% .. +150%
+      layer.style.backgroundPosition = x + '% 50%';
+      requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', build);
+  } else {
+    build();
+  }
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:cef13027c2b1 */
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
