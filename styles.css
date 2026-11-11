@@ -5705,6 +5705,229 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   .problem-title {
     font-size: 1.5rem;
   }
+}/* AI-generated section */
+.groutbot-comparison{background: #F5EFE6;padding: 80px 20px;font-family: system-ui, sans-serif;}html[dir="rtl"] /* AI-generated section */
+.groutbot-comparison{direction: rtl;}
+
+.comparison-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.comparison-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #23395B;
+  text-align: center;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.comparison-subtitle {
+  font-size: 1.1rem;
+  color: #5a6a7e;
+  text-align: center;
+  margin-bottom: 48px;
+  font-weight: 400;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+/* Card Base */
+.compare-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 36px 32px 32px;
+  box-shadow: 0 8px 30px rgba(35, 57, 91, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.compare-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(35, 57, 91, 0.14);
+}
+
+/* Featured Card (Epoxy) */
+.compare-card--featured {
+  border: 2px solid rgba(42, 157, 143, 0.3);
+  box-shadow: 0 12px 35px rgba(42, 157, 143, 0.15);
+  overflow: hidden;
+}
+
+.compare-card--featured:hover {
+  box-shadow: 0 18px 45px rgba(42, 157, 143, 0.22);
+}
+
+/* Orange accent bar at top of featured card */
+.compare-card__accent-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #F4A261 0%, #E76F51 100%);
+  border-radius: 16px 16px 0 0;
+}
+
+/* Card Header */
+.compare-card__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.compare-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #F0EDE8;
+  color: #6b7280;
+  margin-bottom: 16px;
+  transition: background 0.3s ease;
+}
+
+.compare-card__icon--featured {
+  background: rgba(42, 157, 143, 0.12);
+  color: #1A7A6E;
+}
+
+.compare-card__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #23395B;
+  margin-bottom: 6px;
+}
+
+.compare-card__badge {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #8b95a5;
+  background: #F5F5F5;
+  padding: 4px 14px;
+  border-radius: 20px;
+  letter-spacing: 0.3px;
+}
+
+.compare-card__badge--featured {
+  color: #1A7A6E;
+  background: rgba(42, 157, 143, 0.1);
+  font-weight: 600;
+}
+
+/* Card List */
+.compare-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex-grow: 1;
+}
+
+.compare-card__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: #4a5568;
+}
+
+.compare-card__bullet {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.compare-card__bullet--x {
+  background: #FEE2E2;
+  color: #DC2626;
+}
+
+.compare-card__bullet--check {
+  background: #D1FAE5;
+  color: #059669;
+}
+
+/* Card Image */
+.compare-card__image-wrapper {
+  margin-top: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #EDE9E4;
+}
+
+.compare-card__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 16/10;
+  transition: transform 0.4s ease;
+}
+
+.compare-card:hover .compare-card__image {
+  transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 820px) {
+  .comparison-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .comparison-title {
+    font-size: 1.9rem;
+  }
+  
+  .comparison-subtitle {
+    font-size: 1rem;
+    margin-bottom: 32px;
+  }
+  
+  .compare-card {
+    padding: 28px 22px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .groutbot-comparison {
+    padding: 50px 14px;
+  }
+  
+  .comparison-title {
+    font-size: 1.6rem;
+  }
+  
+  .compare-card__title {
+    font-size: 1.35rem;
+  }
+  
+  .compare-card__item {
+    font-size: 0.9rem;
+  }
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
