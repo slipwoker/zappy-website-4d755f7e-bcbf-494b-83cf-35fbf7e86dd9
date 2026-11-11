@@ -10438,8 +10438,8 @@ nav.navbar .sub-menu li a {
 
 .pavel-problem .pavel-problem__grid {
   display: grid !important;
-  grid-template-columns: 1fr 0.9fr 1fr !important;
-  gap: 56px !important;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
   align-items: start !important;
 }
 
@@ -11233,6 +11233,87 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
   -webkit-text-fill-color: #111111 !important;
   font-size: 15px !important;
   opacity: 1 !important;
+}
+
+.pavel-problem .pavel-problem__card {
+  background: var(--surface-color, var(--surface, #ffffff)) !important;
+  border: 1px solid #ece7df !important;
+  border-radius: 16px !important;
+  padding: 36px 32px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 18px !important;
+}
+
+.pavel-problem .pavel-problem__card-icon {
+  width: 48px !important;
+  height: 48px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 12px !important;
+  background: #f5f2ed !important;
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__card-icon svg {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.pavel-problem .pavel-problem__card-title {
+  font-family: 'Heebo', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  color: #1a1a1a !important;
+  margin: 0 !important;
+  line-height: 1.3 !important;
+}
+
+.pavel-problem .pavel-problem__card-desc {
+  font-family: 'Heebo', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 15px !important;
+  line-height: 1.85 !important;
+  color: #555555 !important;
+  margin: 0 !important;
+}
+
+.pavel-problem .pavel-problem__title {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__subhead {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__body {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__btn {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__note {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__itemTitle {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__itemDesc {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__patent {
+  color: #111111 !important;
+}
+
+.pavel-problem .pavel-problem__patent svg {
+  color: #111111 !important;
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
