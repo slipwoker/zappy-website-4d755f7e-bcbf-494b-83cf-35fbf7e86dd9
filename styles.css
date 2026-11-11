@@ -15021,10 +15021,10 @@ nav.navbar .sub-menu li a {
 }
 
 #founder .pavel-founder__card {
-  background: var(--surface-color, var(--surface, #ffffff)) !important;
+  background: #0b0b0c !important;
   border: 1px solid #eee !important;
-  border-radius: 24px !important;
-  padding: 20px 18px !important;
+  border-radius: 28px !important;
+  padding: 56px !important;
   display: flex !important;
   flex-direction: column !important;
   align-items: flex-start !important;
