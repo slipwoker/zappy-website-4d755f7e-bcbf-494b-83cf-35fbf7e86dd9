@@ -14407,6 +14407,52 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 .pavel-strip .pavel-strip__list { display: flex !important; }
 .pavel-strip .pavel-strip__list { gap: 4px 14px !important; }
 
+
+.pavel-strip {
+  background: #0f766e !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-strip .pavel-strip__list {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 4px 14px !important;
+  padding: 18px 24px !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-strip .pavel-strip__item {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  font-weight: 700 !important;
+  font-size: 17px !important;
+  white-space: nowrap !important;
+}
+
+.pavel-strip .pavel-strip__dot {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  font-weight: 700 !important;
+}
+
+@media (max-width: 768px) {
+.pavel-strip .pavel-strip__list {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  justify-items: center !important;
+  gap: 10px 12px !important;
+}
+
+.pavel-strip .pavel-strip__dot {
+  display: none !important;
+}
+}
+
+.pavel-strip .pavel-strip__item {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
