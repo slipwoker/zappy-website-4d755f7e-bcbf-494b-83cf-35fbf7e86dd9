@@ -10807,7 +10807,7 @@ nav.navbar .sub-menu li a {
 @media (max-width: 900px) {
 .pavel-problem .pavel-problem__grid {
   grid-template-columns: 1fr !important;
-  gap: 44px !important;
+  gap: 24px !important;
 }
 
 .pavel-problem .pavel-problem__img {
@@ -11876,7 +11876,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 @media (max-width: 768px) {
 .pavel-problem .pavel-problem__grid {
   grid-template-columns: 1fr !important;
-  gap: 20px !important;
+  gap: 24px !important;
 }
 
 .pavel-problem .pavel-problem__card {
@@ -18157,12 +18157,12 @@ nav.navbar .nav-menu,
   box-shadow: 0 4px 24px rgba(0,0,0,0.10) !important;
 }
 }
+
 /* zappy-self-heal */
 nav.navbar { -webkit-backdrop-filter: none !important; }
 
 /* zappy-self-heal */
 html body nav.navbar { -webkit-backdrop-filter: none !important; }
-
 
 body nav.navbar div.nav-cta-container a.nav-pilot-btn {
   color: var(--surface-color, var(--surface, #ffffff)) !important;
@@ -18190,12 +18190,12 @@ nav.navbar.navbar--scrolled,
   -webkit-backdrop-filter: none !important;
   backdrop-filter: none !important;
 }
+
 /* zappy-self-heal */
 nav.navbar { -webkit-backdrop-filter: none !important; }
 
 /* zappy-self-heal */
 html body nav.navbar { -webkit-backdrop-filter: none !important; }
-
 
 @media (max-width: 768px) {
 nav.navbar .mobile-toggle {
@@ -19135,6 +19135,35 @@ body nav.navbar div.nav-cta-container a.nav-pilot-btn {
 
 .pavel-contact .pavel-contact__form textarea {
   color: #4a4f55 !important;
+}
+
+.pavel-problem .pavel-problem__grid, #pavel-problem #zappy-auto-grid-1794440624450-zhgys4 {
+  display: grid !important;
+  gap: 24px !important;
+  align-items: stretch !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+.pavel-problem .pavel-problem__grid, #pavel-problem #zappy-auto-grid-1794440624450-zhgys4 {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+}
+
+@media (max-width: 768px) {
+.pavel-problem .pavel-problem__grid, #pavel-problem #zappy-auto-grid-1794440624450-zhgys4 {
+  grid-template-columns: 1fr !important;
+}
+}
+
+.pavel-problem .pavel-problem__card {
+  transform: none !important;
+  translate: none !important;
+  will-change: auto !important;
+}
+
+.pavel-problem .pavel-problem__card:hover {
+  transform: translateY(-4px) !important;
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
