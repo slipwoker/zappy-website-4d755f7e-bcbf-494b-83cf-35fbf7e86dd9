@@ -20887,6 +20887,181 @@ body nav.navbar div.nav-cta-container a.nav-pilot-btn:hover {
   font-size: 13.5px !important;
   line-height: 1.4 !important;
 }
+
+.groutbot-hero .pavel-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.groutbot-hero .pavel-scene {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.groutbot-hero .pavel-scene {
+  background: linear-gradient(180deg, #050505 0%, #0a1014 45%, rgba(10,16,20,0) 70%);
+}
+
+.groutbot-hero .pavel-hero__watermark {
+  z-index: 1;
+}
+
+.groutbot-hero .pavel-hero__content {
+  position: relative;
+  z-index: 3;
+}
+
+.groutbot-hero .pavel-scene__floor {
+  position: absolute;
+  left: 50%;
+  bottom: -6%;
+  width: 220%;
+  height: 130%;
+  transform: translateX(-50%) rotateX(58deg);
+  transform-style: preserve-3d;
+  transform-origin: 50% 100%;
+  background-color: #121718;
+  background-image: linear-gradient(to right, rgba(20,184,166,0.75) 0, rgba(20,184,166,0.75) 2px, transparent 2px),
+    linear-gradient(to bottom, rgba(20,184,166,0.75) 0, rgba(20,184,166,0.75) 2px, transparent 2px);
+  background-size: 150px 150px;
+  mask-image: linear-gradient(180deg, transparent 0%, #000 28%, #000 100%);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 28%, #000 100%);
+  opacity: 0.85;
+}
+
+.groutbot-hero .pavel-scene__glow {
+  position: absolute;
+  top: -18%;
+  right: -12%;
+  width: 62%;
+  height: 62%;
+  background: radial-gradient(circle at center, rgba(20,184,166,0.30) 0%, rgba(20,184,166,0.08) 45%, transparent 70%);
+  filter: blur(6px);
+}
+
+.groutbot-hero .pavel-scene__vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(120% 90% at 50% 45%, transparent 55%, rgba(0,0,0,0.55) 100%);
+}
+
+.groutbot-hero .pavel-scene__fill {
+  position: absolute;
+  left: 0;
+  bottom: 26%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(20,184,166,0) 0%, rgba(45,226,208,0.95) 30%, rgba(45,226,208,0.95) 70%, rgba(20,184,166,0) 100%);
+  transform: translateX(50%);
+  opacity: 0;
+  animation: pavel-fill 8s linear infinite;
+}
+
+.groutbot-hero .pavel-scene__pulse {
+  position: absolute;
+  left: 0;
+  width: 160px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, rgba(20,184,166,0) 0%, rgba(45,226,208,0.9) 50%, rgba(20,184,166,0) 100%);
+  box-shadow: 0 0 14px 2px rgba(20,184,166,0.85), 0 0 34px 6px rgba(20,184,166,0.5);
+  opacity: 0;
+}
+
+.groutbot-hero .pavel-scene__pulse--1 {
+  bottom: 18%;
+  animation: pavel-pulse 7s ease-in-out infinite;
+}
+
+.groutbot-hero .pavel-scene__pulse--2 {
+  bottom: 34%;
+  animation: pavel-pulse 9s ease-in-out infinite;
+  animation-delay: -3s;
+}
+
+.groutbot-hero .pavel-scene__dot {
+  position: absolute;
+  left: 9%;
+  bottom: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(45,226,208,0.9);
+  box-shadow: 0 0 10px 3px rgba(20,184,166,0.7);
+  opacity: 0;
+  animation: pavel-dot 9s ease-in-out infinite;
+}
+
+.groutbot-hero .pavel-scene__dot--1 {
+  left: 7%;
+  animation-duration: 10s;
+  animation-delay: 0s;
+}
+
+.groutbot-hero .pavel-scene__dot--2 {
+  left: 16%;
+  animation-duration: 13s;
+  animation-delay: -4s;
+}
+
+.groutbot-hero .pavel-scene__dot--3 {
+  left: 24%;
+  animation-duration: 11s;
+  animation-delay: -7s;
+}
+
+@keyframes pavel-pulse {
+  0%   { transform: translateX(120%) scaleX(1); opacity: 0; }
+  15%  { opacity: 1; }
+  50%  { transform: translateX(-40%) scaleX(1.1); opacity: 1; }
+  75%  { opacity: 0; }
+  100% { transform: translateX(-120%) scaleX(1); opacity: 0; }
+}
+
+@keyframes pavel-dot {
+  0%   { transform: translateY(0) translateX(0); opacity: 0; }
+  15%  { opacity: 1; }
+  55%  { opacity: 0.7; }
+  100% { transform: translateY(-340px) translateX(24px); opacity: 0; }
+}
+
+@media (max-width: 768px) {
+.groutbot-hero .pavel-scene__floor {
+  width: 380%;
+  bottom: -28%;
+  height: 92%;
+}
+
+.groutbot-hero .pavel-scene__fill {
+  bottom: 20%;
+}
+
+.groutbot-hero .pavel-scene__pulse--1 {
+  bottom: 13%;
+}
+
+.groutbot-hero .pavel-scene__pulse--2 {
+  bottom: 27%;
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+.groutbot-hero .pavel-scene__fill,
+  .groutbot-hero .pavel-scene__pulse,
+  .groutbot-hero .pavel-scene__dot {
+  animation: none !important;
+  opacity: 0 !important;
+}
+}
+/* zappy-self-heal */
+.groutbot-hero .pavel-scene__floor { bottom: -6% !important; }
+.groutbot-hero .pavel-scene__floor { width: 220% !important; }
+.groutbot-hero .pavel-scene__floor { height: 130% !important; }
+.groutbot-hero .pavel-scene__fill { bottom: 26% !important; }
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
