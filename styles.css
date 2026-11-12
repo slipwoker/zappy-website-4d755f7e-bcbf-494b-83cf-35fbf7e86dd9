@@ -21062,6 +21062,38 @@ body nav.navbar div.nav-cta-container a.nav-pilot-btn:hover {
 .groutbot-hero .pavel-scene__floor { height: 130% !important; }
 .groutbot-hero .pavel-scene__fill { bottom: 26% !important; }
 
+
+#groutbot-hero .pavel-scene__floor,
+#groutbot-hero .pavel-scene__fill,
+#groutbot-hero .pavel-scene__pulse--1,
+#groutbot-hero .pavel-scene__pulse--2 {
+  position: absolute !important;
+  left: 50% !important;
+  bottom: -6% !important;
+  width: 240% !important;
+  height: 118% !important;
+  transform: translateX(-50%) perspective(1100px) rotateX(58deg) !important;
+  transform-origin: 50% 100% !important;
+}
+
+#groutbot-hero .pavel-scene__floor {
+  background: linear-gradient(to right, rgba(20,184,166,0.75) 2px, transparent 2px),
+    linear-gradient(rgba(20,184,166,0.75) 2px, transparent 2px),
+    #121718 !important;
+  background-size: 150px 150px, 150px 150px, auto !important;
+}
+
+@media (max-width: 768px) {
+#groutbot-hero .pavel-scene__floor,
+  #groutbot-hero .pavel-scene__fill,
+  #groutbot-hero .pavel-scene__pulse--1,
+  #groutbot-hero .pavel-scene__pulse--2 {
+  width: 380% !important;
+  height: 95% !important;
+  bottom: -4% !important;
+  transform: translateX(-50%) perspective(600px) rotateX(56deg) !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
