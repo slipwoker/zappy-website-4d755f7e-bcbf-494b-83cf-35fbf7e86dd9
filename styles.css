@@ -20711,6 +20711,24 @@ body nav.navbar div.nav-cta-container a.nav-pilot-btn:hover {
   width: 100% !important;
 }
 }
+
+@media (max-width: 768px) {
+.groutbot-hero .pavel-hero {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.groutbot-hero .pavel-hero__top {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.groutbot-hero .pavel-hero__headline-block {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
