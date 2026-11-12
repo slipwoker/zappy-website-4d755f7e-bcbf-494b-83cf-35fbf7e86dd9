@@ -19016,6 +19016,126 @@ body nav.navbar div.nav-cta-container a.nav-pilot-btn {
   font-size: 12.5px !important;
   letter-spacing: 0.08em !important;
 }
+
+#groutbot-hero p, #pavel-problem p, #how p, #pavel-partners p, #founder p, .pavel-contact p,
+#groutbot-hero li, #pavel-problem li, #how li, #pavel-partners li, #founder li, .pavel-contact li,
+#groutbot-hero label, #pavel-problem label, #how label, #pavel-partners label, #founder label, .pavel-contact label,
+#groutbot-hero span, #pavel-problem span, #how span, #pavel-partners span, #founder span, .pavel-contact span,
+#groutbot-hero a, #pavel-problem a, #how a, #pavel-partners a, #founder a, .pavel-contact a {
+  font-family: 'Assistant', 'Rubik', sans-serif !important;
+  font-size: 17px !important;
+  line-height: 1.75 !important;
+}
+
+#groutbot-hero h1, #groutbot-hero h2, #groutbot-hero h3,
+#pavel-problem h1, #pavel-problem h2, #pavel-problem h3,
+#how h1, #how h2, #how h3,
+#pavel-partners h1, #pavel-partners h2, #pavel-partners h3,
+#founder h1, #founder h2, #founder h3,
+.pavel-contact h1, .pavel-contact h2, .pavel-contact h3 {
+  font-family: 'Rubik', 'Assistant', sans-serif !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.12 !important;
+  font-size: inherit;
+}
+
+#pavel-problem .pavel-problem__card-title,
+#how .pavel-how__step-title,
+#pavel-problem .pavel-solution__heading,
+#pavel-partners .pavel-pcard__title {
+  font-family: 'Rubik', 'Assistant', sans-serif !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.12 !important;
+}
+
+#pavel-problem .pavel-problem__card-desc,
+#how .pavel-how__step-text,
+#pavel-problem .pavel-solution__item-text,
+#pavel-partners .pavel-pcard__line,
+#founder .pavel-founder__bio,
+.pavel-contact .pavel-contact__line {
+  color: #4a4f55 !important;
+}
+
+#how .pavel-how__lead {
+  font-size: 19px !important;
+  font-weight: 500 !important;
+  color: #3d4248 !important;
+}
+
+.pavel-contact .pavel-contact__title {
+  color: #4a4f55 !important;
+}
+
+.pavel-contact .pavel-contact__name {
+  color: #4a4f55 !important;
+}
+
+.pavel-contact .pavel-contact__field label {
+  color: #4a4f55 !important;
+}
+
+.pavel-contact .pavel-contact__field input {
+  color: #4a4f55 !important;
+}
+
+.pavel-contact .pavel-contact__field select {
+  color: #4a4f55 !important;
+}
+
+.pavel-contact .pavel-contact__field textarea {
+  color: #4a4f55 !important;
+}
+
+.pavel-contact .pavel-contact__submit {
+  color: #4a4f55 !important;
+}
+
+.pavel-contact .pavel-contact__whatsapp {
+  color: #4a4f55 !important;
+}
+
+.pavel-contact .zappy-label-pill {
+  color: #4a4f55 !important;
+}
+
+.pavel-contact .pavel-contact__phone a {
+  color: #4a4f55 !important;
+}
+
+.pavel-contact .pavel-contact__submit span {
+  color: #4a4f55 !important;
+}
+
+.pavel-contact .pavel-contact__whatsapp span {
+  color: #4a4f55 !important;
+}
+
+.pavel-contact .pavel-contact__whatsapp i {
+  color: #4a4f55 !important;
+}
+
+.pavel-contact .pavel-contact__whatsapp svg {
+  color: #4a4f55 !important;
+}
+
+.pavel-contact .pavel-contact__form label {
+  color: #4a4f55 !important;
+}
+
+.pavel-contact .pavel-contact__form input {
+  color: #4a4f55 !important;
+}
+
+.pavel-contact .pavel-contact__form select {
+  color: #4a4f55 !important;
+}
+
+.pavel-contact .pavel-contact__form textarea {
+  color: #4a4f55 !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
