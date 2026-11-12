@@ -20631,6 +20631,25 @@ body nav.navbar div.nav-cta-container a.nav-pilot-btn:hover {
 .site-footer .footer-col { flex: 1 1 0 !important; }
 .site-footer .footer-bottom-bar { justify-content: space-between !important; }
 
+
+.navbar a.pavel-nav-cta {
+  display: inline-flex;
+  align-items: center;
+  background: var(--surface-color, var(--surface, #ffffff));
+  color: #111111;
+  border: 1.5px solid #111111;
+  border-radius: 999px;
+  padding: 10px 20px;
+  font-family: Rubik;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.navbar a.pavel-nav-cta:hover {
+  background: #111111;
+  color: var(--surface-color, var(--surface, #ffffff));
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,

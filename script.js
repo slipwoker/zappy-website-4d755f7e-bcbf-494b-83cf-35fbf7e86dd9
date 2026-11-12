@@ -1149,11 +1149,11 @@ window.onload = function() {
 })();
 /* ZAPPY_CUSTOM_JS_END:e2c4ee861522 */
 
-/* ZAPPY_CUSTOM_JS_START:6709d1273667 */
+/* ZAPPY_CUSTOM_JS_START:a48cfad4e84a */
 (function () {
   function __zappyCustomInit() {
     try {
-(function(){var b=document.querySelector('a.nav-pilot-btn');if(!b)return;function f(){b.style.setProperty('background-color','#ffffff','important');b.style.setProperty('border','1.5px solid #111111','important');b.style.setProperty('color','#111111','important');b.style.setProperty('-webkit-text-fill-color','#111111','important');}f();new MutationObserver(f).observe(b,{attributes:true,attributeFilter:['style','class']});})();
+/* removed - no longer needed */
     } catch (e) {
       if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
     }
@@ -1164,7 +1164,7 @@ window.onload = function() {
     __zappyCustomInit();
   }
 })();
-/* ZAPPY_CUSTOM_JS_END:6709d1273667 */
+/* ZAPPY_CUSTOM_JS_END:a48cfad4e84a */
 
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
