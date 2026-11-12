@@ -1,10 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&family=Rubik:wght@400;500;600;700;800&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500&family=Heebo:wght@300;400;500&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Heebo:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
 
 /* Self-hosted fonts (Inter + Rubik for multi-language support) */
 
@@ -142,7 +136,7 @@
   src: url('assets/fonts/Rubik-Bold.woff2') format('woff2');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
+
 
 :root {
 --primary: #2b2f33;
@@ -192,7 +186,10 @@
   --surface-color: #ffffff;
   --text-color: #2b2f33;
   --text-secondary-color: #6b7075;
-}
+
+  --body-font: 'Nunito', sans-serif;
+  --font-family: 'Nunito', sans-serif;
+  --font-primary: 'Nunito', sans-serif;}
 
 *,
 *::before,
@@ -212,7 +209,7 @@
 body {
   font-size: 16px !important;
   line-height: 1.7 !important;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: var(--text-dark);
   background-color: var(--bg-light);
   -webkit-font-smoothing: antialiased;
@@ -7026,7 +7023,7 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 
 :root {
   --font-heading: 'Sora', 'Heebo', sans-serif;
-  --font-body: 'Heebo', system-ui, sans-serif;
+  --font-body: 'Nunito', sans-serif;
   --radius-sm: 12px;
   --radius-card: 20px;
   --radius-btn: 100px;
@@ -7035,7 +7032,7 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 }
 
 body {
-  font-family: 'Heebo', system-ui, sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .groutbot-hero {
@@ -7429,7 +7426,7 @@ body {
   border-radius: 14px;
   color: #F7F4EE;
   padding: 16px 18px;
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Nunito', sans-serif;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -7454,7 +7451,7 @@ body {
 }
 
 body, .groutbot-hero, .groutbot-problem, .groutbot-comparison, .pavel-product, .groutbot-video-section, .audience-section, .groutbot-vision, .contact-prototype-section {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif;
 }
 
 #problem .problem-card {
@@ -9058,7 +9055,7 @@ section.groutbot-hero {
 }
 
 body {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .navbar {
@@ -10099,14 +10096,14 @@ nav.navbar .sub-menu li a {
 
 :root {
   --font-heading: 'Frank Ruhl Libre', 'Heebo', serif !important;
-  --font-body: 'Heebo', system-ui, sans-serif !important;
+  --font-body: 'Nunito', sans-serif;
   --radius-card: 24px !important;
   --radius-img: 24px !important;
   --radius-btn: 100px !important;
 }
 
 body {
-  font-family: 'Heebo', system-ui, sans-serif !important;
+  font-family: 'Nunito', sans-serif;
   background-color: #F4C99B !important;
 }
 
@@ -10155,7 +10152,7 @@ body {
 }
 
 .navbar .nav-menu .nav-pill {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-size: 14px !important;
   font-weight: 400 !important;
   color: rgba(255,255,255,0.9) !important;
@@ -10174,7 +10171,7 @@ body {
 }
 
 .navbar .nav-pilot-btn {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-size: 14px !important;
   font-weight: 400 !important;
   color: #ffffff !important;
@@ -10526,7 +10523,7 @@ nav.navbar .sub-menu li a {
 }
 
 .groutbot-hero .pavel-hero__subtitle {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 300 !important;
   font-size: 17px !important;
   line-height: 1.6 !important;
@@ -10556,14 +10553,14 @@ nav.navbar .sub-menu li a {
 }
 
 .groutbot-hero .pavel-glass-card__title {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-size: 15px !important;
   font-weight: 500 !important;
   color: var(--surface-color, var(--surface, #ffffff)) !important;
 }
 
 .groutbot-hero .pavel-glass-card__desc {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-size: 13px !important;
   font-weight: 300 !important;
   color: rgba(255,255,255,0.72) !important;
@@ -10582,7 +10579,7 @@ nav.navbar .sub-menu li a {
   gap: 12px !important;
   background: var(--surface-color, var(--surface, #ffffff)) !important;
   color: #111111 !important;
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-size: 15px !important;
   font-weight: 400 !important;
   padding: 13px 16px 13px 24px !important;
@@ -10701,7 +10698,7 @@ nav.navbar .sub-menu li a {
 }
 
 .pavel-problem .pavel-problem__subhead {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 500 !important;
   font-size: 20px !important;
   color: #1a1a1a !important;
@@ -10710,7 +10707,7 @@ nav.navbar .sub-menu li a {
 }
 
 .pavel-problem .pavel-problem__body {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif;
   font-weight: 300 !important;
   font-size: 15px !important;
   line-height: 1.9 !important;
@@ -10724,7 +10721,7 @@ nav.navbar .sub-menu li a {
   justify-content: center !important;
   background: #111111 !important;
   color: var(--surface-color, var(--surface, #ffffff)) !important;
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-size: 15px !important;
   font-weight: 400 !important;
   padding: 16px 30px !important;
@@ -10735,7 +10732,7 @@ nav.navbar .sub-menu li a {
 }
 
 .pavel-problem .pavel-problem__note {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-size: 12px !important;
   font-weight: 300 !important;
   color: #888888 !important;
@@ -10762,7 +10759,7 @@ nav.navbar .sub-menu li a {
 }
 
 .pavel-problem .pavel-problem__itemTitle {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 500 !important;
   font-size: 19px !important;
   color: #1a1a1a !important;
@@ -10771,7 +10768,7 @@ nav.navbar .sub-menu li a {
 }
 
 .pavel-problem .pavel-problem__itemDesc {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 300 !important;
   font-size: 15px !important;
   line-height: 1.85 !important;
@@ -10791,7 +10788,7 @@ nav.navbar .sub-menu li a {
   align-items: center !important;
   gap: 10px !important;
   margin-top: 36px !important;
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-size: 13px !important;
   font-weight: 400 !important;
   color: var(--text-secondary-color, var(--text-secondary, var(--text-muted, #6b7075))) !important;
@@ -10909,7 +10906,7 @@ nav.navbar .sub-menu li a {
 }
 
 .pavel-how .pavel-how__cap-title {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 500 !important;
   font-size: 18px !important;
   color: var(--surface-color, var(--surface, #ffffff)) !important;
@@ -10918,7 +10915,7 @@ nav.navbar .sub-menu li a {
 }
 
 .pavel-how .pavel-how__cap-desc {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 300 !important;
   font-size: 14px !important;
   line-height: 1.5 !important;
@@ -10941,7 +10938,7 @@ nav.navbar .sub-menu li a {
 }
 
 .pavel-how .pavel-how__body {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif;
   font-weight: 300 !important;
   font-size: 16px !important;
   line-height: 1.9 !important;
@@ -10956,7 +10953,7 @@ nav.navbar .sub-menu li a {
   justify-content: center !important;
   background: var(--surface-color, var(--surface, #ffffff)) !important;
   color: #111111 !important;
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-size: 15px !important;
   font-weight: 400 !important;
   padding: 14px 28px !important;
@@ -11084,7 +11081,7 @@ nav.navbar .sub-menu li a {
 }
 
 .pavel-partners .pavel-partners__intro {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 300 !important;
   font-size: 17px !important;
   line-height: 1.6 !important;
@@ -11130,7 +11127,7 @@ nav.navbar .sub-menu li a {
   right: 14px !important;
   background: var(--surface-color, var(--surface, #ffffff)) !important;
   color: #111111 !important;
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-size: 12px !important;
   font-weight: 500 !important;
   padding: 5px 13px !important;
@@ -11147,7 +11144,7 @@ nav.navbar .sub-menu li a {
 }
 
 .pavel-partners .pavel-pcard__title {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 600 !important;
   font-size: 21px !important;
   color: #111111 !important;
@@ -11156,7 +11153,7 @@ nav.navbar .sub-menu li a {
 }
 
 .pavel-partners .pavel-pcard__line {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 300 !important;
   font-size: 14.5px !important;
   line-height: 1.55 !important;
@@ -11171,7 +11168,7 @@ nav.navbar .sub-menu li a {
   background: var(--surface-color, var(--surface, #ffffff)) !important;
   color: #111111 !important;
   border: 1px solid #d9d9d9 !important;
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-size: 14px !important;
   font-weight: 400 !important;
   padding: 11px 22px !important;
@@ -11291,7 +11288,7 @@ nav.navbar .sub-menu li a {
 }
 
 .pavel-contact .pavel-contact__line {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 300 !important;
   font-size: 17px !important;
   line-height: 1.6 !important;
@@ -11300,7 +11297,7 @@ nav.navbar .sub-menu li a {
 }
 
 .pavel-contact .pavel-contact__name {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 400 !important;
   font-size: 15px !important;
   color: #111111 !important;
@@ -11324,14 +11321,14 @@ nav.navbar .sub-menu li a {
 }
 
 .pavel-contact .pavel-contact__field label {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 500 !important;
   font-size: 13.5px !important;
   color: #111111 !important;
 }
 
 .pavel-contact .pavel-contact__field input, .pavel-contact .pavel-contact__field select, .pavel-contact .pavel-contact__field textarea {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 300 !important;
   font-size: 15px !important;
   color: #111111 !important;
@@ -11359,7 +11356,7 @@ nav.navbar .sub-menu li a {
   background: #111111 !important;
   color: #ffffff !important;
   border: none !important;
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-size: 15px !important;
   font-weight: 400 !important;
   padding: 14px 34px !important;
@@ -11404,7 +11401,7 @@ nav.navbar .sub-menu li a {
 
 .site-footer .pavel-footbar__left,
 .site-footer .pavel-footbar__right {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 300 !important;
   font-size: 13.5px !important;
   color: var(--text-secondary-color, var(--text-secondary, var(--text-muted, #6b7075))) !important;
@@ -11429,7 +11426,7 @@ nav.navbar .sub-menu li a {
 }
 
 .site-footer .footer-bottom-links a {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 300 !important;
   font-size: 12.5px !important;
   color: var(--text-secondary-color, var(--text-secondary, var(--text-muted, #6b7075))) !important;
@@ -11517,7 +11514,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-problem .pavel-problem__card-title {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 600 !important;
   font-size: 20px !important;
   color: #1a1a1a !important;
@@ -11526,7 +11523,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-problem .pavel-problem__card-desc {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 300 !important;
   font-size: 15px !important;
   line-height: 1.85 !important;
@@ -11621,7 +11618,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-problem .pavel-solution__item-text {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 500 !important;
   font-size: 19px !important;
   line-height: 1.4 !important;
@@ -11629,7 +11626,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-problem .pavel-solution__note {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 300 !important;
   font-size: 14px !important;
   line-height: 1.7 !important;
@@ -11648,7 +11645,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-size: 15px !important;
   font-weight: 500 !important;
   padding: 15px 32px !important;
@@ -11769,7 +11766,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 #video .pavel-video__subtitle {
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 18px;
   line-height: 1.7;
   color: #c9cfd4;
@@ -13387,14 +13384,14 @@ html, body {
   font-weight: 800 !important;
   line-height: 1.05 !important;
   font-size: clamp(30px, 4.2vw, 44px) !important;
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
 }
 
 .pavel-how .pavel-how__title {
   font-weight: 800 !important;
   line-height: 1.05 !important;
   font-size: clamp(30px, 4.2vw, 44px) !important;
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
 }
 
 .pavel-problem {
@@ -13815,7 +13812,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
   display: inline-block;
   background: rgba(15,118,110,0.12);
   color: #0f766e !important;
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 12.5px;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -14161,7 +14158,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-partners .pavel-partners__title {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 800 !important;
   font-size: clamp(30px, 4.2vw, 44px) !important;
   line-height: 1.05 !important;
@@ -14427,7 +14424,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
   display: inline-block;
   background: rgba(15,118,110,0.18);
   color: #0f766e !important;
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 12.5px;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -14438,7 +14435,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-how .pavel-how__heading {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 800 !important;
   font-size: clamp(30px, 4.2vw, 44px) !important;
   line-height: 1.05 !important;
@@ -14447,7 +14444,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-how .pavel-how__lead {
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.9;
@@ -14461,7 +14458,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
   justify-content: center;
   background: var(--surface-color, var(--surface, #ffffff)) !important;
   color: #111111 !important;
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 15px;
   font-weight: 500;
   padding: 15px 32px;
@@ -14499,7 +14496,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
   border-radius: 50%;
   background: #0f766e !important;
   color: var(--surface-color, var(--surface, #ffffff)) !important;
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 800;
   font-size: 22px;
   display: flex;
@@ -14508,7 +14505,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-how .pavel-how__step-title {
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 700;
   font-size: 20px;
   color: var(--surface-color, var(--surface, #ffffff)) !important;
@@ -14517,7 +14514,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-how .pavel-how__step-text {
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 1.6;
@@ -18484,7 +18481,7 @@ section#how.pavel-how,
   display: inline-block !important;
   background: rgba(15,118,110,0.12) !important;
   color: #0f766e !important;
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-size: 12.5px !important;
   font-weight: 700 !important;
   letter-spacing: 0.04em !important;
@@ -18510,7 +18507,7 @@ section#how.pavel-how,
   border: 1px solid #d9d9d9 !important;
   border-radius: 100px !important;
   padding: 8px 18px !important;
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-size: 14px !important;
   font-weight: 500 !important;
   color: #111111 !important;
@@ -18544,7 +18541,7 @@ section#how.pavel-how,
 .pavel-problem .pavel-problem__container > p:first-child span {
   display: inline-block !important;
   background: rgba(15,118,110,0.12) !important;
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-style: normal !important;
   font-weight: 700 !important;
   font-size: 12.5px !important;
@@ -18657,7 +18654,7 @@ section#how.pavel-how,
   width: auto !important;
   background: #0f766e !important;
   color: var(--surface-color, var(--surface, #ffffff)) !important;
-  font-family: 'Heebo', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   font-size: 12.5px !important;
   font-weight: 700 !important;
   letter-spacing: 0.5px !important;
@@ -18775,11 +18772,11 @@ section#pavel-problem div.pavel-problem__container > p {
 
 :root {
   --font-heading: 'Rubik', 'Assistant', sans-serif !important;
-  --font-body: 'Assistant', 'Rubik', sans-serif !important;
+  --font-body: 'Nunito', sans-serif;
 }
 
 body {
-  font-family: 'Assistant', 'Rubik', sans-serif !important;
+  font-family: 'Nunito', sans-serif;
   font-size: 17px !important;
   line-height: 1.75 !important;
   color: #4a4f55 !important;
