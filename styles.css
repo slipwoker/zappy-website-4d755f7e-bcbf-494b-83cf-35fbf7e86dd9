@@ -20456,6 +20456,16 @@ body nav.navbar div.nav-cta-container a.nav-pilot-btn:hover {
   border-radius: 24px !important;
   padding: 40px !important;
 }
+
+#how .pavel-how__step:not(:last-child)::after {
+  content: '' !important;
+  position: absolute !important;
+  top: 46px !important;
+  left: 21px !important;
+  width: 1px !important;
+  height: calc(100% - 44px) !important;
+  background: rgba(20,184,166,0.30) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
