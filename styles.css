@@ -14041,7 +14041,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 
 .pavel-partners .pavel-pcard .pavel-pcard__tag {
   background: var(--surface-color, var(--surface, #ffffff)) !important;
-  color: #0f766e !important;
+  color: #111111 !important;
 }
 
 #pavel-problem .pavel-solution .pavel-solution__btn--dark, #pavel-problem .pavel-solution .pavel-solution__btn {
@@ -14373,7 +14373,8 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-partners .pavel-pcard .pavel-pcard__tag {
-  color: #0f766e !important;
+  color: #111111 !important;
+  background: var(--surface-color, var(--surface, #ffffff)) !important;
 }
 
 .pavel-partners .pavel-pcard .pavel-pcard__btn--dark {
@@ -16068,6 +16069,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 
 .pavel-partners .pavel-pcard .pavel-pcard__tag {
   color: #111111 !important;
+  background: var(--surface-color, var(--surface, #ffffff)) !important;
 }
 
 .pavel-partners .pavel-pcard .pavel-pcard__btn--dark {
@@ -16267,6 +16269,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 
 .pavel-partners .pavel-pcard .pavel-pcard__tag {
   color: #111111 !important;
+  background: var(--surface-color, var(--surface, #ffffff)) !important;
 }
 
 .pavel-partners .pavel-pcard .pavel-pcard__btn--dark {
@@ -18661,7 +18664,8 @@ section#how.pavel-how,
 }
 
 .pavel-partners .pavel-pcard .pavel-pcard__tag {
-  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  color: #111111 !important;
+  background: var(--surface-color, var(--surface, #ffffff)) !important;
 }
 
 .pavel-partners .pavel-pcard .pavel-pcard__btn--dark {
