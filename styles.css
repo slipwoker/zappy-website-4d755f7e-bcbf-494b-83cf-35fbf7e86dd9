@@ -16064,7 +16064,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-partners .zappy-label-pill {
-  color: #111111 !important;
+  color: #0f766e !important;
 }
 
 .pavel-partners .pavel-pcard .pavel-pcard__tag {
@@ -16264,7 +16264,7 @@ section.groutbot-hero .pavel-hero__cta > span:first-child {
 }
 
 .pavel-partners .zappy-label-pill {
-  color: #111111 !important;
+  color: #0f766e !important;
 }
 
 .pavel-partners .pavel-pcard .pavel-pcard__tag {
@@ -18537,6 +18537,7 @@ section#how.pavel-how,
   padding: 6px 16px !important;
   border-radius: 100px !important;
   border: 1px solid rgba(15,118,110,0.25) !important;
+  color: #0f766e !important;
 }
 
 .pavel-contact .pavel-contact__title {
@@ -18652,7 +18653,7 @@ section#how.pavel-how,
 }
 
 .pavel-problem .pavel-problem__container > p:first-child span {
-  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  color: #0f766e !important;
 }
 
 .pavel-problem .pavel-problem__container > p:first-child i {
@@ -18670,6 +18671,49 @@ section#how.pavel-how,
 
 .pavel-partners .pavel-pcard .pavel-pcard__btn--dark {
   color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.pavel-problem .pavel-problem__container > p {
+  text-align: center !important;
+  display: block !important;
+  width: 100% !important;
+  margin: 0 auto 18px !important;
+}
+
+.pavel-partners .pavel-partners__head {
+  display: block !important;
+  text-align: center !important;
+}
+
+.pavel-partners .pavel-partners__head > p {
+  text-align: center !important;
+  display: block !important;
+  width: 100% !important;
+  margin: 0 auto 18px !important;
+}
+
+.pavel-problem .pavel-problem__container {
+  text-align: center !important;
+}
+
+.pavel-partners .pavel-partners__head {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.pavel-problem .pavel-problem__container > p, .pavel-partners .pavel-partners__head > p {
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+  margin: 0 !important;
+}
+
+.pavel-problem .pavel-problem__container > p > span.zappy-label-pill, .pavel-partners .pavel-partners__head > p > span.zappy-label-pill {
+  display: inline-block !important;
+  margin: 0 !important;
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
