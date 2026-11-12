@@ -19165,6 +19165,285 @@ body nav.navbar div.nav-cta-container a.nav-pilot-btn {
 .pavel-problem .pavel-problem__card:hover {
   transform: translateY(-4px) !important;
 }
+
+#how .pavel-how__lead {
+  color: #d6dbdf !important;
+}
+
+#how .pavel-how__step-text {
+  color: #c3c9ce !important;
+}
+
+#how .pavel-how__step-title {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar a.nav-pilot-btn {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+#founder .pavel-founder__chips {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  justify-content: center !important;
+}
+
+#founder .pavel-founder__chip {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  background: #f1f5f4 !important;
+  border: 1px solid #dfe6e4 !important;
+  border-radius: 999px !important;
+  padding: 8px 14px !important;
+  font-size: 13px !important;
+  color: #111111 !important;
+}
+
+#founder .pavel-founder__chip-dot {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50% !important;
+  background: #14b8a6 !important;
+  flex: 0 0 auto !important;
+}
+
+.navbar .nav-menu > li > a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-menu > .nav-item > a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar a:not(.nav-cta-btn) {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .navbar-brand a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .dropdown-menu li a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .sub-menu a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .sub-menu li a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-menu .sub-menu a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-menu .sub-menu li a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .zappy-products-dropdown .sub-menu a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+nav.navbar .sub-menu li a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-search-box .nav-search-input {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-search-input::placeholder {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-search-result-item a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .cart-link.nav-cart {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .login-link.nav-login {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .cart-link.nav-cart svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .login-link.nav-login svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-search-toggle svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .search-toggle svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-item {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-all {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-item {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-all {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .nav-menu > li > a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .nav-menu > .nav-item > a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .nav-link {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled a:not(.nav-cta-btn) {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .navbar-brand {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .navbar-brand a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .dropdown-toggle {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .mobile-hamburger-btn {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .mobile-close-btn {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .phone-header-btn {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .mobile-toggle {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .mobile-toggle svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .mobile-hamburger-btn svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .mobile-close-btn svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .phone-header-btn svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .navbar-brand svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .logo-link svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .nav-search-btn {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .cart-link.nav-cart {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .login-link.nav-login {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .nav-search-toggle {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar.scrolled .search-toggle {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-menu a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-menu .nav-pill {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-container a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar #navMenu a {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .mobile-toggle svg {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-pilot-btn span {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar #mobileToggle {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+nav.navbar div.nav-cta-container a.nav-pilot-btn {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+nav.navbar div.nav-cta-container a.nav-pilot-btn span {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar .nav-cta-container .nav-pilot-btn {
+  color: var(--surface-color, var(--surface, #ffffff)) !important;
+}
+
+.navbar a.nav-pilot-btn:hover {
+  color: #111111 !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
