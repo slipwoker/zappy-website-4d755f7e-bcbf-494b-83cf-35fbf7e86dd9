@@ -19430,7 +19430,7 @@ nav.navbar .sub-menu li a {
 }
 
 nav.navbar div.nav-cta-container a.nav-pilot-btn {
-  color: var(--surface-color, var(--surface, #ffffff)) !important;
+  color: #ffffff !important;
 }
 
 nav.navbar div.nav-cta-container a.nav-pilot-btn span {
