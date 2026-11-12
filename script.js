@@ -698,8 +698,13 @@ window.onload = function() {
   dotsWrap.className = 'pavel-carousel-dots';
   var dots = [];
   for (var d = 0; d < cards.length; d++) {
-    /* ZAPPY: Element "pavel-carousel-dot" removed by user */
-})(d);
+    var dot = document.createElement('button');
+    dot.type = 'button';
+    dot.className = 'pavel-carousel-dot';
+    dot.setAttribute('aria-label', 'עבור לכרטיס ' + (d + 1));
+    (function(dd){
+      dot.addEventListener('click', function(){ goTo(cards[dd]); });
+    })(d);
     dots.push(dot);
     dotsWrap.appendChild(dot);
   }
