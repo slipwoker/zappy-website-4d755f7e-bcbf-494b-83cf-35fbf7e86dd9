@@ -20650,6 +20650,45 @@ body nav.navbar div.nav-cta-container a.nav-pilot-btn:hover {
   background: #111111;
   color: var(--surface-color, var(--surface, #ffffff));
 }
+
+@media (max-width: 768px) {
+#how .pavel-how__photos {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  width: 100% !important;
+}
+
+#how .pavel-how__photo {
+  width: 100% !important;
+  aspect-ratio: 4 / 3 !important;
+}
+
+#how .pavel-how__photo img {
+  width: 100% !important;
+}
+
+#groutbot-hero .pavel-hero__cta-wrap {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  gap: 12px !important;
+}
+
+#groutbot-hero .pavel-hero__cta {
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.pavel-contact .pavel-contact__submit {
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+#how .pavel-how__lead, #pavel-partners .pavel-partners__subtitle, #groutbot-hero .pavel-hero__subtitle {
+  font-size: 16px !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
