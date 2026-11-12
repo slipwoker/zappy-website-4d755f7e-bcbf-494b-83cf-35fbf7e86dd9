@@ -17834,8 +17834,12 @@ nav.navbar div.nav-cta-container a.nav-pilot-btn span {
 }
 
 nav.navbar div.nav-cta-container a.nav-pilot-btn {
-  color: #ffffff !important;
-  background: #111111 !important;
+  color: #111111 !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border: 1.5px solid #111 !important;
+  border-radius: 999px;
+  padding: 10px 20px;
 }
 
 nav.navbar div.nav-cta-container a.nav-pilot-btn span {
@@ -18117,8 +18121,12 @@ nav.navbar div.nav-cta-container a.nav-pilot-btn span {
 }
 
 nav.navbar div.nav-cta-container a.nav-pilot-btn {
-  color: #ffffff !important;
-  background: #111111 !important;
+  color: #111111 !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border: 1.5px solid #111 !important;
+  border-radius: 999px;
+  padding: 10px 20px;
 }
 
 nav.navbar div.nav-cta-container a.nav-pilot-btn span {
@@ -19430,7 +19438,12 @@ nav.navbar .sub-menu li a {
 }
 
 nav.navbar div.nav-cta-container a.nav-pilot-btn {
-  color: #ffffff !important;
+  color: #111111 !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border: 1.5px solid #111 !important;
+  border-radius: 999px;
+  padding: 10px 20px;
 }
 
 nav.navbar div.nav-cta-container a.nav-pilot-btn span {
@@ -19812,7 +19825,12 @@ nav.navbar .sub-menu li a {
 }
 
 nav.navbar div.nav-cta-container a.nav-pilot-btn {
-  color: #111 !important;
+  color: #111111 !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border: 1.5px solid #111 !important;
+  border-radius: 999px;
+  padding: 10px 20px;
 }
 
 nav.navbar div.nav-cta-container a.nav-pilot-btn span {
@@ -20230,7 +20248,12 @@ nav.navbar .sub-menu li a {
 }
 
 nav.navbar div.nav-cta-container a.nav-pilot-btn {
-  color: #111 !important;
+  color: #111111 !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border: 1.5px solid #111 !important;
+  border-radius: 999px;
+  padding: 10px 20px;
 }
 
 nav.navbar div.nav-cta-container a.nav-pilot-btn span {
@@ -20244,6 +20267,12 @@ nav.navbar div.nav-cta-container a.nav-pilot-btn span {
 #groutbot-hero .pavel-hero__subtitle,
 #groutbot-hero .pavel-hero p {
   color: #d8dde1 !important;
+}
+
+body nav.navbar div.nav-cta-container a.nav-pilot-btn:hover {
+  background: #111 !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
