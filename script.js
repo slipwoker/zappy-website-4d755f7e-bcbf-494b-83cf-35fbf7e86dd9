@@ -1083,6 +1083,72 @@ window.onload = function() {
 })();
 /* ZAPPY_CUSTOM_JS_END:977236bf40ea */
 
+/* ZAPPY_CUSTOM_JS_START:e2c4ee861522 */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function() {
+  function dedupeControls() {
+    var section = document.querySelector('#pavel-partners');
+    if (!section) return;
+
+    // Arrows: keep only the first prev and first next (the originals with data-element-id).
+    var prevs = section.querySelectorAll('.pavel-carousel-arrow--prev');
+    var nexts = section.querySelectorAll('.pavel-carousel-arrow--next');
+
+    // Keep the one that has data-element-id (the original); remove the rest.
+    function keepOne(list, dir) {
+      if (list.length <= 1) return;
+      var kept = null;
+      list.forEach(function(el) {
+        if (el.hasAttribute('data-element-id')) kept = el;
+      });
+      // If no data-element-id original found, fall back to first
+      if (!kept) kept = list[0];
+      list.forEach(function(el) {
+        if (el !== kept) el.remove();
+      });
+    }
+    keepOne(prevs, 'prev');
+    keepOne(nexts, 'next');
+
+    // Dots: keep only the first dots row that contains dots with data-element-id.
+    var dotsRows = section.querySelectorAll('.pavel-carousel-dots');
+    if (dotsRows.length > 1) {
+      var keptRow = null;
+      dotsRows.forEach(function(row) {
+        if (row.querySelector('.pavel-carousel-dot[data-element-id]')) keptRow = row;
+      });
+      if (!keptRow) keptRow = dotsRows[0];
+      dotsRows.forEach(function(row) {
+        if (row !== keptRow) row.remove();
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', dedupeControls);
+  } else {
+    dedupeControls();
+  }
+  // Also run after a short delay to catch late runtime cloning.
+  window.addEventListener('load', function() {
+    setTimeout(dedupeControls, 100);
+    setTimeout(dedupeControls, 600);
+  });
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:e2c4ee861522 */
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
