@@ -18518,6 +18518,11 @@ section#how.pavel-how,
 .pavel-problem .pavel-problem__container > p:first-child {
   display: block !important;
   margin: 0 0 18px 0 !important;
+  background: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  color: inherit !important;
+  height: auto !important;
 }
 
 .pavel-problem .pavel-problem__container > p:first-child span,
@@ -18690,6 +18695,11 @@ section#how.pavel-how,
   display: block !important;
   width: 100% !important;
   margin: 0 auto 18px !important;
+  background: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  color: inherit !important;
+  height: auto !important;
 }
 
 .pavel-problem .pavel-problem__container {
@@ -18714,6 +18724,43 @@ section#how.pavel-how,
 .pavel-problem .pavel-problem__container > p > span.zappy-label-pill, .pavel-partners .pavel-partners__head > p > span.zappy-label-pill {
   display: inline-block !important;
   margin: 0 !important;
+}
+
+.pavel-problem .pavel-problem__container > p > span.zappy-label-pill,
+.pavel-partners .pavel-partners__head > p > span.zappy-label-pill {
+  background: rgba(15,118,110,0.12) !important;
+  color: #0f766e !important;
+  border-radius: 100px !important;
+  padding: 7px 16px !important;
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+  height: 35px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  line-height: 1 !important;
+}
+
+.pavel-problem .pavel-problem__container > p:first-child span {
+  color: #0f766e !important;
+}
+
+.pavel-problem .pavel-problem__container > p:first-child i {
+  color: #0f766e !important;
+}
+
+.pavel-problem .pavel-problem__container > p:first-child b {
+  color: #0f766e !important;
+}
+
+#pavel-problem .pavel-problem__container > p:first-child,
+section#pavel-problem div.pavel-problem__container > p {
+  background: none !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  color: inherit !important;
+  height: auto !important;
+  box-shadow: none !important;
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
