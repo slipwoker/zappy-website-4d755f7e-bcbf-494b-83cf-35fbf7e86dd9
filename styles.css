@@ -20798,6 +20798,49 @@ body nav.navbar div.nav-cta-container a.nav-pilot-btn:hover {
   width: 100% !important;
 }
 }
+
+#groutbot-hero .pavel-lockup {
+  display: inline-flex;
+  align-items: center;
+}
+
+#groutbot-hero .pavel-lockup__brand {
+  color: var(--surface-color, var(--surface, #ffffff));
+  font-family: 'Rubik', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 0.12em;
+}
+
+#groutbot-hero .pavel-lockup__divider {
+  width: 1px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.35);
+  margin: 0 12px;
+  flex-shrink: 0;
+}
+
+#groutbot-hero .pavel-lockup__from {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 13.5px;
+}
+
+#groutbot-hero .pavel-hero__content {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+#groutbot-hero .pavel-hero__content {
+  margin: 0;
+  max-width: 100%;
+}
+
+.pavel-contact .pavel-contact__submit {
+  width: 100%;
+  display: block;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
